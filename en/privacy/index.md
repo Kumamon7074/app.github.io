@@ -1,6 +1,7 @@
 ---
-title:Privacy Policy
+title: Privacy Policy
 ---
+
 
 Mac Zhou built this app. This SERVICE is provided by Mac Zhou at no cost and is intended for use as is.
 
