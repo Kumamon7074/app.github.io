@@ -2,7 +2,7 @@
 title: Terms of Use
 ---
 
-###1.   Acceptance and modification of terms of service
+**1.   Acceptance and modification of terms of service**
 
 This agreement is about the user becoming a professional member and using the professional member service provided by this application. This agreement describes the rights and obligations between the application and the professional version members regarding software licensing, service use and related aspects. "Professional member" or "you" refers to an individual or single entity who enjoys the professional membership service provided by this application. This service agreement constitutes a prerequisite for you (whether individual or organization) to use the professional membership services provided by this application. Unless you accept the terms of this agreement, you have no right to use the related services of this agreement. Your use behavior will be deemed to agree to be bound by the terms of this agreement.
 
@@ -10,7 +10,7 @@ This application has the right to modify the terms of service at any time. Once 
 
 Please review and accept or not accept this agreement. The minor should review and perform it under the company of a legal guardian. The minor’s exercise and performance of the rights and obligations under this agreement are deemed to have been approved by the legal guardian. You must fully and strictly abide by the terms of this service agreement when enjoying the professional membership service of this app
 
-###2.  Service description
+**2.  Service description**
 
 The ownership of this application product and related software intellectual property rights involved in the professional membership service of this application belong to this application. The services provided by this application will be strictly implemented in accordance with its terms of service and operating rules. Professional members shall be bound by this agreement and the "Privacy Policy and User Service Terms of this Application" when enjoying any single service of this application.
 
@@ -24,7 +24,7 @@ You clearly understand and agree that the payment method for members of the prof
 
 This application does not assume any responsibility for your losses caused by the actions or omissions of third parties, including but not limited to payment services and network access services, and any third-party infringements.
 
-###3. Professional membership service and account query
+**3. Professional membership service and account query**
 
 Once you become a member of the professional version of this application, you are deemed to have approved the price indicated on the service; after becoming a member of the professional version of this application, the service will take effect immediately.
 
@@ -32,11 +32,11 @@ The tariff standard for value-added services for professional members is subject
 
 You can check the details of your account information for free by logging in to the member center of the professional version of this app, including the opened service content, service period, consumption amount, transaction status, etc.
 
-###4. Professional membership rights and service period
+**4. Professional membership rights and service period**
 
 All the rights and interests you can enjoy after purchasing the professional version of this application are subject to the membership rights announced on the official website of this application. This application has the right to change all or part of the membership rights based on the business development needs of this application. The app will notify or announce the adjustment of the aforementioned rights and interests on the corresponding service page. You can also check the latest membership rights and interests through the official website of this app.
 
-###5. Rights and Restrictions of Professional Members
+**5. Rights and Restrictions of Professional Members**
 
 During the validity period of the professional edition members, the professional edition members can take priority to participate in the activities organized by this application and enjoy various discounts and value-added services provided by this application.
 
@@ -52,7 +52,7 @@ Professional version members whose membership of the professional version has be
 
 The professional membership service content provided by this application must not be used for commercial, profit, etc., and can only be viewed privately.
 
-###6. Changes to the agreement
+**6. Changes to the agreement**
 
 If this application changes the service content, service methods, and the content of this user agreement in accordance with the provisions of this agreement, if the professional version members do not agree with the changes to this application, they have the right to choose to cancel and stop using all or part of the corresponding services they have obtained; if professional If members continue to use the above-mentioned services provided by this application, it is deemed that the professional version members have accepted the above adjustments of this application.
 
@@ -62,7 +62,7 @@ When using the services provided by this app, professional members suffer any pe
 
 If the professional version member does not agree to the modification of the terms, he can voluntarily request the termination of the professional version membership service to this app, but this app does not refund those who have enjoyed the professional version membership service in the month in which the professional version membership service is activated to the month when the professional version membership service is requested to terminate Part of the fee; if the professional member continues to enjoy the professional member service, it is deemed that the professional member has accepted the modification of the terms.
 
-###7. Interruption and termination of service
+**7. Interruption and termination of service**
 
 Due to irresistible causes of this application, such as government actions and force majeure, which cause the professional membership service to be unable to continue, this application will notify the professional membership as soon as possible, but will not be responsible for any losses and losses caused to the professional membership. Non-refundable professional membership service fee.
 
