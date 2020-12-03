@@ -69,3 +69,5 @@ Due to irresistible causes of this application, such as government actions and f
 If a professional member violates or is deemed to have violated the content of these terms of service, this app has the right to immediately terminate all the services you have purchased without notifying the professional member, and cancel your professional member account and Use permission, but does not refund any paid professional membership service fees.
 
 This application's failure to exercise or delay in exercising its rights under this agreement does not constitute a waiver of these rights, and the single or partial exercise of any of its rights under this agreement does not exclude the exercise of any other rights. This application has the right to ask you to continue to perform your obligations and bear the corresponding liability for breach of contract at any time.
+
+----
