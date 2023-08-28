@@ -3,9 +3,9 @@ layout: page
 title: My Awesome App
 ---
 
-# My Awesome App
+# My Folder App
 
-Welcome to My Awesome App, a powerful mobile application that helps you easily accomplish various tasks.
+Welcome to My Folder App, a powerful mobile application that helps you easily accomplish various tasks.
 
 ## Key Features
 
@@ -21,8 +21,7 @@ You can add some screenshots of the app to let users better understand its inter
 
 You can download and install My Awesome App from the following links:
 
-- [App Store](https://itunes.apple.com/app/my-awesome-app/id123456789)
-- [Google Play](https://play.google.com/store/apps/details?id=com.myawesomeapp)
+- [App Store](https://apps.apple.com/cn/app/apple-store/id1563518405)
 
 ## User Guide
 
@@ -32,9 +31,8 @@ You can add some user guides to help users better understand how to use My Aweso
 
 If you have any questions or suggestions, please feel free to contact us:
 
-- Email: support@myawesomeapp.com
-- Official website: https://www.myawesomeapp.com
+- Email: death7074@gmail.com
 
 We will reply to you as soon as possible and provide assistance.
 
-Thank you for using My Awesome App!
+Thank you for using My Folder App!
