@@ -13,9 +13,11 @@ Welcome to My Folder App, a powerful mobile application that helps you easily ac
 
 ## Key Features
 
-- Feature one: Here is the introduction to feature one.
-- Feature two: Here is the introduction to feature two.
-- Feature three: Here is the introduction to feature three.
+- Easily manage files in google drive.
+- Play video and audio files in various formats.
+- upload mobile photos to google drive.
+- Add password protection to Google drive.
+- share files with friends.
 
 ## Screenshots
 
@@ -26,10 +28,6 @@ You can add some screenshots of the app to let users better understand its inter
 You can download and install My Awesome App from the following links:
 
 - [App Store](https://apps.apple.com/cn/app/apple-store/id1563518405)
-
-## User Guide
-
-You can add some user guides to help users better understand how to use My Awesome App.
 
 ## Feedback and Support
 
