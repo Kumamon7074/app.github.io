@@ -21,7 +21,7 @@ Welcome to My Folder App, a powerful mobile application that helps you easily ac
 
 ## Screenshots
 
-![Alt Text](/assets/images/folderscreenshot.png)
+![Alt Text]({{ site.baseurl }}/assets/images/folderscreenshot.png)
 
 ## Download and Installation
 
