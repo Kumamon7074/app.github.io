@@ -1,6 +1,5 @@
 ---
-layout: page
-title: My Awesome App
+layout: default
 ---
 <style>
 body {
