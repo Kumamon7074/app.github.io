@@ -21,7 +21,7 @@ Welcome to My Folder App, a powerful mobile application that helps you easily ac
 
 ## Screenshots
 
-![](/assets/images/folderscreenshot.png)
+![](https://kumamon7074.github.io/app.github.io/assets/images/folderscreenshot.png)
 
 ## Download and Installation
 
