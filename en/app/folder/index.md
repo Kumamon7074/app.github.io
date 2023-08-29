@@ -1,12 +1,12 @@
+---
+layout: page
+title: My Awesome App
+---
 <style>
 body {
   background-color: #fdeff2; /* 设置为你想要的背景颜色 */
 }
 </style>
----
-layout: page
-title: My Awesome App
----
 
 # My Folder App
 
