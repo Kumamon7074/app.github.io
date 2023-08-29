@@ -25,7 +25,7 @@ Welcome to My Folder App, a powerful mobile application that helps you easily ac
 
 ## Download and Installation
 
-You can download and install My Awesome App from the following links:
+You can download and install My Folder App from the following links:
 
 - [App Store](https://apps.apple.com/cn/app/apple-store/id1563518405)
 
