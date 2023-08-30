@@ -1,2 +1,4 @@
 theme: jekyll-theme-cayman
 baseurl: "/app.github.io"
+plugins:
+  - jekyll-sitemap
