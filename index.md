@@ -1,3 +1,7 @@
+---
+layout: default
+---
+<meta name="google-site-verification" content="UJXdXmPu9fs_BY9UUv5TgNHk6XL4IXHjkMepB8X9HAk" />
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Kumamon7074/app.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
