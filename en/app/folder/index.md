@@ -39,4 +39,5 @@ We will reply to you as soon as possible and provide assistance.
 
 Thank you for using My Folder App!
 
-##[Privacy policy](https://kumamon7074.github.io/app.github.io/en/privacy)
+## Privacy policy
+- [Privacy policy](https://kumamon7074.github.io/app.github.io/en/privacy)
