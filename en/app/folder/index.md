@@ -1,5 +1,5 @@
 ---
-layout: default
+title: Folder
 ---
 <style>
 body {
