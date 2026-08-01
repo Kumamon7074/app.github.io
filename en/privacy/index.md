@@ -1,69 +1,126 @@
 ---
-title: Privacy Policy
+title: Vanto Privacy Policy
+description: How Vanto handles and protects your data
 ---
 
+**Effective date: August 1, 2026**<br>
+**Last updated: August 1, 2026**
 
-Mac Zhou built this app. This SERVICE is provided by Mac Zhou at no cost and is intended for use as is.
+Vanto is a personal media player provided by independent developer Mac Zhou. This policy explains how Vanto handles data on iPhone, iPad, Apple TV, and Mac, and the choices available to you.
 
-This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
+Vanto does not provide media content or operate a cloud media server that receives your media files. Your local media files, media contents, full file paths, and media server passwords are not sent to the Vanto developer.
 
-If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
+## 1. Data handled by Vanto
 
-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at NiponCam unless otherwise defined in this Privacy Policy.
+### 1.1 Data stored only on your device
 
-**Information Collection and Use**
+To provide media browsing, playback, downloads, and preferences, Vanto stores the following on your device:
 
-For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
+- Local media indexes, metadata, artwork caches, and playback preferences;
+- Configuration for media sources you add;
+- Offline downloads, external subtitles, and app-managed imported files;
+- Playback progress, favorites, and watched status for Local sources;
+- Access Lock settings. The Apple TV Access Lock PIN is stored only in the local Keychain.
 
-The app does use third party services that may collect information used to identify you.
+Passwords, tokens, and other sensitive credentials for media servers and remote file sources are stored in the system Keychain and are used only to connect to services you configure.
 
-Link to privacy policy of third party service providers used by the app
+### 1.2 Optional usage analytics
 
-*   [AdMob](https://support.google.com/admob/answer/6128543?hl=en)
-*   [Firebase Crashlytics](https://firebase.google.com/support/privacy/)
+Vanto sends limited product usage data through Google Firebase Analytics only after you enable “Share Usage Analytics.” This may include:
 
-**Log Data**
+- App version, device platform, and operating system version;
+- Categorized results and duration buckets for sources, pages, or features;
+- Aggregated buckets for playback, buffering, seeking, and downloads.
 
-I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.
+These events do not contain media titles, person names, file paths, server addresses, URLs, accounts, credentials, or raw error contents. Vanto does not use this data for advertising, user profiling, or cross-app tracking.
 
-**Cookies**
+### 1.3 Optional crash diagnostics
 
-Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
+Vanto sends crash diagnostics through Google Firebase Crashlytics only after you enable “Share Crash Diagnostics.” Reports may contain crash stacks, app and system versions, device type, runtime state, and restricted diagnostic categories. Vanto does not attach media titles, paths, server addresses, accounts, or credentials.
 
-This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
+Turning this option off immediately stops Vanto from actively recording new non-fatal diagnostics. A Firebase change to automatic crash collection may take full effect on the next app launch. Reports already sent cannot be withdrawn from the device.
 
-**Service Providers**
+### 1.4 Private iCloud data
 
-I may employ third-party companies and individuals due to the following reasons:
+When you have the applicable Vanto Pro entitlement and enable remote-file user-state sync, Vanto uses your private Apple CloudKit database to sync playback progress, watched status, and favorites for SMB, WebDAV, and SFTP items.
 
-*   To facilitate our Service;
-*   To provide the Service on our behalf;
-*   To perform Service-related services; or
-*   To assist us in analyzing how our Service is used.
+Sync records contain only a digest derived from stable source and object facts, content revision and length, plus necessary numeric state. Vanto does not upload media titles, full paths, server addresses, usernames, passwords, tokens, or media files. The data remains in the private CloudKit container associated with your Apple Account.
 
-I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
+### 1.5 Purchase information
 
-**Security**
+Vanto uses Apple StoreKit for Vanto Pro purchases, purchase restoration, subscription status, and Family Sharing entitlements. Apple processes payment accounts, card information, and billing details. The Vanto developer does not receive those payment details.
 
-I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
+## 2. Services you configure
 
-**Links to Other Sites**
+Vanto can connect directly from your device to:
 
-This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+- Emby, Jellyfin, and Plex;
+- SMB, WebDAV, and SFTP;
+- Metadata or subtitle services such as TMDB, TVDB, and OpenSubtitles;
+- Apple CloudKit, StoreKit, Firebase, and system media services.
 
-**Children’s Privacy**
+Requests to these services may contain credentials, media identifiers, search terms, network addresses, or device network information required for the selected service to work. Requests travel directly from your device to the relevant service and do not pass through a Vanto-operated server. Each third party handles data under its own privacy policy and its relationship with you.
 
-These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13\. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions.
+## 3. Why data is handled
 
-**Changes to This Privacy Policy**
+Vanto handles data only to:
 
-I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
+- Connect to, browse, and play media sources you choose;
+- Save preferences, playback state, favorites, and offline content;
+- Sync selected state across devices when you enable that feature;
+- Verify and restore Vanto Pro entitlements;
+- Analyze reliability and diagnose crashes after you authorize collection;
+- Meet legal obligations and protect the app and its users.
 
-This policy is effective as of 2020-12-01
+## 4. Data sharing
 
-**Contact Us**
+Vanto does not sell or rent data and does not provide data to advertisers. Data is handled by Apple, Google Firebase, or services you configure only when necessary for the purposes above, or disclosed when legally required by a competent authority.
 
-If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at death7074@gmail.com.
+## 5. Retention and deletion
 
+- Local settings, indexes, and caches remain until you delete them in the app, disconnect the source, clear the applicable data, or uninstall Vanto;
+- Keychain credentials remain until you remove the source or Vanto clears stale credentials after a fresh installation;
+- Offline files and imported copies remain until you delete them;
+- Private CloudKit state remains until you disable sync and delete the relevant data, remove the Apple Account data, or delete the associated source state;
+- Firebase data is collected only after authorization and retained under Vanto’s Firebase configuration and the applicable Google Firebase terms for no longer than needed for analytics or diagnostics.
 
------
+You can disable usage analytics or crash diagnostics at any time under “Settings → Legal & Privacy.” You can also remove sources, clear caches and downloads, or disable remote-file user-state sync.
+
+## 6. Your rights
+
+Depending on applicable law, you may have the right to:
+
+- Learn about, access, correct, or delete data concerning you;
+- Withdraw permission for optional analytics and diagnostics;
+- Restrict or object to certain processing;
+- Request a portable copy of applicable data;
+- Complain to your local data protection authority.
+
+Vanto does not create a separate Vanto user account. Connecting a third-party media service does not create an account with the Vanto developer. To request access to or deletion of data controlled by the Vanto developer, contact the email address below. Reasonable verification may be required to avoid disclosing data to the wrong person.
+
+## 7. Children’s privacy
+
+Vanto is intended for general users who manage personal media sources and is not directed specifically to children. Vanto does not knowingly ask children to provide personal information to the developer. A parent or guardian who believes a child provided personal information may contact us to request appropriate action.
+
+## 8. Security
+
+Vanto uses the system Keychain, source identity isolation, and encrypted connections when supported by the selected service. No network transmission or electronic storage method is completely secure. You remain responsible for protecting your media servers, network, Apple Account, and third-party service credentials.
+
+## 9. International processing
+
+Apple, Google Firebase, or services you choose may process data outside your country or region. Vanto limits this processing through data minimization, user choice, and the applicable service terms, and uses appropriate safeguards where required by law.
+
+## 10. Changes to this policy
+
+If data categories, purposes, or third-party services change materially, Vanto will update this page and its effective date and obtain a new choice where required by law. Continued use does not constitute consent to new optional data collection.
+
+## 11. Contact
+
+Data controller: Mac Zhou (independent developer)<br>
+Email: [death7074@gmail.com](mailto:death7074@gmail.com)
+
+Contact the address above for access, deletion, consent withdrawal, or questions about this policy.
+
+---
+
+[中文版]({{ '/zh/privacy/' | relative_url }}) · [Apple Standard Terms of Use](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
