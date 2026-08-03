@@ -153,13 +153,13 @@ TV Shows/
 Arrival (2016).mkv
 Arrival (2016).zh-Hans.srt
 Arrival (2016).en.forced.ass
-Arrival (2016).zh-Hant.default.vtt
+Arrival (2016).zh-Hant.vtt
 ```
 
 可在主文件名后追加语言与用途：
 
 - 语言：`zh-Hans`、`zh-Hant`、`en`、`ja` 等。
-- 用途：`forced` 表示强制字幕，`default` 表示默认候选。
+- 可保留 `forced` 等常见用途后缀以便人工识别；是否自动启用仍由播放器中的字幕选择决定。
 - Vanto 支持的文本字幕格式：SRT、ASS、SSA、VTT、SMI。
 
 外挂字幕不写入 NFO。NFO 负责描述媒体，字幕始终是与具体视频绑定的独立文件。
@@ -181,4 +181,3 @@ Arrival (2016).zh-Hant.default.vtt
 - [Jellyfin Shows](https://jellyfin.org/docs/general/server/media/shows/)
 - [Kodi NFO files](https://kodi.wiki/view/NFO_files)
 - [Kodi Artwork](https://kodi.wiki/view/Artwork)
-

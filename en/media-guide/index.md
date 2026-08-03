@@ -153,13 +153,13 @@ Place subtitles beside the video and use exactly the same base name:
 Arrival (2016).mkv
 Arrival (2016).en.srt
 Arrival (2016).zh-Hans.forced.ass
-Arrival (2016).fr.default.vtt
+Arrival (2016).fr.vtt
 ```
 
 Optional suffixes may describe language and purpose:
 
 - Language: `en`, `zh-Hans`, `zh-Hant`, `ja`, and similar language tags.
-- Role: `forced` marks forced dialogue; `default` marks the preferred candidate.
+- Conventional role suffixes such as `forced` may be retained for identification; automatic activation still follows the subtitle selection in the player.
 - Text subtitle formats supported by Vanto: SRT, ASS, SSA, VTT, and SMI.
 
 External subtitles are not stored in NFO. NFO describes the media item; each subtitle remains a separate file bound to one video.
@@ -181,4 +181,3 @@ This page promises only the intersection implemented by Vanto and commonly suppo
 - [Jellyfin Shows](https://jellyfin.org/docs/general/server/media/shows/)
 - [Kodi NFO files](https://kodi.wiki/view/NFO_files)
 - [Kodi Artwork](https://kodi.wiki/view/Artwork)
-
