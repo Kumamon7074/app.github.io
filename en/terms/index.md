@@ -1,73 +1,88 @@
 ---
-title: Terms of Use
+title: Vanto Terms of Use
+description: Rules for using Vanto, its services, and Vanto Pro
 ---
 
-**1.   Acceptance and modification of terms of service**
+**Effective date: August 3, 2026**<br>
+**Last updated: August 3, 2026**
 
-This agreement is about the user becoming a professional member and using the professional member service provided by this application. This agreement describes the rights and obligations between the application and the professional version members regarding software licensing, service use and related aspects. "Professional member" or "you" refers to an individual or single entity who enjoys the professional membership service provided by this application. This service agreement constitutes a prerequisite for you (whether individual or organization) to use the professional membership services provided by this application. Unless you accept the terms of this agreement, you have no right to use the related services of this agreement. Your use behavior will be deemed to agree to be bound by the terms of this agreement.
+Welcome to Vanto. Vanto is a personal media management and playback tool provided by independent developer Mac Zhou for iPhone, iPad, Apple TV, and Mac.
 
-This application has the right to modify the terms of service at any time. Once the terms of service are changed or modified, the application will prompt the modified content on the relevant page; if the professional version member does not agree to the modification of this agreement, the service already obtained can be cancelled and stopped Use; if the professional member continues to use the services provided by this application, it is deemed that the professional member has accepted all the modifications of this agreement.
+These terms supplement the [Apple Standard End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) (the “Apple Standard EULA”) that applies to Vanto as distributed by Apple. The software license remains governed by the Apple Standard EULA; these terms principally describe Vanto’s service nature, user content, third-party services, and Vanto Pro. If these terms conflict with mandatory applicable law or mandatory provisions of the Apple Standard EULA, those provisions control.
 
-Please review and accept or not accept this agreement. The minor should review and perform it under the company of a legal guardian. The minor’s exercise and performance of the rights and obligations under this agreement are deemed to have been approved by the legal guardian. You must fully and strictly abide by the terms of this service agreement when enjoying the professional membership service of this app
+## 1. Nature of the service
 
-**2.  Service description**
+Vanto is a media player and personal media-library client. It does not provide, host, sell, or distribute movies, television programs, live channels, subtitles, or other media content, and it does not operate a cloud media server that receives your media files.
 
-The ownership of this application product and related software intellectual property rights involved in the professional membership service of this application belong to this application. The services provided by this application will be strictly implemented in accordance with its terms of service and operating rules. Professional members shall be bound by this agreement and the "Privacy Policy and User Service Terms of this Application" when enjoying any single service of this application.
+You may use Vanto to browse and play local files or connect services you configure, including Emby, Jellyfin, Plex, SMB, WebDAV, SFTP, and other supported services. Vanto is not affiliated with, acting for, or endorsed by those third parties unless expressly stated.
 
-This application has the right to supervise, prompt, and inspect all online activities of professional members. If the behavior of professional members violates relevant laws and regulations or violates the terms of this agreement, this application has the right to request corrections and pursue their responsibilities.
+## 2. Your media and lawful use
 
-All services provided by this application to professional members are limited to the use of professional members on this application platform. Any act of separating the service content provided by this application from this application platform by malicious cracking or other illegal means does not belong to this agreement. The services provided by this application as agreed in. All legal consequences caused by this are the responsibility of the perpetrator, and this application will pursue the legal responsibility of the perpetrator in accordance with the law.
+You are responsible for the content you add, access, play, download, cache, or share, and for ensuring that you have ownership, a license, or other lawful authority to do so. You must not use Vanto to infringe copyright, privacy, publicity, trademark, or other rights, or to circumvent access controls, digital rights management, payment restrictions, or applicable law.
 
-When a professional member uses each individual service of this application, the use behavior of the professional member is regarded as their agreement to the terms of service of each individual service and the application of various announcements in the individual service.
+Vanto’s downloading, offline playback, screenshot sharing, subtitle, and metadata features are intended only for content you are authorized to handle. Vanto does not verify whether a media source is lawful, and providing general playback or connection capabilities does not acquire or grant any content rights.
 
-You clearly understand and agree that the payment method for members of the professional version of this application is the payment method collected on behalf of the charging operator. There may be certain commercial risks in your payment through this payment method, including but not limited to criminals using your account or bank Cards and other valuable cards carry out illegal activities, and such risks will cause you corresponding economic losses. You shall bear the consequences of the infringing party being held accountable for the infringement and the inability to be held accountable.
+## 3. Third-party sources and services
 
-This application does not assume any responsibility for your losses caused by the actions or omissions of third parties, including but not limited to payment services and network access services, and any third-party infringements.
+Vanto relies on servers, NAS devices, network protocols, metadata services, subtitle services, and Apple system services that you choose to configure. Your accounts, subscriptions, licenses, content, availability, rate limits, and data relationship with those services are governed by their respective terms.
 
-**3. Professional membership service and account query**
+Third-party services may change interfaces, stop operating, reject requests, restrict regions or accounts, or return inaccurate, incomplete, or incompatible data. Vanto will make reasonable efforts to maintain compatibility but does not guarantee continued availability of any third-party service, server, or protocol and is not responsible for their content, conduct, security, or policies.
 
-Once you become a member of the professional version of this application, you are deemed to have approved the price indicated on the service; after becoming a member of the professional version of this application, the service will take effect immediately.
+## 4. Metadata, artwork, and subtitles
 
-The tariff standard for value-added services for professional members is subject to the detailed tariff marked on the application website. This application has the right to change the above tariff standards based on its own business development needs, but this application will be activated and continue at different stages according to actual operating conditions Valid professional members are given different tariff discounts in terms of renewal and upgrades. The specific preferential policies are subject to the content announced by this application on the relevant service page.
+Titles, descriptions, cast information, artwork, ratings, subtitles, and other display facts may come from media files, NFO files, servers you configure, or third-party providers. Vanto seeks to avoid incorrect matches but cannot guarantee that such information is always accurate, complete, or suitable for every region or age.
 
-You can check the details of your account information for free by logging in to the member center of the professional version of this app, including the opened service content, service period, consumption amount, transaction status, etc.
+Text, images, trademarks, and data remain the property of their respective rights holders. You must follow applicable provider licenses and attribution requirements and must not use Vanto’s matching, caching, or display capabilities for unauthorized redistribution.
 
-**4. Professional membership rights and service period**
+## 5. Local files, downloads, and backups
 
-All the rights and interests you can enjoy after purchasing the professional version of this application are subject to the membership rights announced on the official website of this application. This application has the right to change all or part of the membership rights based on the business development needs of this application. The app will notify or announce the adjustment of the aforementioned rights and interests on the corresponding service page. You can also check the latest membership rights and interests through the official website of this app.
+Removing a source, cache, download, or app-managed imported copy may permanently remove data. Uninstalling the app, system cleanup, device damage, or third-party service changes may also make local content, offline files, or sync state unavailable. Keep your own backups of important media and configuration.
 
-**5. Rights and Restrictions of Professional Members**
+Vanto does not delete original files from externally authorized folders. Deletion capabilities apply only to app-managed imported copies or downloaded files. Confirm the target content and available device storage before acting.
 
-During the validity period of the professional edition members, the professional edition members can take priority to participate in the activities organized by this application and enjoy various discounts and value-added services provided by this application.
+## 6. Vanto Pro, purchases, and Family Sharing
 
-The professional version membership service is limited to the application account for self-use; the professional version membership service period cannot be transferred between this application account, and it is forbidden to gift, borrow, use, transfer or sell. Otherwise, this application has the right to cancel the professional membership service qualification of the transferred account and the transferred account without notice, and the loss caused by this will be borne by the professional member.
+Vanto Pro is offered through Apple StoreKit as an annual subscription and a lifetime purchase. The price, currency, taxes, subscription period, trial eligibility, renewal date, and refund rules shown by the App Store at purchase time control. Vanto does not directly process payment accounts or card information.
 
-If the behavior of the professional member continues to violate this agreement or violates relevant national laws and regulations, or the application believes that the professional member’s behavior is harmful to the reputation and interests of this application or others, the application company has the right to cancel the professional member of the professional member Qualified without any compensation.
+The annual subscription renews for the period shown by Apple unless canceled through your Apple Account settings before the current period ends. Purchase restoration, refunds, billing disputes, and subscription management are handled under Apple’s applicable rules.
 
-Professional version members shall not use illegal means such as theft, exploiting system vulnerabilities, or on websites that illegally sell the professional version members of the application without authorization from the application to obtain or purchase the professional version membership services, otherwise the application has the right to cancel the services of the professional version members qualifications. The problems caused by this are borne by the professional members, and this application does not bear any responsibility.
+Eligible Family Sharing purchases share only the Vanto Pro feature entitlement. They do not share media sources, accounts, credentials, playback history, favorites, downloads, settings, or an Access Lock PIN. Expiration does not proactively delete local data, but restricted features may stop creating new tasks or switching to additional sources.
 
-Any member of the professional version shall not use nicknames and signature files with the meaning of illegal, obscene, insulting or personal attack. Once discovered, this application has the right to cancel its professional membership without any compensation or refund. fee.
+## 7. Technical compatibility and playback results
 
-Professional version members whose membership of the professional version has been cancelled can no longer participate in activities organized by this application and can no longer enjoy the various discounts and value-added services provided by this application, that is, they no longer enjoy the rights of the professional version membership.
+Playback depends on the device model, operating system, display, audio route, network, server, container, codec, subtitle format, HDR or Dolby metadata, and third-party implementations. A recognized file may still fail, transcode, fall back to a lower-capability output, produce color or loudness differences, show subtitle timing differences, buffer, or encounter performance limits.
 
-The professional membership service content provided by this application must not be used for commercial, profit, etc., and can only be viewed privately.
+Vanto will continue to improve compatibility but does not promise that every combination will match the output of a particular player, television, sound system, or server client, or that metadata, sync, downloads, and remote connections will never be interrupted. Verify your device and source configuration before important playback.
 
-**6. Changes to the agreement**
+## 8. Prohibited conduct
 
-If this application changes the service content, service methods, and the content of this user agreement in accordance with the provisions of this agreement, if the professional version members do not agree with the changes to this application, they have the right to choose to cancel and stop using all or part of the corresponding services they have obtained; if professional If members continue to use the above-mentioned services provided by this application, it is deemed that the professional version members have accepted the above adjustments of this application.
+You must not:
 
-Once this application modifies the professional membership agreement, the modified content will be published on the page. Once announced, it shall be deemed to notify the professional members.
+- Use Vanto unlawfully, infringe rights, commit fraud, or compromise security;
+- Access servers, accounts, networks, or content without authorization;
+- Circumvent Vanto Pro, Apple StoreKit, or third-party access restrictions;
+- Maliciously interfere with Vanto, distribute malicious code, or abuse network resources;
+- Reverse engineer, rent, resell, or redistribute Vanto where prohibited by applicable law.
 
-When using the services provided by this app, professional members suffer any personal or financial loss, damage or injury, regardless of the reason, this app is not responsible. As the professional version members inform others of their personal passwords or share their registered accounts with others, this application is not responsible for any leakage of personal data caused by this.
+## 9. Updates, availability, and termination
 
-If the professional version member does not agree to the modification of the terms, he can voluntarily request the termination of the professional version membership service to this app, but this app does not refund those who have enjoyed the professional version membership service in the month in which the professional version membership service is activated to the month when the professional version membership service is requested to terminate Part of the fee; if the professional member continues to enjoy the professional member service, it is deemed that the professional member has accepted the modification of the terms.
+Vanto may adjust features, supported capabilities, and minimum system requirements for security, compatibility, legal compliance, or product improvement. Material changes to these terms will be published here with an updated date; additional notice or consent will be used where required by law.
 
-**7. Interruption and termination of service**
+If you materially violate these terms, the Apple Standard EULA, or applicable law, Vanto may limit relevant functionality where permitted. You may stop using and uninstall Vanto at any time. Back up data you want to keep before uninstalling.
 
-Due to irresistible causes of this application, such as government actions and force majeure, which cause the professional membership service to be unable to continue, this application will notify the professional membership as soon as possible, but will not be responsible for any losses and losses caused to the professional membership. Non-refundable professional membership service fee.
+## 10. Warranties and limitation of liability
 
-If a professional member violates or is deemed to have violated the content of these terms of service, this app has the right to immediately terminate all the services you have purchased without notifying the professional member, and cancel your professional member account and Use permission, but does not refund any paid professional membership service fees.
+To the maximum extent permitted by applicable law, Vanto is provided “as is” and “as available.” Except for warranties that cannot lawfully be excluded, Vanto does not warrant uninterrupted or error-free operation, complete compatibility, freedom from data loss, accurate metadata, or continued availability of third-party services.
 
-This application's failure to exercise or delay in exercising its rights under this agreement does not constitute a waiver of these rights, and the single or partial exercise of any of its rights under this agreement does not exclude the exercise of any other rights. This application has the right to ask you to continue to perform your obligations and bear the corresponding liability for breach of contract at any time.
+Loss resulting from third-party content or services, unauthorized media use, network or device failure, data loss, configuration errors, or events outside Vanto’s reasonable control remains the responsibility of the legally responsible party. Nothing in these terms limits mandatory consumer rights.
 
-----
+## 11. Contact
+
+Developer: Mac Zhou (independent developer)<br>
+Email: [death7074@gmail.com](mailto:death7074@gmail.com)
+
+Contact the address above with questions about these terms, content rights, or Vanto Pro.
+
+---
+
+[中文版]({{ '/zh/terms/' | relative_url }}) · [Privacy Policy]({{ '/en/privacy/' | relative_url }}) · [Apple Standard EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
