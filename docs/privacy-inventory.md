@@ -31,7 +31,7 @@
 
 ## 商店 URL
 
-- 中文：https://kumamon7074.github.io/app.github.io/zh/app/calculator/privacy/
-- 英文：https://kumamon7074.github.io/app.github.io/en/app/calculator/privacy/
+- 中文：https://apps.vanto.space/zh/app/calculator/privacy/
+- 英文：https://apps.vanto.space/en/app/calculator/privacy/
 
 只修改计算器隐私政策 URL；不改隐私选择 URL、不代填未核实的数据类型、不提交 App 版本审核。

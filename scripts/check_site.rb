@@ -6,7 +6,12 @@ require 'uri'
 
 root = File.expand_path('..', __dir__)
 output = File.join(root, '_site')
-prefix = '/app.github.io'
+config = YAML.load_file(File.join(root, '_config.yml'))
+origin = config.fetch('url')
+prefix = config.fetch('baseurl')
+abort 'Unexpected public origin' unless origin == 'https://apps.vanto.space' && prefix.empty?
+abort 'CNAME differs from public origin' unless File.read(File.join(root, 'CNAME')).strip == URI(origin).host
+abort 'Published CNAME missing' unless File.read(File.join(output, 'CNAME')).strip == URI(origin).host
 expected = %w[index.html zh/index.html en/privacy/index.html zh/privacy/index.html
   en/app/calculator/privacy/index.html zh/app/calculator/privacy/index.html
   en/app/folder/index.html zh/app/folder/index.html en/site-privacy/index.html
@@ -20,9 +25,13 @@ documents = {}
 Dir.glob(File.join(output, '**', '*.html')).each do |file|
   next if File.basename(file).start_with?('google')
   html = File.read(file)
-  abort "Removed content: #{file}" if html.match?(/vanto|googletagmanager|Welcome to GitHub Pages/i)
+  abort "Removed content: #{file}" if html.match?(/googletagmanager|Welcome to GitHub Pages/i)
   abort "Unrendered template: #{file}" if html.include?('{%') || html.include?('{{')
   doc = Nokogiri::HTML(html)
+  abort "Removed product content: #{file}" if doc.text.match?(/\bvanto\b/i)
+  abort "Old host or base path: #{file}" if html.include?('kumamon7074.github.io') || html.include?('/app.github.io/')
+  canonical = doc.at_css('link[rel="canonical"]')&.[]('href')
+  abort "Wrong canonical: #{file}" unless canonical&.start_with?(origin + '/')
   abort "Missing page structure: #{file}" unless doc.at_css('html[lang]') && doc.css('h1').length == 1 && doc.at_css('main#content')
   abort "Tracking/runtime script: #{file}" unless doc.css('script').empty?
   ids = doc.css('[id]').map { |node| node['id'] }
@@ -33,7 +42,12 @@ end
 documents.each do |file, doc|
   doc.css('a[href], link[href], img[src]').each do |node|
     value = node['href'] || node['src']
-    next if value.start_with?('mailto:', 'https://', 'http://')
+    next if value.start_with?('mailto:')
+    if value.start_with?('https://', 'http://')
+      next unless URI(value).host == URI(origin).host
+      abort "Insecure owned link: #{value}" unless value.start_with?(origin + '/')
+      value = value.delete_prefix(origin)
+    end
     uri = URI.parse(value)
     if uri.path.nil? || uri.path.empty?
       destination = file
@@ -49,6 +63,10 @@ documents.each do |file, doc|
     end
   end
 end
+
+sitemap = File.read(File.join(output, 'sitemap.xml'))
+abort 'Sitemap uses old origin' if sitemap.include?('kumamon7074.github.io') || sitemap.include?('/app.github.io/')
+abort 'Sitemap misses custom origin' unless sitemap.include?(origin + '/')
 
 sections = YAML.load_file(File.join(root, '_data/policy_sections.yml')).map { |section| section.fetch('id') }
 %w[en zh].each do |language|
