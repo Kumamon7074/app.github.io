@@ -1,44 +1,28 @@
 ---
 title: Folder
+lang: en
+translation: /zh/app/folder/
+description: Google Drive file management, media playback, and support.
 ---
+<header class="page-heading">
+  <p class="eyebrow">FOLDER</p>
+  <h1>Your files, in one place.</h1>
+  <p class="lede">Manage Google Drive files, play audio and video, and upload photos from your device.</p>
+</header>
+<div class="prose support-page" markdown="1">
+[View Folder on the App Store](https://apps.apple.com/app/id1563518405)
 
-<style>
-body {
-  background-color: #fdeff2; /* 设置为你想要的背景颜色 */
-}
-</style>
+## About Folder
 
-# My Folder App
+Folder's published features include Google Drive file management, audio and video playback, photo uploads, an access lock, and file sharing. Available features depend on your installed version.
 
-Welcome to My Folder App, a powerful mobile application that helps you easily accomplish various tasks.
+![Folder app interface]({{ '/assets/images/folderscreenshot.png' | relative_url }})
 
-## Key Features
+<div class="contact-panel" markdown="1">
+## Support and privacy questions
 
-- Easily manage files in google drive.
-- Play video and audio files in various formats.
-- upload mobile photos to google drive.
-- Add password protection to Google drive.
-- share files with friends.
+Email [{{ site.contact_email }}](mailto:{{ site.contact_email }}?subject=Folder%20support) with the app name, version, and your question. Do not include passwords, authorization tokens, or private files.
 
-## Screenshots
-
-![](https://kumamon7074.github.io/app.github.io/assets/images/folderscreenshot.png)
-
-## Download and Installation
-
-You can download and install My Folder App from the following links:
-
-- [App Store](https://apps.apple.com/cn/app/apple-store/id1563518405)
-  
-## Feedback and Support
-
-If you have any questions or suggestions, please feel free to contact us:
-
-- Email: death7074@gmail.com
-
-We will reply to you as soon as possible and provide assistance.
-
-Thank you for using My Folder App!
-
-## Privacy Policy
-- [Privacy policy](https://kumamon7074.github.io/app.github.io/en/privacy)
+**Folder is separate from Smart Calculator.** The calculator policy on this website does not describe Folder's Google Drive access or data practices.
+</div>
+</div>

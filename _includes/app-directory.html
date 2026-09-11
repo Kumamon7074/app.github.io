@@ -1,0 +1,13 @@
+<div class="app-directory">
+{% for app in site.data.apps %}
+  <article class="app-card">
+    <span class="app-number" aria-hidden="true">0{{ forloop.index }}</span>
+    <div class="app-copy">
+      <h2>{{ app.name[page.lang] }}</h2>
+      <p>{{ app.description[page.lang] }}</p>
+      {% if app.policy %}<a class="primary-link" href="{{ app.policy[page.lang] | relative_url }}">{{ site.data.ui[page.lang].privacy }} <span aria-hidden="true">↗</span></a>
+      {% else %}<a class="primary-link" href="{{ app.support[page.lang] | relative_url }}">{{ site.data.ui[page.lang].support }} <span aria-hidden="true">↗</span></a>{% endif %}
+    </div>
+  </article>
+{% endfor %}
+</div>

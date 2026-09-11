@@ -1,41 +1,12 @@
 ---
-layout: default
+title: Software & Privacy
+lang: en
+translation: /zh/
 ---
-<meta name="google-site-verification" content="UJXdXmPu9fs_BY9UUv5TgNHk6XL4IXHjkMepB8X9HAk" />
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/Kumamon7074/app.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Kumamon7074/app.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<header class="page-heading">
+  <p class="eyebrow">MAC ZHOU / SOFTWARE</p>
+  <h1>Software & privacy.</h1>
+  <p class="lede">Find the privacy policy and support information for your app.</p>
+</header>
+{% include app-directory.html %}
+<p class="directory-note">Policies describe the app named on each page. Reading a policy does not grant tracking, photo, or other device permissions.</p>

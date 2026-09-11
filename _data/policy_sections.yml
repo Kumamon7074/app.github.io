@@ -1,0 +1,36 @@
+- id: scope
+  en: Scope
+  zh: 适用范围
+- id: local-data
+  en: Calculations & local data
+  zh: 计算与本地数据
+- id: widgets
+  en: Widgets & lock screen
+  zh: 小组件与锁屏
+- id: sharing
+  en: Sharing & permissions
+  zh: 分享与权限
+- id: ads
+  en: Advertising
+  zh: 广告服务
+- id: analytics
+  en: Usage analytics
+  zh: 使用分析
+- id: purchases
+  en: Purchases
+  zh: 购买与恢复
+- id: retention
+  en: Retention & deletion
+  zh: 保存与删除
+- id: choices
+  en: Your choices & rights
+  zh: 选择与权利
+- id: security
+  en: Security & processing locations
+  zh: 安全与处理地点
+- id: children
+  en: Children
+  zh: 儿童隐私
+- id: contact
+  en: Updates & contact
+  zh: 更新与联系

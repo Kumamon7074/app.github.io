@@ -1,113 +1,22 @@
 ---
-title: Vanto 隐私政策
-description: Vanto 如何处理和保护您的数据
+title: 软件隐私政策
+lang: zh
+translation: /en/privacy/
 ---
-
-**生效日期：2026 年 8 月 1 日**<br>
-**最近更新：2026 年 8 月 3 日**
-
-Vanto 是由独立开发者 Mac Zhou 提供的个人媒体管理与播放工具。本政策说明 Vanto 在 iPhone、iPad、Apple TV 和 Mac 上如何处理数据。
-
-Vanto 不提供媒体内容，也不运营接收您媒体文件的云端媒体服务器。您的媒体文件内容、完整文件路径以及媒体来源密码不会发送给 Vanto 开发者。
-
-## 1. 设备上的数据
-
-为提供媒体浏览、播放、下载和偏好设置，Vanto 会在设备上保存：
-
-- 本地媒体索引、元数据、封面缓存和播放设置；
-- 您添加的媒体来源和连接配置；
-- 离线下载、外挂字幕和 App 管理的导入文件；
-- 播放进度、收藏、观看状态和最近看过记录；
-- 访问锁设置及其他 App 偏好。
-
-媒体服务器和远程文件来源的密码、令牌及其他敏感凭据保存在系统 Keychain 中，并只用于连接您指定的服务。Vanto 不创建独立的 Vanto 用户账号。
-
-## 2. Firebase 使用分析与崩溃诊断
-
-Vanto 默认启用 Google Firebase Analytics 和 Firebase Crashlytics，用于了解核心功能是否正常、发现崩溃并改进稳定性。当前版本不提供单独的端内收集开关，也不申请 AppTrackingTransparency 权限；Vanto 不包含广告，不使用 Firebase 数据进行广告投放、跨 App 跟踪或用户画像。
-
-### 2.1 使用分析
-
-Vanto 只主动上报经过类型白名单和分档处理的产品事件，例如：
-
-- App 版本、设备平台和系统版本；
-- 页面、来源类型和功能的成功、失败与耗时分档；
-- 播放、缓冲、跳转和下载等行为的汇总分档；
-- Vanto Pro 购买流程的非支付状态。
-
-Vanto 的自定义事件不包含媒体标题、人员姓名、完整文件路径、服务器地址、URL、账号、凭据或原始错误内容。Firebase SDK 在提供服务时仍可能处理网络传输信息、App 实例或安装标识、设备和系统信息等其正常运行所需的数据。
-
-### 2.2 崩溃诊断
-
-Crashlytics 报告可能包含崩溃堆栈、线程状态、App 与系统版本、设备类型和受限制的运行上下文。Vanto 不主动附加媒体标题、路径、服务器地址、账号或凭据。
-
-Vanto 已关闭 Firebase 自动页面上报、广告个性化信号和 IDFV 收集。停止使用或卸载 Vanto 会停止 App 未来产生的收集；已经发送的数据无法从设备撤回，保留和删除受 Vanto 的 Firebase 配置及 Google 的适用条款约束。
-
-## 3. Apple 服务与跨设备同步
-
-Vanto 使用 Apple StoreKit 验证和恢复 Vanto Pro 购买及家庭共享权益。付款账户、银行卡和账单资料由 Apple 处理，Vanto 开发者无法获取这些支付资料。
-
-拥有 Vanto Pro 权益时，受支持的设置可通过 Apple iCloud 键值存储在同一 Apple 账户设备间同步。您还可以选择为 SMB、WebDAV 和 SFTP 来源启用远程文件用户状态同步；该功能使用您的 CloudKit 私有数据库同步播放进度、观看状态和收藏。
-
-远程文件用户状态使用由稳定来源、对象版本和文件长度生成的摘要以及必要的数值状态，不上传媒体标题、完整路径、服务器地址、用户名、密码、令牌或媒体文件。家庭共享只共享 StoreKit 权益，不会合并任何媒体或用户数据。
-
-## 4. 您配置的第三方服务
-
-Vanto 可以从您的设备直接连接：
-
-- Emby、Jellyfin 和 Plex；
-- SMB、WebDAV 和 SFTP；
-- TMDB、TVDB 和 OpenSubtitles 等元数据或字幕服务；
-- Apple CloudKit、StoreKit、Firebase 及系统媒体服务。
-
-向这些服务发出的请求可能包含服务正常工作所必需的账号凭据、媒体标识、搜索条件、网络地址或设备网络信息。除 Firebase 诊断与分析外，这些请求由您的设备直接发送到对应服务，不经过 Vanto 自建服务器。第三方如何处理数据由其自身隐私政策和您与该服务的关系决定。
-
-## 5. 处理目的与共享范围
-
-Vanto 仅为以下目的处理数据：
-
-- 连接、浏览和播放您选择的媒体来源；
-- 保存偏好、播放状态、收藏和离线内容；
-- 提供您启用或符合权益条件的跨设备同步；
-- 验证和恢复 Vanto Pro 权益；
-- 分析核心功能可靠性并诊断崩溃；
-- 履行法律义务并保护 App 和用户安全。
-
-Vanto 不出售或出租数据，也不向广告商提供数据。只有在实现上述功能所必需时，数据才会由 Apple、Google Firebase 或您主动配置的服务处理；或者在法律明确要求时向有权机关提供必要信息。
-
-## 6. 保存与删除
-
-- 本地设置、索引和缓存保留至您在 App 中删除、断开来源、清理相关数据或卸载 Vanto；
-- Keychain 凭据保留至您移除来源，或由 Vanto 清理不再关联的凭据；
-- 离线文件、外挂字幕和导入副本保留至您主动删除；
-- iCloud 和 CloudKit 数据保留至您关闭相应功能并删除数据、移除相关来源状态，或通过 Apple 账户管理相应数据；
-- Firebase 数据按 Vanto 的 Firebase 项目配置和 Google 的适用条款，在实现分析和诊断所需的期限内保存。
-
-如需查询或删除 Vanto 开发者能够控制的数据，请通过本政策末尾的邮箱联系。Apple、Google 或您配置的第三方服务所控制的数据，需要依照对应服务提供的管理方式处理。
-
-## 7. 您的权利
-
-根据适用法律，您可能有权了解、访问、更正或删除与您有关的数据，限制或反对特定处理，请求可携带的数据副本，或向当地数据保护机构投诉。为避免向错误的人披露数据，处理请求前可能需要合理验证。
-
-## 8. 儿童隐私
-
-Vanto 面向管理个人媒体来源的一般用户，并非专门面向儿童。Vanto 不会故意要求儿童向开发者提供个人信息。监护人如认为儿童向 Vanto 开发者提供了个人信息，可以联系我们请求处理。
-
-## 9. 安全与跨境处理
-
-Vanto 使用系统 Keychain、来源身份隔离以及服务支持的加密连接保护数据。任何网络传输或电子存储都无法保证绝对安全；您仍应保护自己的媒体服务器、网络、Apple 账户和第三方服务凭据。
-
-Apple、Google Firebase 或您选择的第三方服务可能在您所在国家或地区之外处理数据。Vanto 会通过数据最小化和适用服务条款限制此类处理，并在适用法律要求时采取相应保护措施。
-
-## 10. 政策更新
-
-若数据类型、处理目的或第三方服务发生实质变化，Vanto 会更新本页面和最近更新日期，并在适用法律要求时提供额外通知或选择。
-
-## 11. 联系方式
-
-数据处理者：Mac Zhou（独立开发者）<br>
-联系邮箱：[death7074@gmail.com](mailto:death7074@gmail.com)
-
----
-
-[English version]({{ '/en/privacy/' | relative_url }}) · [使用条款]({{ '/zh/terms/' | relative_url }}) · [Apple 标准 EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
+<header class="page-heading">
+  <p class="eyebrow">隐私政策目录</p>
+  <h1>请先确认软件</h1>
+  <p class="lede">部分旧版软件共用此地址。下方政策仅适用于超级计算器。</p>
+</header>
+{% include app-directory.html %}
+<div class="prose">
+  <p>如需了解 Folder 的隐私事项，请<a href="mailto:{{ site.contact_email }}?subject=Folder%20privacy">联系开发者</a>。计算器政策不适用于 Folder。</p>
+</div>
+{% assign policies = site.policies | where: "lang", "zh" %}
+{% for policy in policies %}
+<section class="legacy-policy">
+  <h2>{{ policy.app_name }} · 隐私政策</h2>
+  <p class="version-note">生效与更新：{{ policy.updated }} · 政策版本 {{ policy.policy_version }} · <a href="{{ policy.url | relative_url }}">打开该软件的独立政策</a></p>
+  <article class="prose">{{ policy.content | markdownify }}</article>
+</section>
+{% endfor %}

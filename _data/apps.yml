@@ -1,0 +1,20 @@
+- id: calculator
+  name:
+    en: Smart Calculator
+    zh: 超级计算器
+  description:
+    en: Everyday and scientific calculations, with editable history and notes.
+    zh: 日常与科学计算，支持编辑计算历史和备注。
+  policy:
+    en: /en/app/calculator/privacy/
+    zh: /zh/app/calculator/privacy/
+- id: folder
+  name:
+    en: Folder
+    zh: Folder
+  description:
+    en: File management and media playback for Google Drive.
+    zh: Google Drive 文件管理与媒体播放。
+  support:
+    en: /en/app/folder/
+    zh: /zh/app/folder/

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{% assign ui = site.data.ui[page.lang] %}
+<header class="page-heading policy-heading">
+  <p class="eyebrow">{{ page.app_name }}</p>
+  <h1>{{ ui.privacy }}</h1>
+  <p class="lede">{{ page.description }}</p>
+  <dl class="policy-meta">
+    <div><dt>{{ ui.effective }}</dt><dd><time datetime="{{ page.updated }}">{{ page.updated }}</time></dd></div>
+    <div><dt>{{ ui.version }}</dt><dd>{{ page.policy_version }}</dd></div>
+  </dl>
+</header>
+<div class="policy-grid">
+  <aside class="policy-toc">
+    <p class="toc-label">{{ ui.contents }}</p>
+    {% include policy-nav.html %}
+  </aside>
+  <div class="policy-reading">
+    <details class="mobile-toc">
+      <summary>{{ ui.contents }}</summary>
+      {% include policy-nav.html %}
+    </details>
+    <article class="prose policy-body">{{ content }}</article>
+  </div>
+</div>

@@ -1,4 +1,27 @@
-theme: jekyll-theme-cayman
+title: Mac Zhou · Software & Privacy
+url: "https://kumamon7074.github.io"
 baseurl: "/app.github.io"
+lang: en
+markdown: kramdown
+timezone: Asia/Shanghai
+contact_email: death7074@gmail.com
+collections:
+  policies:
+    output: true
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
 plugins:
   - jekyll-sitemap
+exclude:
+  - README.md
+  - CHANGELOG.md
+  - docs
+  - scripts
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .sites-runtime

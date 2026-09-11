@@ -1,0 +1,40 @@
+en:
+  brand: Software & Privacy
+  description: Privacy policies and support for software by independent developer Mac Zhou.
+  skip: Skip to content
+  navigation: Main navigation
+  apps: All apps
+  home: /
+  other_lang: zh
+  other_label: 中文
+  independent: Independent developer
+  footer: Footer navigation
+  contact: Contact
+  website_privacy: Website privacy
+  site_privacy: /en/site-privacy/
+  separate: Each app has its own policy. Please check the app name before reading.
+  privacy: Privacy policy
+  support: App information & support
+  contents: On this page
+  effective: Effective & updated
+  version: Policy version
+zh:
+  brand: 软件与隐私
+  description: 独立开发者 Mac Zhou 的软件隐私政策与支持信息。
+  skip: 跳至正文
+  navigation: 主导航
+  apps: 全部软件
+  home: /zh/
+  other_lang: en
+  other_label: English
+  independent: 独立开发者
+  footer: 页脚导航
+  contact: 联系我们
+  website_privacy: 网站隐私说明
+  site_privacy: /zh/site-privacy/
+  separate: 不同软件适用不同政策，请先确认软件名称。
+  privacy: 隐私政策
+  support: 软件介绍与支持
+  contents: 本页目录
+  effective: 生效与更新
+  version: 政策版本
