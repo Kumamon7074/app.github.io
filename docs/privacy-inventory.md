@@ -1,6 +1,6 @@
 # 隐私事实与发布边界
 
-核对日期：2026-09-11。计算器基于本地 5.0.0 实现；功能可能晚于当前线上版本。政策不承诺旧版本拥有新增功能。
+核对日期：2026-09-13。计算器基于本地 5.0.0 实现；文件夹基于本地 3.0.0 实现及历史源码。功能可能晚于当前线上版本，政策按版本区分。
 
 ## 计算器
 
@@ -21,9 +21,18 @@
 
 ## Folder
 
-仅核实原仓库公开介绍：Google Drive 文件管理、媒体播放、照片上传、访问锁、分享。App Store ID 1563518405。未取得源码；OAuth scopes、令牌存储、文件传输路径、广告/分析 SDK、删除方式均未验证。
+App Store ID 1563518405，bundle ID `com.macrzhou.folder`。应用工程 `/Users/macrzhou/Documents/lockalbum` 的 3.0.0 源码已核验；历史提交 `deabf2c` 保留 Google Drive、旧广告/分析初始化和订阅实现，但不能仅凭历史提交断言每个已发布 2.x 构建的确切设置。
 
-当前只提供产品资料和联系入口，不发布未经核验的 Folder 政策。若其线上版本/OAuth 仍引用旧公共政策地址，需在核实 Folder 实现并发布专用政策后更新，不能改为计算器地址。
+| 数据/功能 | 3.0.0 已核实实现 | 对应来源 |
+|---|---|---|
+| 文件和阅读状态 | App Group 工作区直接扫描；Core Data 只存稀疏状态；不提供开发者云文件账号 | `FileSystem.swift`、`MetadataStore.swift`、`README.md` |
+| Wi‑Fi 传输 | 用户主动启动的局域网 HTTP 服务，无登录；可选浏览下载，进入后台或空闲后停止 | `WiFiService.swift`、`WiFiController.swift`、`WiFiWebPage.swift` |
+| 分享与备份 | 选中文件交系统分享；密码加密备份由用户保存到所选位置 | `AppServices.swift`、`BackupService.swift` |
+| 广告与同意 | 免费版 Google Mobile Ads，UMP 可请求状态时启动；ATT 另行申请；专业版不加载广告 | `AppServices.swift`、`WorkspaceBrowser.swift` |
+| 诊断 | Firebase Analytics/Crashlytics 默认关闭，用户主动开启后初始化；不主动附带文件内容 | `AppServices.swift`、`Info.plist` |
+| 购买 | StoreKit 2 一次买断；退役订阅只用于既有权益识别 | `AppServices.swift`、`MembershipController.swift` |
+
+旧版政策段只写能从历史代码和已发布功能说明确认的类别：Google Drive、媒体投送、月/年订阅，以及启动时的 Firebase/广告行为。OAuth 令牌实际留存、第三方后台保留期限、各版本精确 SDK 配置未经核实，不编造承诺。3.0.0 的“诊断默认关闭”不得覆盖旧版。App Store Connect 的隐私 URL、隐私标签和商品文案须在发布新版时另行核对；网页发布不等于商店后台已更新。
 
 ## 网站
 
@@ -33,5 +42,7 @@
 
 - 中文：https://apps.vanto.space/zh/app/calculator/privacy/
 - 英文：https://apps.vanto.space/en/app/calculator/privacy/
+- 文件夹中文：https://apps.vanto.space/zh/app/folder/privacy/
+- 文件夹英文：https://apps.vanto.space/en/app/folder/privacy/
 
-只修改计算器隐私政策 URL；不改隐私选择 URL、不代填未核实的数据类型、不提交 App 版本审核。
+不改隐私选择 URL、不代填未核实的数据类型、不提交 App 版本审核。

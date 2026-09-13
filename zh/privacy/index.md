@@ -10,9 +10,9 @@ translation: /en/privacy/
 </header>
 {% include app-directory.html %}
 <div class="prose">
-  <p>如需了解 Folder 的隐私事项，请<a href="mailto:{{ site.contact_email }}?subject=Folder%20privacy">联系开发者</a>。计算器政策不适用于 Folder。</p>
+  <p>另一款应用请阅读<a href="{{ '/zh/app/folder/privacy/' | relative_url }}">文件夹隐私政策</a>。下方计算器政策不适用于它。</p>
 </div>
-{% assign policies = site.policies | where: "lang", "zh" %}
+{% assign policies = site.policies | where: "lang", "zh" | where: "app", "calculator" %}
 {% for policy in policies %}
 <section class="legacy-policy">
   <h2>{{ policy.app_name }} · 隐私政策</h2>

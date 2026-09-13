@@ -1,28 +1,28 @@
 ---
-title: Folder
+title: 文件夹
 lang: zh
 translation: /en/app/folder/
-description: Google Drive 文件管理、媒体播放与使用支持。
+description: 文件夹的版本说明、隐私政策、使用条款与支持。
 ---
 <header class="page-heading">
-  <p class="eyebrow">FOLDER</p>
-  <h1>管理文件，播放媒体</h1>
-  <p class="lede">管理 Google Drive 文件，播放音频与视频，上传设备中的照片。</p>
+  <p class="eyebrow">文件夹 / FOLDER</p>
+  <h1>本地文件，安心整理</h1>
+  <p class="lede">私密本地文件工作区，支持整理、阅读、播放与局域网传输。</p>
 </header>
 <div class="prose support-page" markdown="1">
-[在 App Store 查看 Folder](https://apps.apple.com/app/id1563518405)
+[在 App Store 查看](https://apps.apple.com/app/id1563518405) · [隐私政策]({{ '/zh/app/folder/privacy/' | relative_url }}) · [使用条款]({{ '/zh/app/folder/terms/' | relative_url }})
 
-## 关于 Folder
+## 版本说明
 
-Folder 已发布的功能介绍包含 Google Drive 文件管理、音视频播放、照片上传、访问锁和文件分享。实际功能以您安装的版本为准。
+3.0.0 的本地工作区不连接百度网盘或 Google Drive；文件存储、PDF 与电子书阅读、媒体播放和局域网传输在设备上完成。已发布的旧版本可能仍提供 Google Drive、媒体投送和订阅，功能与数据处理请以安装版本为准。
 
-![Folder 应用界面]({{ '/assets/images/folderscreenshot.png' | relative_url }})
+应用的中文显示名为“文件夹”，英文及部分地区显示为“Folder”；名称只用于识别应用，功能说明中的“文件夹”指普通目录。
 
 <div class="contact-panel" markdown="1">
 ## 支持与隐私咨询
 
-请将软件名称、版本和问题发送至 [{{ site.contact_email }}](mailto:{{ site.contact_email }}?subject=Folder%20support)，不要附带密码、授权令牌或私人文件。
+请将应用版本和问题发送至 [{{ site.contact_email }}](mailto:{{ site.contact_email }}?subject=Folder%20support)，不要附带密码、恢复码或私人文件。
 
-**Folder 与超级计算器是不同软件。** 本站的计算器政策不适用于 Folder 的 Google Drive 访问或数据处理。
+本站的其他应用政策不适用于本应用。
 </div>
 </div>

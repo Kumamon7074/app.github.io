@@ -31,6 +31,7 @@ html[lang=zh] h1 { letter-spacing: -.02em; }
 .app-card h2 { font-size: 1.6rem; letter-spacing: -.02em; line-height: 1.4; margin: 0 0 .55rem; }
 .app-card p { color: var(--muted); margin: 0 0 1.25rem; max-width: 680px; }
 .primary-link { font-weight: 600; font-size: 1rem; }
+.app-copy .primary-link { display: inline-flex; align-items: center; min-height: 44px; margin-right: 1.5rem; }
 .primary-link span { margin-left: .3rem; }
 .directory-note { color: var(--muted); font-size: .9rem; max-width: 740px; margin-top: 2rem; }
 .site-footer { border-top: 1px solid var(--line); padding-block: 2rem 2.5rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.5rem; }

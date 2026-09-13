@@ -14,10 +14,11 @@ en:
   site_privacy: /en/site-privacy/
   separate: Each app has its own policy. Please check the app name before reading.
   privacy: Privacy policy
+  terms: Terms of use
   support: App information & support
   contents: On this page
   effective: Effective & updated
-  version: Policy version
+  version: Document version
 zh:
   brand: 软件与隐私
   description: 独立开发者 Mac Zhou 的软件隐私政策与支持信息。
@@ -34,7 +35,8 @@ zh:
   site_privacy: /zh/site-privacy/
   separate: 不同软件适用不同政策，请先确认软件名称。
   privacy: 隐私政策
+  terms: 使用条款
   support: 软件介绍与支持
   contents: 本页目录
   effective: 生效与更新
-  version: 政策版本
+  version: 文档版本

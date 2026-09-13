@@ -10,9 +10,9 @@ translation: /zh/privacy/
 </header>
 {% include app-directory.html %}
 <div class="prose">
-  <p>For Folder privacy questions, <a href="mailto:{{ site.contact_email }}?subject=Folder%20privacy">contact the developer</a>. The calculator policy is not a Folder policy.</p>
+  <p>For the other app, read the <a href="{{ '/en/app/folder/privacy/' | relative_url }}">Folder privacy policy</a>. The calculator policy below does not apply to it.</p>
 </div>
-{% assign policies = site.policies | where: "lang", "en" %}
+{% assign policies = site.policies | where: "lang", "en" | where: "app", "calculator" %}
 {% for policy in policies %}
 <section class="legacy-policy">
   <h2>{{ policy.app_name }} · Privacy policy</h2>

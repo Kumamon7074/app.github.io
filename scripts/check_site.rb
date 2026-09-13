@@ -14,7 +14,9 @@ abort 'CNAME differs from public origin' unless File.read(File.join(root, 'CNAME
 abort 'Published CNAME missing' unless File.read(File.join(output, 'CNAME')).strip == URI(origin).host
 expected = %w[index.html zh/index.html en/privacy/index.html zh/privacy/index.html
   en/app/calculator/privacy/index.html zh/app/calculator/privacy/index.html
-  en/app/folder/index.html zh/app/folder/index.html en/site-privacy/index.html
+  en/app/folder/index.html zh/app/folder/index.html
+  en/app/folder/privacy/index.html zh/app/folder/privacy/index.html
+  en/app/folder/terms/index.html zh/app/folder/terms/index.html en/site-privacy/index.html
   zh/site-privacy/index.html 404.html]
 expected.each { |path| abort "Missing page: #{path}" unless File.file?(File.join(output, path)) }
 %w[en/terms zh/terms en/media-guide zh/media-guide].each do |path|
@@ -78,5 +80,15 @@ sections = YAML.load_file(File.join(root, '_data/policy_sections.yml')).map { |s
   abort "Language switch leaves app" unless doc.at_css('a.language-link')['href'] == expected_translation
   legacy = documents.fetch(File.join(output, language, 'privacy/index.html'))
   abort "Legacy policy differs" unless legacy.at_css('article.prose').text.strip == doc.at_css('article.prose').text.strip
+end
+{ 'privacy' => 'folder_policy_sections', 'terms' => 'folder_terms_sections' }.each do |kind, section_file|
+  folder_sections = YAML.load_file(File.join(root, "_data/#{section_file}.yml")).map { |section| section.fetch('id') }
+  %w[en zh].each do |language|
+    doc = documents.fetch(File.join(output, language, "app/folder/#{kind}/index.html"))
+    folder_sections.each { |id| abort "Folder #{kind} section missing: #{language}/#{id}" unless doc.at_css("article ##{id}") }
+    abort 'Wrong Folder identity' unless doc.text.include?('1563518405')
+    other = language == 'en' ? 'zh' : 'en'
+    abort 'Folder language switch leaves document' unless doc.at_css('a.language-link')['href'] == "/#{other}/app/folder/#{kind}/"
+  end
 end
 puts "Site checks passed: #{documents.length} pages, internal links/anchors, translations, policy reuse, removed pages and no scripts."

@@ -4,7 +4,7 @@ layout: default
 {% assign ui = site.data.ui[page.lang] %}
 <header class="page-heading policy-heading">
   <p class="eyebrow">{{ page.app_name }}</p>
-  <h1>{{ ui.privacy }}</h1>
+  <h1>{{ page.document_title | default: ui.privacy }}</h1>
   <p class="lede">{{ page.description }}</p>
   <dl class="policy-meta">
     <div><dt>{{ ui.effective }}</dt><dd><time datetime="{{ page.updated }}">{{ page.updated }}</time></dd></div>

@@ -1,1 +1,1 @@
-<nav aria-label="{{ ui.contents }}"><ol>{% for section in site.data.policy_sections %}<li><a href="#{{ section.id }}">{{ section[page.lang] }}</a></li>{% endfor %}</ol></nav>
+{% assign sections_name = page.sections | default: 'policy_sections' %}{% assign sections = site.data[sections_name] %}<nav aria-label="{{ ui.contents }}"><ol>{% for section in sections %}<li><a href="#{{ section.id }}">{{ section[page.lang] }}</a></li>{% endfor %}</ol></nav>
