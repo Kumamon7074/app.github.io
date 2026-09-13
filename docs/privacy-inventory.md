@@ -29,10 +29,10 @@ App Store ID 1563518405，bundle ID `com.macrzhou.folder`。应用工程 `/Users
 | Wi‑Fi 传输 | 用户主动启动的局域网 HTTP 服务，无登录；可选浏览下载，进入后台或空闲后停止 | `WiFiService.swift`、`WiFiController.swift`、`WiFiWebPage.swift` |
 | 分享与备份 | 选中文件交系统分享；密码加密备份由用户保存到所选位置 | `AppServices.swift`、`BackupService.swift` |
 | 广告与同意 | 免费版 Google Mobile Ads，UMP 可请求状态时启动；ATT 另行申请；专业版不加载广告 | `AppServices.swift`、`WorkspaceBrowser.swift` |
-| 诊断 | Firebase Analytics/Crashlytics 默认关闭，用户主动开启后初始化；不主动附带文件内容 | `AppServices.swift`、`Info.plist` |
+| 诊断 | Firebase Analytics/Crashlytics 依赖保留，但应用不初始化、不提供开关或事件上报；`Info.plist` 禁止采集 | `AppServices.swift`、`Info.plist` |
 | 购买 | StoreKit 2 一次买断；退役订阅只用于既有权益识别 | `AppServices.swift`、`MembershipController.swift` |
 
-旧版政策段只写能从历史代码和已发布功能说明确认的类别：Google Drive、媒体投送、月/年订阅，以及启动时的 Firebase/广告行为。OAuth 令牌实际留存、第三方后台保留期限、各版本精确 SDK 配置未经核实，不编造承诺。3.0.0 的“诊断默认关闭”不得覆盖旧版。App Store Connect 的隐私 URL、隐私标签和商品文案须在发布新版时另行核对；网页发布不等于商店后台已更新。
+旧版政策段只写能从历史代码和已发布功能说明确认的类别：Google Drive、媒体投送、月/年订阅，以及启动时的 Firebase/广告行为。OAuth 令牌实际留存、第三方后台保留期限、各版本精确 SDK 配置未经核实，不编造承诺。3.0.0 的“不启用 Firebase”不得覆盖旧版。App Store Connect 的隐私 URL、隐私标签和商品文案须在发布新版时另行核对；网页发布不等于商店后台已更新。
 
 ## 网站
 

@@ -8,11 +8,11 @@ permalink: /en/app/folder/privacy/
 translation: /zh/app/folder/privacy/
 sections: folder_policy_sections
 updated: "2026-09-13"
-policy_version: "1.0"
-description: How local files, Wi-Fi transfer, ads, and diagnostics are handled.
+policy_version: "1.1"
+description: How local files, Wi-Fi transfer, ads, and purchases are handled.
 ---
 <div class="summary-box" markdown="1">
-**In brief:** Version 3.0.0 centers on local files. Content leaves your device only when you choose to share, start local-network transfer, or use a system or third-party service. The free app uses ads. Firebase Analytics and Crashlytics are off by default in 3.0.0 and require your in-app opt-in. Earlier versions may include Google Drive and different collection behavior; see below.
+**In brief:** Version 3.0.0 centers on local files. Content leaves your device only when you choose to share, start local-network transfer, or use a system or third-party service. The free app uses ads. The app does not activate Firebase Analytics or Crashlytics. Earlier versions may include Google Drive and different collection behavior; see below.
 </div>
 
 ## 1. Scope and versions {#scope}
@@ -31,23 +31,23 @@ When you start computer transfer, the app temporarily serves an HTTP page on you
 
 You initiate sharing, opening in another app, and exports. The system passes selected content to the recipient you choose, whose own privacy rules apply. Copies saved by the recipient or through the web page are not automatically deleted when you delete the original in the app.
 
-## 4. Ads, diagnostics, and purchases {#services}
+## 4. Ads and purchases {#services}
 
 The free version of 3.0.0 integrates Google Mobile Ads. Its SDK may process IP addresses, device or advertising identifiers, ad interactions, and diagnostics. The app uses Google UMP for applicable regional ad consent and the system ATT prompt for tracking permission. Declining tracking does not remove all ads. Ad loading stops when a Pro entitlement is recognized. See [Google Privacy Policy](https://policies.google.com/privacy) and [Google Mobile Ads data disclosure](https://developers.google.com/admob/ios/privacy/data-disclosure).
 
-Firebase Analytics and Crashlytics are off by default in 3.0.0 and initialize only after you enable anonymous diagnostics in the app. The SDKs may process app-instance identifiers, device and system information, events, and crash stacks. The app does not intentionally attach file contents, full paths, or passwords to custom events. You can turn diagnostics off in the app; information already sent cannot be recalled from the device. See [Firebase privacy information](https://firebase.google.com/support/privacy).
+Version 3.0.0 retains Firebase Analytics and Crashlytics SDK dependencies but does not initialize Firebase, offer an anonymous diagnostics switch, or actively send analytics events or crash reports. This does not describe Google Mobile Ads' own data processing; see the ad disclosure above.
 
 Apple StoreKit handles Pro purchase and restoration. Apple processes payment accounts, cards, and transaction records; the developer does not receive card details. Version 3.0.0 sells a one-time purchase only; retired subscriptions remain entitlement-only for existing customers. See [Apple Privacy Policy](https://www.apple.com/legal/privacy/).
 
 ## 5. Earlier versions {#legacy}
 
-Published 2.x versions differ from 3.0.0 in features, SDK startup, and consent handling. They may offer Google Drive authorization and file access, local-network media casting, and monthly or yearly subscriptions. Google Drive operations send selected files, file metadata, and authorization information directly to Google's service; this is not the behavior of the 3.0.0 local workspace. Historical source includes Firebase configuration at launch and ad startup for free users. **The 3.0.0 default-off diagnostic statement does not apply to older versions.** Check your installed version and its permission prompts. Contact the developer below for questions about specific older-version processing.
+Published 2.x versions differ from 3.0.0 in features, SDK startup, and consent handling. They may offer Google Drive authorization and file access, local-network media casting, and monthly or yearly subscriptions. Google Drive operations send selected files, file metadata, and authorization information directly to Google's service; this is not the behavior of the 3.0.0 local workspace. Historical source includes Firebase configuration at launch and ad startup for free users. **The 3.0.0 no-Firebase-activation statement does not apply to older versions.** Check your installed version and its permission prompts. Contact the developer below for questions about specific older-version processing.
 
 ## 6. Retention and choices {#retention}
 
 Local files, metadata, and settings generally remain until you remove the relevant content or app data. With the trash option enabled, removed items can be recovered in the app; when disabled, deletion is immediate. Separately manage manually created backups, shared copies, Apple device backups, and third-party service records. Uninstalling the app does not necessarily delete Apple backups, Google service records, or Apple transactions.
 
-You can manage system permissions, ad consent, the in-app diagnostics switch, sharing, and local transfer. Depending on applicable law, you may have rights to access, correct, delete, withdraw consent, or complain. The developer cannot access or delete files that exist only on your device. Contact us about service data we can control; third-party retention depends on their settings and policies, so this page does not assert a fixed period.
+You can manage system permissions, ad consent, sharing, and local transfer. Depending on applicable law, you may have rights to access, correct, delete, withdraw consent, or complain. The developer cannot access or delete files that exist only on your device. Contact us about service data we can control; third-party retention depends on their settings and policies, so this page does not assert a fixed period.
 
 ## 7. Contact and updates {#contact}
 
