@@ -24,3 +24,13 @@
   support:
     en: /en/app/folder/
     zh: /zh/app/folder/
+- id: shengye
+  name:
+    en: Shengye
+    zh: 声页
+  description:
+    en: Local voice recording, transcription, continuous listening, and highlights. Optional iCloud sync.
+    zh: 本地录音、转写、连续回听与重点整理；可选 iCloud 同步。
+  policy:
+    en: /en/app/shengye/privacy/
+    zh: /zh/app/shengye/privacy/

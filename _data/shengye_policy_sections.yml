@@ -1,0 +1,24 @@
+- id: scope
+  en: Scope and versions
+  zh: 适用版本
+- id: local
+  en: Recordings and local storage
+  zh: 录音与本地存储
+- id: speech
+  en: Transcription and permissions
+  zh: 转写与权限
+- id: cloud
+  en: iCloud and sharing
+  zh: iCloud 与分享
+- id: services
+  en: Diagnostics, advertising and purchases
+  zh: 诊断、广告与购买
+- id: retention
+  en: Retention and deletion
+  zh: 保存与删除
+- id: choices
+  en: Your choices
+  zh: 你的选择
+- id: contact
+  en: Contact and updates
+  zh: 联系与更新

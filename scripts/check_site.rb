@@ -16,6 +16,7 @@ expected = %w[index.html zh/index.html en/privacy/index.html zh/privacy/index.ht
   en/app/calculator/privacy/index.html zh/app/calculator/privacy/index.html
   en/app/folder/index.html zh/app/folder/index.html
   en/app/folder/privacy/index.html zh/app/folder/privacy/index.html
+  en/app/shengye/privacy/index.html zh/app/shengye/privacy/index.html
   en/app/folder/terms/index.html zh/app/folder/terms/index.html en/site-privacy/index.html
   zh/site-privacy/index.html 404.html]
 expected.each { |path| abort "Missing page: #{path}" unless File.file?(File.join(output, path)) }
@@ -29,6 +30,7 @@ Dir.glob(File.join(output, '**', '*.html')).each do |file|
   html = File.read(file)
   abort "Removed content: #{file}" if html.match?(/googletagmanager|Welcome to GitHub Pages/i)
   abort "Unrendered template: #{file}" if html.include?('{%') || html.include?('{{')
+  abort "Unresolved policy decision: #{file}" if html.include?('DIAGNOSTICS_DECISION_PENDING')
   doc = Nokogiri::HTML(html)
   abort "Removed product content: #{file}" if doc.text.match?(/\bvanto\b/i)
   abort "Old host or base path: #{file}" if html.include?('kumamon7074.github.io') || html.include?('/app.github.io/')
@@ -90,5 +92,14 @@ end
     other = language == 'en' ? 'zh' : 'en'
     abort 'Folder language switch leaves document' unless doc.at_css('a.language-link')['href'] == "/#{other}/app/folder/#{kind}/"
   end
+end
+%w[en zh].each do |language|
+  doc = documents.fetch(File.join(output, language, 'app/shengye/privacy/index.html'))
+  YAML.load_file(File.join(root, '_data/shengye_policy_sections.yml')).each do |section|
+    abort "Shengye section missing: #{section['id']}" unless doc.at_css("article ##{section['id']}")
+  end
+  abort 'Wrong Shengye identity' unless doc.text.include?('1241562587') && doc.text.include?('com.mac.zhou.artrecorder.first')
+  other = language == 'en' ? 'zh' : 'en'
+  abort 'Shengye language switch leaves app' unless doc.at_css('a.language-link')['href'] == "/#{other}/app/shengye/privacy/"
 end
 puts "Site checks passed: #{documents.length} pages, internal links/anchors, translations, policy reuse, removed pages and no scripts."
