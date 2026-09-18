@@ -7,8 +7,8 @@ lang: zh
 permalink: /zh/app/folder/privacy/
 translation: /en/app/folder/privacy/
 sections: folder_policy_sections
-updated: "2026-09-13"
-policy_version: "1.1"
+updated: "2026-09-18"
+policy_version: "1.2"
 description: 文件夹如何处理本地文件、局域网传输、广告与购买。
 ---
 <div class="summary-box" markdown="1">
@@ -17,7 +17,7 @@ description: 文件夹如何处理本地文件、局域网传输、广告与购�
 
 ## 1. 适用范围 {#scope}
 
-本政策适用于独立开发者 Mac Zhou 提供的**文件夹**（英文显示名 Folder，App Store ID **1563518405**），不适用于本站其他软件。下文的 3.0.0 描述以该版本源码为准；你实际安装的版本、系统权限和购买权益决定可用功能。旧版本差异见第 5 节。阅读本政策本身不构成跟踪或诊断授权。
+本政策适用于Vanto 团队 提供的**文件夹**（英文显示名 Folder，App Store ID **1563518405**），不适用于本站其他软件。下文的 3.0.0 描述以该版本源码为准；你实际安装的版本、系统权限和购买权益决定可用功能。旧版本差异见第 5 节。阅读本政策本身不构成跟踪或诊断授权。
 
 ## 2. 本地文件与访问 {#local}
 
@@ -51,7 +51,7 @@ description: 文件夹如何处理本地文件、局域网传输、广告与购�
 
 ## 7. 联系与更新 {#contact}
 
-服务提供者与隐私联系人：Mac Zhou（独立开发者）<br>
-邮箱：[death7074@gmail.com](mailto:death7074@gmail.com)
+服务提供者与隐私联系人：Vanto 团队<br>
+邮箱：[{{ site.contact_email }}](mailto:{{ site.contact_email }})
 
 请说明应用名称与版本，不要发送密码、恢复码或私人文件。来信中的邮箱及所提供信息仅用于处理请求和必要后续沟通。数据做法发生重要变化时会更新本页日期与版本，并按适用要求另行通知或取得同意。

@@ -1,24 +1,48 @@
 - id: scope
-  en: Scope and versions
-  zh: 适用版本
+  en: Scope
+  zh: 适用范围
+  ja: 適用範囲
+  ko: 적용 범위
+  es: Alcance
 - id: local
-  en: Recordings and local storage
-  zh: 录音与本地存储
+  en: Local data and protection
+  zh: 本地数据与保护
+  ja: 端末内のデータと保護
+  ko: 기기 내 데이터와 보호
+  es: Datos locales y protección
 - id: speech
   en: Transcription and permissions
-  zh: 转写与权限
+  zh: 转文字与权限
+  ja: 文字起こしと権限
+  ko: 텍스트 변환과 권한
+  es: Transcripción y permisos
 - id: cloud
-  en: iCloud and sharing
-  zh: iCloud 与分享
+  en: Sync, sharing, and backups
+  zh: 同步、分享与备份
+  ja: 同期・共有・バックアップ
+  ko: 동기화·공유·백업
+  es: Sincronización, uso compartido y copias
 - id: services
-  en: Diagnostics, advertising and purchases
-  zh: 诊断、广告与购买
+  en: Ads, purchases, and analytics
+  zh: 广告、购买与分析
+  ja: 広告・購入・分析
+  ko: 광고·구매·분석
+  es: Publicidad, compras y análisis
 - id: retention
   en: Retention and deletion
   zh: 保存与删除
+  ja: 保存と削除
+  ko: 보관과 삭제
+  es: Conservación y eliminación
 - id: choices
-  en: Your choices
-  zh: 你的选择
+  en: Choices and rights
+  zh: 你的选择与权利
+  ja: 選択と権利
+  ko: 선택과 권리
+  es: Opciones y derechos
 - id: contact
   en: Contact and updates
   zh: 联系与更新
+  ja: お問い合わせと更新
+  ko: 문의와 변경
+  es: Contacto y cambios

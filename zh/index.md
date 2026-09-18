@@ -4,7 +4,7 @@ lang: zh
 translation: /
 ---
 <header class="page-heading">
-  <p class="eyebrow">MAC ZHOU / 软件</p>
+  <p class="eyebrow">VANTO / 软件</p>
   <h1>软件与隐私</h1>
   <p class="lede">查看对应软件的隐私政策与支持信息。</p>
 </header>

@@ -20,6 +20,12 @@ main { min-height: 55vh; padding-bottom: 5rem; }
 .site-header nav, .site-footer nav { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.5rem; }
 .site-header nav a { color: var(--text); font-size: .9rem; text-decoration: none; padding-block: .5rem; min-height: 44px; display: inline-flex; align-items: center; }
 .language-link { border: 1px solid var(--line); padding: .35rem .85rem !important; border-radius: 6px; }
+.language-picker { position: relative; font-size: .9rem; }
+.language-picker summary { cursor: pointer; border: 1px solid var(--line); border-radius: 6px; padding: .5rem .85rem; min-height: 44px; }
+.language-picker ul { position: absolute; inset-inline-end: 0; z-index: 2; min-width: 10rem; margin: .4rem 0 0; padding: .35rem; list-style: none; background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 6px 20px #00000012; }
+.site-header .language-option { display: flex; padding: .5rem .85rem; border-radius: 6px; }
+.language-option:hover { background: var(--surface); }
+.language-option[aria-current=page] { background: var(--accent-bg); color: var(--accent); font-weight: 600; }
 .page-heading { padding-block: 4rem 2.75rem; max-width: 840px; }
 .eyebrow { font-size: .875rem; color: var(--accent); font-weight: 600; margin: 0 0 .8rem; letter-spacing: .04em; }
 h1 { font-size: clamp(2rem, 4.8vw, 3.5rem); font-weight: 650; letter-spacing: -.045em; line-height: 1.15; margin: 0 0 1.15rem; }
@@ -36,7 +42,6 @@ html[lang=zh] h1 { letter-spacing: -.02em; }
 .directory-note { color: var(--muted); font-size: .9rem; max-width: 740px; margin-top: 2rem; }
 .site-footer { border-top: 1px solid var(--line); padding-block: 2rem 2.5rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.5rem; }
 .site-footer strong { font-size: .95rem; }
-.site-footer div span { font-size: .875rem; display: block; color: var(--muted); }
 .site-footer nav a { font-size: .875rem; }
 .site-footer p { font-size: .875rem; color: var(--muted); flex-basis: 100%; margin: 0; }
 .skip-link { position: absolute; left: 1rem; top: -6rem; padding: .8rem 1rem; background: var(--bg); z-index: 10; }

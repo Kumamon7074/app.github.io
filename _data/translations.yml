@@ -1,0 +1,16 @@
+shengye-privacy:
+  - lang: zh
+    label: 中文
+    url: /zh/app/shengye/privacy/
+  - lang: en
+    label: English
+    url: /en/app/shengye/privacy/
+  - lang: ja
+    label: 日本語
+    url: /ja/app/shengye/privacy/
+  - lang: ko
+    label: 한국어
+    url: /ko/app/shengye/privacy/
+  - lang: es
+    label: Español
+    url: /es/app/shengye/privacy/

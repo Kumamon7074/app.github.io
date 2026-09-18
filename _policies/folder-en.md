@@ -7,8 +7,8 @@ lang: en
 permalink: /en/app/folder/privacy/
 translation: /zh/app/folder/privacy/
 sections: folder_policy_sections
-updated: "2026-09-13"
-policy_version: "1.1"
+updated: "2026-09-18"
+policy_version: "1.2"
 description: How local files, Wi-Fi transfer, ads, and purchases are handled.
 ---
 <div class="summary-box" markdown="1">
@@ -17,7 +17,7 @@ description: How local files, Wi-Fi transfer, ads, and purchases are handled.
 
 ## 1. Scope and versions {#scope}
 
-This policy applies to **Folder** (also displayed as **文件夹** or **資料夾**, App Store ID **1563518405**) from independent developer Mac Zhou. It does not apply to other apps on this site. The 3.0.0 description is based on that version's implementation; features depend on your installed version, permissions, and purchase entitlement. See section 5 for older versions. Reading this policy does not grant tracking or diagnostic consent.
+This policy applies to **Folder** (also displayed as **文件夹** or **資料夾**, App Store ID **1563518405**) from the Vanto team. It does not apply to other apps on this site. The 3.0.0 description is based on that version's implementation; features depend on your installed version, permissions, and purchase entitlement. See section 5 for older versions. Reading this policy does not grant tracking or diagnostic consent.
 
 ## 2. Local files and access {#local}
 
@@ -51,7 +51,7 @@ You can manage system permissions, ad consent, sharing, and local transfer. Depe
 
 ## 7. Contact and updates {#contact}
 
-Provider and privacy contact: Mac Zhou, independent developer<br>
-Email: [death7074@gmail.com](mailto:death7074@gmail.com)
+Provider and privacy contact: Vanto team<br>
+Email: [{{ site.contact_email }}](mailto:{{ site.contact_email }})
 
 Include the app name and version, but do not send passwords, recovery codes, or private files. Your email and submitted information are used to handle your request and necessary follow-up. Material changes will update this page's date and version, with further notice or consent where required.

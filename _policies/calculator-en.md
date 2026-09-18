@@ -6,8 +6,8 @@ app_name: Smart Calculator
 lang: en
 permalink: /en/app/calculator/privacy/
 translation: /zh/app/calculator/privacy/
-updated: "2026-09-11"
-policy_version: "1.0"
+updated: "2026-09-18"
+policy_version: "1.1"
 description: How your calculations, settings, and service data are handled.
 ---
 <div class="summary-box" markdown="1">
@@ -21,7 +21,7 @@ description: How your calculations, settings, and service data are handled.
 
 ## 1. Scope {#scope}
 
-This policy applies to **Smart Calculator** (also named **超级计算器**), provided by independent developer **Mac Zhou**, App Store ID **1322880549**. It does not apply to Folder or other software listed on this website.
+This policy applies to **Smart Calculator** (also named **超级计算器**), provided by the **Vanto team**, App Store ID **1322880549**. It does not apply to Folder or other software listed on this website.
 
 It describes the current calculator implementation, including features introduced in version 5.0.0. Some features, including widgets, depend on your app version, operating system, and purchase entitlement. Earlier versions may not include every feature described here. No separate developer-operated account is required to calculate.
 
@@ -104,7 +104,7 @@ The app is a general-purpose calculator, not a service designed specifically for
 
 We update this policy when relevant features, service providers, or data practices change. The date and policy version above identify this revision. Where required, material changes will be accompanied by additional notice or a request for consent.
 
-**Developer and privacy contact:** Mac Zhou, independent developer<br>
-**Email:** [death7074@gmail.com](mailto:death7074@gmail.com)
+**Provider and privacy contact:** Vanto team<br>
+**Email:** [{{ site.contact_email }}](mailto:{{ site.contact_email }})
 
 If you contact us, your email address and the information you provide are used to handle and follow up on your request, and retained as needed for that purpose or applicable obligations. Please include the app name and version, without sensitive content.

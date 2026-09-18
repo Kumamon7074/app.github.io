@@ -1,13 +1,14 @@
 en:
   brand: Software & Privacy
-  description: Privacy policies and support for software by independent developer Mac Zhou.
+  description: App privacy policies, terms, and support from the Vanto team.
   skip: Skip to content
   navigation: Main navigation
   apps: All apps
   home: /
   other_lang: zh
   other_label: 中文
-  independent: Independent developer
+  team: Vanto team
+  language: Language
   footer: Footer navigation
   contact: Contact
   website_privacy: Website privacy
@@ -21,14 +22,15 @@ en:
   version: Document version
 zh:
   brand: 软件与隐私
-  description: 独立开发者 Mac Zhou 的软件隐私政策与支持信息。
+  description: Vanto 团队的应用隐私政策、使用条款与支持信息。
   skip: 跳至正文
   navigation: 主导航
   apps: 全部软件
   home: /zh/
   other_lang: en
   other_label: English
-  independent: 独立开发者
+  team: Vanto 团队
+  language: 语言
   footer: 页脚导航
   contact: 联系我们
   website_privacy: 网站隐私说明
@@ -40,3 +42,57 @@ zh:
   contents: 本页目录
   effective: 生效与更新
   version: 文档版本
+ja:
+  brand: アプリとプライバシー
+  description: Vantoチームのアプリのプライバシーポリシーとサポート情報。
+  skip: 本文へ移動
+  navigation: メインナビゲーション
+  apps: アプリ一覧（英語）
+  home: /
+  team: Vantoチーム
+  language: 言語
+  footer: フッターナビゲーション
+  contact: お問い合わせ
+  website_privacy: ウェブサイトのプライバシー（英語）
+  site_privacy: /en/site-privacy/
+  separate: ポリシーはアプリごとに異なります。対象のアプリ名をご確認ください。
+  privacy: プライバシーポリシー
+  contents: 目次
+  effective: 発効・更新日
+  version: 文書バージョン
+ko:
+  brand: 앱과 개인정보
+  description: Vanto 팀의 앱 개인정보 처리방침과 지원 안내.
+  skip: 본문으로 이동
+  navigation: 기본 탐색
+  apps: 앱 목록 (영어)
+  home: /
+  team: Vanto 팀
+  language: 언어
+  footer: 하단 탐색
+  contact: 문의
+  website_privacy: 웹사이트 개인정보 안내 (영어)
+  site_privacy: /en/site-privacy/
+  separate: 앱마다 처리방침이 다릅니다. 해당 앱 이름을 확인해 주세요.
+  privacy: 개인정보 처리방침
+  contents: 목차
+  effective: 시행·수정일
+  version: 문서 버전
+es:
+  brand: Apps y privacidad
+  description: Políticas de privacidad y soporte de las apps del equipo de Vanto.
+  skip: Ir al contenido
+  navigation: Navegación principal
+  apps: Apps (inglés)
+  home: /
+  team: Equipo de Vanto
+  language: Idioma
+  footer: Navegación del pie de página
+  contact: Contacto
+  website_privacy: Privacidad del sitio (inglés)
+  site_privacy: /en/site-privacy/
+  separate: Cada app tiene su propia política. Comprueba el nombre antes de leerla.
+  privacy: Política de privacidad
+  contents: Contenido
+  effective: Vigencia y actualización
+  version: Versión del documento

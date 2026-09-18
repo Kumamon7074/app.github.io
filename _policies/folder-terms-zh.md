@@ -8,13 +8,13 @@ lang: zh
 permalink: /zh/app/folder/terms/
 translation: /en/app/folder/terms/
 sections: folder_terms_sections
-updated: "2026-09-13"
-policy_version: "1.0"
+updated: "2026-09-18"
+policy_version: "1.1"
 description: 文件夹的使用、文件责任、购买与支持说明。
 ---
 ## 1. 适用范围 {#scope}
 
-本页适用于 Mac Zhou 提供的文件夹应用（App Store ID **1563518405**）。通过 App Store 获取应用时，适用 Apple 提供的应用许可条款；若开发者未在 App Store 配置自定义许可，则适用 [Apple 标准最终用户许可协议](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)。本页补充说明实际功能和使用注意事项，不缩减你依法享有的消费者权利。功能以已安装版本为准；旧版与 3.0.0 可能不同。
+本页适用于 Vanto 团队提供的文件夹应用（App Store ID **1563518405**）。通过 App Store 获取应用时，适用 Apple 提供的应用许可条款；若开发者未在 App Store 配置自定义许可，则适用 [Apple 标准最终用户许可协议](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)。本页补充说明实际功能和使用注意事项，不缩减你依法享有的消费者权利。功能以已安装版本为准；旧版与 3.0.0 可能不同。
 
 ## 2. 使用应用 {#use}
 
@@ -32,4 +32,4 @@ description: 文件夹的使用、文件责任、购买与支持说明。
 
 ## 5. 更新与联系 {#contact}
 
-我们会随功能或适用规则变化更新本页及日期；重要变更会按适用要求提示。问题请联系 [death7074@gmail.com](mailto:death7074@gmail.com)，注明应用版本，不要发送密码或私人文件。
+我们会随功能或适用规则变化更新本页及日期；重要变更会按适用要求提示。问题请联系 [{{ site.contact_email }}](mailto:{{ site.contact_email }})，注明应用版本，不要发送密码或私人文件。

@@ -9,7 +9,7 @@ translation: /zh/site-privacy/
   <p class="lede">This notice concerns visits to this website, not data handled by an app.</p>
 </header>
 <article class="prose" markdown="1">
-Updated: September 11, 2026.
+Updated: September 18, 2026.
 
 ## Reading these pages
 
@@ -23,7 +23,7 @@ External links open services such as the App Store or a provider's privacy page.
 
 If you email us, we use your address and the information you provide to respond and follow up. Correspondence is retained as needed to handle the request or applicable obligations. To ask about access or deletion, contact [{{ site.contact_email }}](mailto:{{ site.contact_email }}). Do not send passwords or private files.
 
-**Website operator:** Mac Zhou, independent developer.
+**Website operator:** Vanto team.
 
 App-specific policies are available in the [software directory]({{ '/' | relative_url }}). Reading a policy does not authorize data collection in an app.
 </article>

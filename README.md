@@ -1,11 +1,14 @@
-# 软件与隐私中心
+# Vanto 软件与隐私中心
 
 公开站点：https://apps.vanto.space/
+
+服务与隐私联系：Vanto 团队 · [support@vanto.space](mailto:support@vanto.space)。全站联系方式由 `_config.yml` 的 `contact_email` 统一提供。
 
 ## 内容范围
 
 - 超级计算器 / Smart Calculator：独立中英文隐私政策，App Store ID 1322880549。
 - 文件夹 / Folder：独立中英文隐私政策、使用条款、版本说明与支持，App Store ID 1563518405。区分已发布 2.x 与开发中的 3.0.0；新版不启用 Firebase 的说明不适用于旧版。
+- 声页 / Shengye：中文、英文、日语、韩语、西班牙语隐私政策，App Store ID 1241562587。当前政策 1.3 按 5.0.0 实现精简说明本地录音、设备端转文字、可选 iCloud、广告、购买与删除；不将新版停用分析的状态套用于旧版。
 - 网站隐私：说明本站无主动广告/分析脚本，以及 GitHub Pages 的安全日志。
 - 旧 /en/privacy/、/zh/privacy/ 保留为兼容页，明确适用软件，复用政策正文。
 - 旧媒体指南与通用使用条款已移除；新的使用条款只放在本应用路径下，不将旧链接重定向到另一款软件。
@@ -17,6 +20,7 @@
 | _policies/ | 各应用独立政策与条款正文、版本、日期、固定链接 |
 | _data/apps.yml | 软件目录和对应语言链接 |
 | _data/ui.yml、*_sections.yml | 公共界面翻译、各文档目录 |
+| _data/translations.yml | 多语言文档地址、语言菜单与 hreflang 的单一来源 |
 | _layouts/、_includes/ | 页面结构；政策与旧兼容页复用同一正文 |
 | assets/css/site.css | 响应式、深浅色、键盘焦点与打印样式 |
 
@@ -25,10 +29,10 @@
 ## 修改与发布
 
 1. 以软件实际实现为依据更新 docs/privacy-inventory.md，不把计划中的控制写成已实现。
-2. 同时更新中英文正文、日期、政策版本和 CHANGELOG.md。版本功能变更先核对源码和线上版本，避免混写。
+2. 同时更新文档全部已支持语言的正文、日期、政策版本和 CHANGELOG.md。版本功能变更先核对源码和线上版本，避免混写。
 3. 使用现代 Ruby（建议 3.3+）运行 bundle install、bundle exec jekyll build 和 bundle exec ruby scripts/check_site.rb。
 4. 只有获得部署授权才提交并推送 gh-pages；等待 GitHub Pages 构建成功。
-5. 验证正式域名的所有政策及旧链接、语言切换、样式和 404 状态。
+5. 验证正式域名的政策及旧链接、语言切换和 404 状态。默认不生成布局预览或执行布局检查。
 6. App Store Connect 的隐私网址使用相应软件的独立地址；未翻译语言回退英文版。App 内入口应指向同一地址。
 
 正式 URL 不包含 /app.github.io。旧 GitHub Pages 项目地址由 GitHub 转向自定义域名，发布后需验证深层链接。网页政策、App 隐私清单、App Store 隐私标签和实际授权流程是不同事项，需分别核对。
@@ -41,3 +45,15 @@
 - 更换商店地址前，确认正式 HTTPS 地址、中文/英文切换、CSS 和旧地址跳转正常。网页发布不会自动修改商店后台配置。
 
 当前发布不修改计算器 SDK、权限流程或商店隐私数据类型。计算器自身的发布修复仍见 docs/privacy-inventory.md。
+
+## 声页多语言地址
+
+- [中文](https://apps.vanto.space/zh/app/shengye/privacy/)
+- [English](https://apps.vanto.space/en/app/shengye/privacy/)
+- [日本語](https://apps.vanto.space/ja/app/shengye/privacy/)
+- [한국어](https://apps.vanto.space/ko/app/shengye/privacy/)
+- [Español](https://apps.vanto.space/es/app/shengye/privacy/)
+
+五种语言相互切换时始终留在声页政策；页面的标题、目录和公共导航同步翻译。日/韩/西页面链接到尚未翻译的总目录和网站隐私时，明确标注“英语”，不伪造本地化入口。其他应用继续保留既有中英文切换及固定 URL。
+
+本次仅更新政策站点，不改 App 客户端的语言路由、商店后台或第三方数据设置。检查脚本覆盖 20 页、全站署名和邮箱、旧政策正文复用、五语言一致版本与日期、内链与目录、双向 hreflang 和 sitemap。

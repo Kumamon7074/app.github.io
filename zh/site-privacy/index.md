@@ -9,7 +9,7 @@ translation: /en/site-privacy/
   <p class="lede">本说明仅涉及访问网站，不替代各 App 的隐私政策。</p>
 </header>
 <article class="prose" markdown="1">
-更新日期：2026 年 9 月 11 日。
+更新日期：2026 年 9 月 18 日。
 
 ## 阅读页面
 
@@ -23,7 +23,7 @@ translation: /en/site-privacy/
 
 您发邮件联系我们时，邮箱地址及主动提供的信息用于回复和跟进，并按处理请求或适用义务所需期限保存。如需咨询访问或删除，请联系 [{{ site.contact_email }}](mailto:{{ site.contact_email }})。请勿发送密码或私人文件。
 
-**网站运营者：** Mac Zhou（独立开发者）。
+**网站运营者：** Vanto 团队。
 
 各 App 的政策请查看[软件目录]({{ '/zh/' | relative_url }})。阅读政策本身不代表授权 App 收集数据。
 </article>

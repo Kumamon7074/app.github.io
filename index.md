@@ -4,7 +4,7 @@ lang: en
 translation: /zh/
 ---
 <header class="page-heading">
-  <p class="eyebrow">MAC ZHOU / SOFTWARE</p>
+  <p class="eyebrow">VANTO / SOFTWARE</p>
   <h1>Software & privacy.</h1>
   <p class="lede">Find the privacy policy and support information for your app.</p>
 </header>

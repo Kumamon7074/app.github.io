@@ -6,8 +6,8 @@ app_name: 超级计算器 · Smart Calculator
 lang: zh
 permalink: /zh/app/calculator/privacy/
 translation: /en/app/calculator/privacy/
-updated: "2026-09-11"
-policy_version: "1.0"
+updated: "2026-09-18"
+policy_version: "1.1"
 description: 了解算式、设置与服务数据如何处理。
 ---
 <div class="summary-box" markdown="1">
@@ -21,7 +21,7 @@ description: 了解算式、设置与服务数据如何处理。
 
 ## 1. 适用范围 {#scope}
 
-本政策适用于独立开发者 **Mac Zhou** 提供的 **超级计算器（Smart Calculator）**，App Store ID 为 **1322880549**，不适用于 Folder 或本网站列出的其他软件。
+本政策适用于 **Vanto 团队** 提供的 **超级计算器（Smart Calculator）**，App Store ID 为 **1322880549**，不适用于 Folder 或本网站列出的其他软件。
 
 本政策说明当前计算器实现的数据处理方式，包括 5.0.0 版本引入的功能。小组件等功能可能取决于 App 版本、系统版本和购买权益，早期版本可能不具备全部功能。使用计算功能无需注册开发者运营的独立账号。
 
@@ -104,7 +104,7 @@ Apple 和 Google 可能在您所在国家或地区之外处理服务数据，具
 
 相关功能、服务商或数据处理方式变化时，我们会更新本政策。页面顶部的日期和政策版本用于识别当前修订；对需要额外通知或征求同意的实质变化，我们会按适用要求处理。
 
-**开发者与隐私联系人：** Mac Zhou（独立开发者）<br>
-**联系邮箱：** [death7074@gmail.com](mailto:death7074@gmail.com)
+**服务提供者与隐私联系人：** Vanto 团队<br>
+**联系邮箱：** [{{ site.contact_email }}](mailto:{{ site.contact_email }})
 
 您通过邮件联系我们时，邮箱地址及主动提供的信息用于处理和跟进请求，并按该目的或适用义务所需期限保存。请注明软件名称和版本，不要附带敏感内容。

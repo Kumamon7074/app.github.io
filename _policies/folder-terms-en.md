@@ -8,13 +8,13 @@ lang: en
 permalink: /en/app/folder/terms/
 translation: /zh/app/folder/terms/
 sections: folder_terms_sections
-updated: "2026-09-13"
-policy_version: "1.0"
+updated: "2026-09-18"
+policy_version: "1.1"
 description: Using Folder, responsibility for files, purchases, and support.
 ---
 ## 1. Scope {#scope}
 
-These terms apply to Folder from Mac Zhou (App Store ID **1563518405**). Your App Store acquisition is governed by the app license terms Apple presents; if no custom license is provided in App Store Connect, the [Apple Standard End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) applies. This page adds practical usage information without reducing rights you have under applicable consumer law. Features depend on the installed version and may differ between older releases and 3.0.0.
+These terms apply to Folder from the Vanto team (App Store ID **1563518405**). Your App Store acquisition is governed by the app license terms Apple presents; if no custom license is provided in App Store Connect, the [Apple Standard End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) applies. This page adds practical usage information without reducing rights you have under applicable consumer law. Features depend on the installed version and may differ between older releases and 3.0.0.
 
 ## 2. Using the app {#use}
 
@@ -32,4 +32,4 @@ Keep an independent backup of important files and safeguard your app password, r
 
 ## 5. Updates and contact {#contact}
 
-This page and its date may change with features or applicable rules; material changes will be communicated where required. Contact [death7074@gmail.com](mailto:death7074@gmail.com) with the app version, without passwords or private files.
+This page and its date may change with features or applicable rules; material changes will be communicated where required. Contact [{{ site.contact_email }}](mailto:{{ site.contact_email }}) with the app version, without passwords or private files.

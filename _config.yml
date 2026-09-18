@@ -1,10 +1,10 @@
-title: Mac Zhou · Software & Privacy
+title: Vanto · Software & Privacy
 url: "https://apps.vanto.space"
 baseurl: ""
 lang: en
 markdown: kramdown
 timezone: Asia/Shanghai
-contact_email: death7074@gmail.com
+contact_email: support@vanto.space
 collections:
   policies:
     output: true

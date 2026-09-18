@@ -1,5 +1,6 @@
 {% assign language = page.lang | default: 'en' %}
 {% assign ui = site.data.ui[language] %}
+{% assign translations = site.data.translations[page.translation_group] %}
 <!doctype html>
 <html lang="{{ language }}">
 <head>
@@ -8,23 +9,34 @@
   <meta name="color-scheme" content="light dark">
   <meta name="description" content="{{ page.description | default: ui.description | escape }}">
   <meta name="google-site-verification" content="UJXdXmPu9fs_BY9UUv5TgNHk6XL4IXHjkMepB8X9HAk">
-  <title>{{ page.title | escape }} · Mac Zhou</title>
+  <title>{{ page.title | escape }} · Vanto</title>
   <link rel="canonical" href="{{ page.url | absolute_url }}">
-  {% if page.translation %}<link rel="alternate" hreflang="{{ ui.other_lang }}" href="{{ page.translation | absolute_url }}">{% endif %}
+  {% if translations %}
+    {% for entry in translations %}<link rel="alternate" hreflang="{{ entry.lang }}" href="{{ entry.url | absolute_url }}">{% endfor %}
+  {% elsif page.translation %}<link rel="alternate" hreflang="{{ ui.other_lang }}" href="{{ page.translation | absolute_url }}">{% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 </head>
 <body>
   <a class="skip-link" href="#content">{{ ui.skip }}</a>
   <header class="site-header">
-    <a class="brand" href="{{ ui.home | relative_url }}">Mac Zhou<span>{{ ui.brand }}</span></a>
+    <a class="brand" href="{{ ui.home | relative_url }}">{{ ui.team }}<span>{{ ui.brand }}</span></a>
     <nav aria-label="{{ ui.navigation }}">
       <a href="{{ ui.home | relative_url }}">{{ ui.apps }}</a>
-      {% if page.translation %}<a class="language-link" href="{{ page.translation | relative_url }}" lang="{{ ui.other_lang }}" hreflang="{{ ui.other_lang }}">{{ ui.other_label }}</a>{% endif %}
+      {% if translations %}
+      <details class="language-picker">
+        <summary>{{ ui.language }}</summary>
+        <ul>
+          {% for entry in translations %}
+          <li><a class="language-option" href="{{ entry.url | relative_url }}" lang="{{ entry.lang }}" hreflang="{{ entry.lang }}"{% if entry.lang == language %} aria-current="page"{% endif %}>{{ entry.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </details>
+      {% elsif page.translation %}<a class="language-link" href="{{ page.translation | relative_url }}" lang="{{ ui.other_lang }}" hreflang="{{ ui.other_lang }}">{{ ui.other_label }}</a>{% endif %}
     </nav>
   </header>
   <main id="content" tabindex="-1">{{ content }}</main>
   <footer class="site-footer">
-    <div><strong>Mac Zhou</strong><span>{{ ui.independent }}</span></div>
+    <div><strong>{{ ui.team }}</strong></div>
     <nav aria-label="{{ ui.footer }}">
       <a href="mailto:{{ site.contact_email }}">{{ ui.contact }}</a>
       <a href="{{ ui.site_privacy | relative_url }}">{{ ui.website_privacy }}</a>
