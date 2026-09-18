@@ -8,7 +8,7 @@ permalink: /en/app/shengye/privacy/
 translation: /zh/app/shengye/privacy/
 sections: shengye_policy_sections
 updated: "2026-09-18"
-policy_version: "1.1"
+policy_version: "1.2"
 description: How Shengye handles recordings, transcripts, iCloud sync, diagnostics, and earlier purchases.
 ---
 <div class="summary-box" markdown="1">
@@ -27,7 +27,7 @@ The app stores recorded or imported audio, titles, dates, durations, pinned stat
 
 The app lock uses system device-owner authentication. iOS handles biometrics or your device passcode; the app does not receive biometric templates. App locking is not separate per-file audio encryption and does not revoke shared copies.
 
-The widget shares the latest recording's title, date, and duration with the app through an on-device App Group, not full audio or transcripts. Enabling the app lock clears that display snapshot. What others can see on your Home Screen still depends on your device environment.
+Widgets and the app share recording display information, playback state and time, control identifiers, and highlight playback segment numbers and boundaries through an on-device App Group, not full audio or transcripts. Enabling the app lock clears that display snapshot. What others can see on your Home Screen still depends on your device environment.
 
 ## 3. Transcription and permissions {#speech}
 
@@ -45,13 +45,9 @@ You initiate original-audio, clip, TXT/Markdown note, subtitle, and portable-lib
 
 ## 5. Optional diagnostics, advertising, and purchases {#services}
 
-Settings → Privacy & Data provides two separate optional choices: Usage analytics and Crash diagnostics. Both are off by default, and earlier diagnostics preferences do not enable them. Declining does not affect recording, playback, free transcription credits, Pro, or advertising rewards. The corresponding Google Firebase services are enabled only after an explicit choice. Firebase Performance is not integrated. Debug builds, tests, and previews do not send this data.
+The current 5.0.0 implementation removes the Privacy & Data screen and disables optional app usage analytics and crash diagnostics. Earlier opt-in preferences are revoked. The current runtime does not start Firebase Analytics or Crashlytics, and Firebase Performance is not integrated. Recording, playback, transcription, purchases, sync, and export do not send app events or diagnostics to these optional services.
 
-Firebase Analytics processes predefined feature usage and outcomes, such as recording saves, listening-duration ranges, transcription completion and adoption, credit settlement, advertising rewards, purchase results, sync, and exports. Firebase may also process installation-scoped identifiers, sessions, device, operating-system, and app information; this is not fully anonymous. The app sets no personal account identifier, enables no advertising personalization for this analysis, uses no IDFA collection capability, and disables Analytics IDFV collection. App events do not include audio, transcript text, recording titles, tag names, notes, search terms, file paths, or CloudKit user identifiers. Verified purchases may send transaction measurement information; restored access is not counted as a new purchase.
-
-Firebase Crashlytics processes crash stacks, app and device information, installation-scoped identifiers, and predefined error codes. The app does not attach recording content or raw error descriptions. Enabling diagnostics takes effect on the next launch. Disabling stops new app diagnostic calls immediately and invalidates the current session for later report submission. Automatic SDK uploading remains off: the app requests pending-report submission only after checking current consent and the previous session's eligibility; ineligible historical reports are discarded. Once initialized, the SDK may still store reports locally. Already submitted network operations may complete, and the in-app switch cannot recall data already sent. See [Firebase privacy and security](https://firebase.google.com/support/privacy).
-
-These choices are separate from advertising consent. Earlier development builds that disabled optional diagnostics retain their behavior. Updating this policy does not erase data processed by earlier versions or mean that advertising SDKs collect no operational data.
+Disabling these services does not erase data already sent by earlier versions or promise identical behavior for every historical build. Advertising SDK operation and privacy choices remain separate and may process the operational data described below; disabled analytics does not mean zero advertising data collection. Contact the email address below about previously sent data. Relevant third-party processing also follows their policies.
 
 Non-Pro users may see a banner above the recording controls, and may explicitly choose a rewarded ad to add a transcription use. The library home screen has no banner. Pro users do not receive these ad placements. Google Mobile Ads (AdMob) and User Messaging Platform (UMP) handle advertising and applicable privacy choices; the app requests non-personalized ads and does not request App Tracking Transparency permission. Where UMP requires a privacy form, ads wait for the required choice. A privacy-options entry is shown in Settings when required by UMP.
 
@@ -61,11 +57,11 @@ A device-local ledger records the free transcription allowance, task reservation
 
 Apple StoreKit handles the permanent Pro purchase, verification, restoration, and management of existing subscriptions. Earlier valid monthly, annual, semiannual, and lifetime/remove-ads purchases continue to unlock the applicable Pro access. Pro provides unlimited transcription uses, optional iCloud sync, and removal of these ads. Apple handles payment details; the developer does not receive card details. Buying permanent Pro does not automatically cancel an earlier subscription. Review renewal status in Apple's subscription settings.
 
-Portable .shengye backups contain saved library audio and organization metadata, including text timing, tags, highlights, notes, and clip origins. They do not contain purchase entitlements, transcription credits, unfinished tasks, Recently Deleted entries, or cloud account bindings. Backups are not encrypted by the app: choose a trusted destination and protect the resulting file. Import is explicitly confirmed, skips identical content, and keeps differing versions as new recordings rather than overwriting existing ones. Selecting a cloud-backed destination in Files sends that backup to that provider.
+Portable .shengye backups contain saved library audio and organization metadata, including text timing, tags, highlights, notes, and clip origins. They do not contain purchase entitlements, transcription credits, unfinished tasks, Trash entries, or cloud account bindings. Backups are not encrypted by the app: choose a trusted destination and protect the resulting file. Import is explicitly confirmed, skips identical content, and keeps differing versions as new recordings rather than overwriting existing ones. Selecting a cloud-backed destination in Files sends that backup to that provider.
 
 ## 6. Retention and deletion {#retention}
 
-Ordinary deletion moves a recording to Recently Deleted, where it can be restored. Permanent deletion removes its audio and related organization state from the current library; enabled sync handles the corresponding deletion. Transcript checkpoints support resuming transcription. There is no separate cross-launch recovery workflow for unfinished recordings. Legacy files retained from earlier builds are not silently reimported or removed by temporary-export cleanup.
+Trash is enabled by default: ordinary deletion moves recordings there for restoration, without automatic emptying. When Trash is disabled, new deletions require confirmation and permanently delete the selected recordings. Existing Trash contents are not automatically erased by disabling it. Permanent deletion removes audio and related organization state from the current library; enabled sync handles the corresponding deletion. Transcript checkpoints support resuming transcription. There is no separate cross-launch recovery workflow for unfinished recordings. Legacy files retained from earlier builds are not silently reimported or removed by temporary-export cleanup.
 
 Sharing, trimming, and sync may generate temporary copies protected while in use. Normal sharing completion has a short grace period. Unused copies from abnormal exits may be reclaimed during later startup or manual cleanup. Storage cleanup only handles unused temporary exports, not saved recordings, retained legacy audio, or legacy migration backups.
 
