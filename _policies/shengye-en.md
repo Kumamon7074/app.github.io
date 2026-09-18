@@ -8,7 +8,7 @@ permalink: /en/app/shengye/privacy/
 translation: /zh/app/shengye/privacy/
 sections: shengye_policy_sections
 updated: "2026-09-18"
-policy_version: "1.0"
+policy_version: "1.1"
 description: How Shengye handles recordings, transcripts, iCloud sync, diagnostics, and earlier purchases.
 ---
 <div class="summary-box" markdown="1">
@@ -45,7 +45,13 @@ You initiate original-audio, clip, TXT/Markdown note, subtitle, and portable-lib
 
 ## 5. Optional diagnostics, advertising, and purchases {#services}
 
-This implementation removes the optional Firebase Analytics, Crashlytics, and Performance SDK integrations, their event calls, and the crash-symbol upload step. An earlier diagnostics preference no longer enables these services. This does not erase data previously processed by earlier versions, and it does not mean that an advertising SDK collects no operational data.
+Settings → Privacy & Data provides two separate optional choices: Usage analytics and Crash diagnostics. Both are off by default, and earlier diagnostics preferences do not enable them. Declining does not affect recording, playback, free transcription credits, Pro, or advertising rewards. The corresponding Google Firebase services are enabled only after an explicit choice. Firebase Performance is not integrated. Debug builds, tests, and previews do not send this data.
+
+Firebase Analytics processes predefined feature usage and outcomes, such as recording saves, listening-duration ranges, transcription completion and adoption, credit settlement, advertising rewards, purchase results, sync, and exports. Firebase may also process installation-scoped identifiers, sessions, device, operating-system, and app information; this is not fully anonymous. The app sets no personal account identifier, enables no advertising personalization for this analysis, uses no IDFA collection capability, and disables Analytics IDFV collection. App events do not include audio, transcript text, recording titles, tag names, notes, search terms, file paths, or CloudKit user identifiers. Verified purchases may send transaction measurement information; restored access is not counted as a new purchase.
+
+Firebase Crashlytics processes crash stacks, app and device information, installation-scoped identifiers, and predefined error codes. The app does not attach recording content or raw error descriptions. Enabling diagnostics takes effect on the next launch. Disabling stops new app diagnostic calls immediately and invalidates the current session for later report submission. Automatic SDK uploading remains off: the app requests pending-report submission only after checking current consent and the previous session's eligibility; ineligible historical reports are discarded. Once initialized, the SDK may still store reports locally. Already submitted network operations may complete, and the in-app switch cannot recall data already sent. See [Firebase privacy and security](https://firebase.google.com/support/privacy).
+
+These choices are separate from advertising consent. Earlier development builds that disabled optional diagnostics retain their behavior. Updating this policy does not erase data processed by earlier versions or mean that advertising SDKs collect no operational data.
 
 Non-Pro users may see a banner above the recording controls, and may explicitly choose a rewarded ad to add a transcription use. The library home screen has no banner. Pro users do not receive these ad placements. Google Mobile Ads (AdMob) and User Messaging Platform (UMP) handle advertising and applicable privacy choices; the app requests non-personalized ads and does not request App Tracking Transparency permission. Where UMP requires a privacy form, ads wait for the required choice. A privacy-options entry is shown in Settings when required by UMP.
 

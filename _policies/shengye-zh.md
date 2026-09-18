@@ -8,7 +8,7 @@ permalink: /zh/app/shengye/privacy/
 translation: /en/app/shengye/privacy/
 sections: shengye_policy_sections
 updated: "2026-09-18"
-policy_version: "1.0"
+policy_version: "1.1"
 description: 声页如何处理录音、文字、iCloud 同步、诊断和历史购买。
 ---
 <div class="summary-box" markdown="1">
@@ -45,7 +45,13 @@ iCloud 同步默认不开启，且需要专业版权益。开启后，音频、�
 
 ## 5. 可选诊断、广告与购买 {#services}
 
-本次实现移除可选的 Firebase Analytics、Crashlytics 和 Performance SDK 接入、事件调用及崩溃符号上传步骤，旧版保存的诊断开关不再启用这些服务。这不表示已删除旧版此前处理的数据，也不表示广告 SDK 不处理运行数据。
+提供“设置 → 隐私与数据”的两个独立可选项：“使用分析”和“故障诊断”，均默认关闭，不继承早期版本的诊断选择。关闭或不选择不会影响录音、回听、免费转文字次数、专业版或广告奖励。只有主动开启后才启用相应的 Google Firebase 服务；当前没有接入 Firebase Performance。调试构建、测试和预览不发送这些数据。
+
+使用分析通过 Firebase Analytics 处理预定义的功能使用和操作结果，例如录音保存、回听时长区间、转文字完成与采用、次数结算、广告奖励到账、购买结果、同步和导出结果。Firebase 还可能处理安装范围标识、会话、设备、系统和应用版本等信息；这并非完全匿名。应用不设置个人账户标识，不为此启用广告个性化，不采集 IDFA，并关闭 Analytics 的 IDFV 采集。应用事件不包含音频、转写正文、录音标题、标签名称、备注、搜索关键词、文件路径或 CloudKit 用户标识。验证后的实际购买可发送交易衡量信息，不将恢复权益算作新购买。
+
+故障诊断通过 Firebase Crashlytics 处理崩溃堆栈、应用和设备信息、安装范围标识及预定义错误代码；应用不会附加录音内容或原始错误描述。首次开启在下次启动生效；关闭立即停止新增应用诊断调用，并使本次会话报告失去后续上传资格。SDK 自动上传保持关闭，应用只在检查当前同意状态与上一会话资格后请求发送待处理报告；没有资格的历史报告会丢弃。SDK 已启动时仍可能在本机保存报告，已提交的网络发送可能完成，已发送的数据无法通过端内开关撤回。参见 [Firebase 隐私与安全说明](https://firebase.google.com/support/privacy)。
+
+使用分析与故障诊断的选择不等同于广告同意。此前停用可选诊断的开发构建仍保持其原有行为；本政策更新不表示删除历史版本此前处理的数据，也不表示广告 SDK 不处理运行数据。
 
 非专业版可能在录音控制区上方展示横幅；转文字次数不足时，你可以主动选择观看激励广告增加次数。录音库首页不展示横幅，专业版不展示上述广告。Google Mobile Ads（AdMob）与 User Messaging Platform（UMP）负责广告与适用的隐私选择。应用请求非个性化广告，不申请 App Tracking Transparency 跟踪权限；UMP 要求隐私表单时，广告等待所需选择完成。UMP 要求提供隐私选项入口时，设置中会显示该入口。
 

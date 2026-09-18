@@ -1,5 +1,11 @@
 # 隐私事实与发布边界
 
+## 声页：2026-09-18 可选上报
+
+基于 Recorder 当前源码：Telemetry / FirebaseTelemetrySink / TelemetryLegacyMigration、TelemetrySettingsView 与 Info.plist。主应用恢复 Firebase 12.19.2 AnalyticsCore、Crashlytics；两个选择独立默认关闭，旧一体化偏好不继承；Performance 不接入，Widget 不链接。自定义事件只接受固定枚举与时长区间，实际携带中文事件和结果名称，无音频、正文、标题、标签名、搜索词、文件路径或录音 ID。
+
+故障诊断首次开启下次启动生效，自动上传一直关闭，当前与上次会话资格都允许才发送待处理报告；SDK 本地缓存与已提交请求的撤回限制须披露。使用分析不作匿名承诺。广告 UMP、永久专业版与次数账本独立。本轮不调整 Firebase 控制台留存 / 账号或 App Store Connect 数据标签；仅更新声页中英文政策，不改其他应用正文。
+
 核对日期：2026-09-13。计算器基于本地 5.0.0 实现；文件夹基于本地 3.0.0 实现及历史源码。功能可能晚于当前线上版本，政策按版本区分。
 
 ## 计算器
