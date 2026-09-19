@@ -1,11 +1,11 @@
 ---
-title: Folder
+title: FileNook
 lang: en
 translation: /zh/app/folder/
-description: Version information, privacy, terms, and support for Folder.
+description: Version information, privacy, terms, and support for FileNook.
 ---
 <header class="page-heading">
-  <p class="eyebrow">FOLDER</p>
+  <p class="eyebrow">FILENOOK</p>
   <h1>Local files, in your hands.</h1>
   <p class="lede">A private local workspace for organizing, reading, playing, and transferring files.</p>
 </header>
@@ -14,9 +14,9 @@ description: Version information, privacy, terms, and support for Folder.
 
 ## Versions
 
-The 3.0.0 local workspace does not connect to Baidu Netdisk or Google Drive. Files, PDFs, books, media, and local-network transfer are handled on the device. Published older versions may still offer Google Drive, casting, and subscriptions. Available features and data handling depend on your installed version.
+The 3.0.0 workspace does not connect to Baidu Netdisk or Google Drive; file processing is mainly on-device. The release enables Firebase usage analytics and crash diagnostics by default, while the free version uses Google ads. Published older versions may still offer Google Drive, casting, and subscriptions. Features and data handling depend on your installed version.
 
-The app's display name is localized as 文件夹 or 資料夾 in Chinese and Folder in English and some other regions. The word “folder” in feature descriptions means an ordinary directory.
+The app is now called FileNook (文件匣 / 檔案匣 in Chinese); its former name was Folder. “Folder” in feature descriptions means an ordinary directory.
 
 <div class="contact-panel" markdown="1">
 ## Support and privacy questions

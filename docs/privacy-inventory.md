@@ -17,9 +17,9 @@ App Store ID `1241562587`，应用标识 `com.mac.zhou.artrecorder.first`。核�
 
 1.1 曾描述可选上报；后续 1.2 已统一停用。本次 1.3 保持同一数据边界，精简重复实现细节，补齐中、英、日、韩、西五语言。关闭采集不代表远端历史数据已删除。第三方保留期限、处理地域及具体请求能力未经后台确认，不作固定承诺。
 
-服务提供者和隐私联系人按用户指定统一为 Vanto 团队 / Vanto team（其他语言采用对应表达），邮箱统一为 `support@vanto.space`。本次其他应用仅调整署名、联系方式、日期和政策版本，不推断它们的数据行为随声页改变。未修改 App、App Store Connect、Firebase、AdMob、DNS 或邮件服务配置。
+2026-09-18 的全站更新将服务提供者和隐私联系人统一为 Vanto 团队 / Vanto team，邮箱为 `support@vanto.space`；当时其他应用仅调整署名、联系方式、日期和政策版本，不推断它们的数据行为随声页改变。
 
-核对日期：2026-09-13。计算器基于本地 5.0.0 实现；文件夹基于本地 3.0.0 实现及历史源码。功能可能晚于当前线上版本，政策按版本区分。
+计算器于 2026-09-13 按本地 5.0.0 实现核对；文件匣于 2026-09-19 按本地 3.0.0 实现复核。功能可能晚于当前线上版本，政策按版本区分。
 
 ## 计算器
 
@@ -38,7 +38,7 @@ App Store ID `1241562587`，应用标识 `com.mac.zhou.artrecorder.first`。核�
 
 发布网页不会修复：缺失的主 App PrivacyInfo.xcprivacy、老广告/分析 SDK、UMP/分析同意流程、商店隐私数据类型、App 内政策入口。这些需要计算器工程与后台的独立变更。
 
-## Folder
+## 文件匣 / FileNook
 
 App Store ID 1563518405，bundle ID `com.macrzhou.folder`。应用工程 `/Users/macrzhou/Documents/lockalbum` 的 3.0.0 源码已核验；历史提交 `deabf2c` 保留 Google Drive、旧广告/分析初始化和订阅实现，但不能仅凭历史提交断言每个已发布 2.x 构建的确切设置。
 
@@ -48,10 +48,10 @@ App Store ID 1563518405，bundle ID `com.macrzhou.folder`。应用工程 `/Users
 | Wi‑Fi 传输 | 用户主动启动的局域网 HTTP 服务，无登录；可选浏览下载，进入后台或空闲后停止 | `WiFiService.swift`、`WiFiController.swift`、`WiFiWebPage.swift` |
 | 分享与备份 | 选中文件交系统分享；密码加密备份由用户保存到所选位置 | `AppServices.swift`、`BackupService.swift` |
 | 广告与同意 | 免费版 Google Mobile Ads，UMP 可请求状态时启动；ATT 另行申请；专业版不加载广告 | `AppServices.swift`、`WorkspaceBrowser.swift` |
-| 诊断 | Firebase Analytics/Crashlytics 依赖保留，但应用不初始化、不提供开关或事件上报；`Info.plist` 禁止采集 | `AppServices.swift`、`Info.plist` |
+| 统计与诊断 | 正式版 `AppTelemetry.start()` 默认配置 Firebase，启用 Analytics；Crashlytics 关闭自动上传，由宿主于下次启动发送符合条件的报告。首次启用时删除旧待发报告；无端内统计开关。自定义事件仅固定类别及分档，不上传文件内容、路径、识别文字、密码等；SDK 仍可能处理实例标识、设备与系统信息及自动会话数据。专业版不关闭统计 | `AppTelemetry.swift`、`WorkspaceApp.swift`、`Documentation/Telemetry.md`、`Info.plist` |
 | 购买 | StoreKit 2 一次买断；退役订阅只用于既有权益识别 | `AppServices.swift`、`MembershipController.swift` |
 
-旧版政策段只写能从历史代码和已发布功能说明确认的类别：Google Drive、媒体投送、月/年订阅，以及启动时的 Firebase/广告行为。OAuth 令牌实际留存、第三方后台保留期限、各版本精确 SDK 配置未经核实，不编造承诺。3.0.0 的“不启用 Firebase”不得覆盖旧版。App Store Connect 的隐私 URL、隐私标签和商品文案须在发布新版时另行核对；网页发布不等于商店后台已更新。
+旧版政策段只写能从历史代码和已发布功能说明确认的类别：Google Drive、媒体投送、月/年订阅，以及可能不同的 Firebase/广告行为。OAuth 令牌实际留存、第三方后台保留期限、各版本精确 SDK 配置未经核实，不编造承诺。App Store Connect 的隐私 URL、隐私标签和商品文案须在发布新版时另行核对；网页发布不等于商店后台已更新。当前应用默认启用统计不等于已满足所有发行地区的同意要求，发布前须独立核查。
 
 ## 网站
 
@@ -61,8 +61,8 @@ App Store ID 1563518405，bundle ID `com.macrzhou.folder`。应用工程 `/Users
 
 - 中文：https://apps.vanto.space/zh/app/calculator/privacy/
 - 英文：https://apps.vanto.space/en/app/calculator/privacy/
-- 文件夹中文：https://apps.vanto.space/zh/app/folder/privacy/
-- 文件夹英文：https://apps.vanto.space/en/app/folder/privacy/
+- 文件匣中文：https://apps.vanto.space/zh/app/folder/privacy/
+- 文件匣英文：https://apps.vanto.space/en/app/folder/privacy/
 - 声页：`https://apps.vanto.space/{zh,en,ja,ko,es}/app/shengye/privacy/`（分别为五个实际地址）
 
 不改隐私选择 URL、不代填未核实的数据类型、不提交 App 版本审核。

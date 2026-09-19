@@ -10,8 +10,8 @@
     zh: /zh/app/calculator/privacy/
 - id: folder
   name:
-    en: Folder
-    zh: 文件夹
+    en: FileNook
+    zh: 文件匣
   description:
     en: Private, local file management and reading. Features vary by installed version.
     zh: 私密本地文件管理与阅读；具体功能以安装版本为准。
