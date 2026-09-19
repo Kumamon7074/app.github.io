@@ -1,21 +1,42 @@
 - id: scope
   en: Scope and versions
   zh: 适用版本
+  zh-Hant: 適用版本
+  ja: 適用範囲
+  ko: 적용 범위
 - id: local
   en: Local files and access
   zh: 本地文件与访问
+  zh-Hant: 本機檔案與存取
+  ja: 端末内のファイルとアクセス
+  ko: 기기 내 파일과 접근
 - id: transfer
   en: Transfer and sharing
   zh: 传输与分享
+  zh-Hant: 傳輸與分享
+  ja: 転送と共有
+  ko: 전송과 공유
 - id: services
-  en: Ads, diagnostics, and purchases
-  zh: 广告、诊断与购买
+  en: Analytics, ads, and purchases
+  zh: 统计、广告与购买
+  zh-Hant: 分析、廣告與購買
+  ja: 分析・広告・購入
+  ko: 분석·광고·구매
 - id: legacy
   en: Earlier versions
   zh: 旧版本差异
+  zh-Hant: 舊版本差異
+  ja: 旧バージョンとの違い
+  ko: 이전 버전과의 차이
 - id: retention
   en: Retention and choices
   zh: 保存与选择
+  zh-Hant: 保存與選擇
+  ja: 保存と選択
+  ko: 보관과 선택
 - id: contact
   en: Contact and updates
   zh: 联系与更新
+  zh-Hant: 聯絡與更新
+  ja: お問い合わせと更新
+  ko: 문의와 변경

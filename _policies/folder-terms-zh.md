@@ -6,7 +6,7 @@ app: folder
 app_name: 文件匣 / FileNook
 lang: zh
 permalink: /zh/app/folder/terms/
-translation: /en/app/folder/terms/
+translation_group: folder-terms
 sections: folder_terms_sections
 updated: "2026-09-19"
 policy_version: "1.2"

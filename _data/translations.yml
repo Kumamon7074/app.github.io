@@ -1,3 +1,35 @@
+folder-privacy:
+  - lang: zh
+    label: 简体中文
+    url: /zh/app/folder/privacy/
+  - lang: zh-Hant
+    label: 繁體中文
+    url: /zh-Hant/app/folder/privacy/
+  - lang: en
+    label: English
+    url: /en/app/folder/privacy/
+  - lang: ja
+    label: 日本語
+    url: /ja/app/folder/privacy/
+  - lang: ko
+    label: 한국어
+    url: /ko/app/folder/privacy/
+folder-terms:
+  - lang: zh
+    label: 简体中文
+    url: /zh/app/folder/terms/
+  - lang: zh-Hant
+    label: 繁體中文
+    url: /zh-Hant/app/folder/terms/
+  - lang: en
+    label: English
+    url: /en/app/folder/terms/
+  - lang: ja
+    label: 日本語
+    url: /ja/app/folder/terms/
+  - lang: ko
+    label: 한국어
+    url: /ko/app/folder/terms/
 shengye-privacy:
   - lang: zh
     label: 中文

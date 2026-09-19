@@ -5,7 +5,7 @@ app: folder
 app_name: 文件匣 / FileNook
 lang: zh
 permalink: /zh/app/folder/privacy/
-translation: /en/app/folder/privacy/
+translation_group: folder-privacy
 sections: folder_policy_sections
 updated: "2026-09-19"
 policy_version: "1.3"

@@ -42,6 +42,26 @@ zh:
   contents: 本页目录
   effective: 生效与更新
   version: 文档版本
+zh-Hant:
+  brand: 軟體與隱私
+  description: Vanto 團隊的 App 隱私政策、使用條款與支援資訊。
+  skip: 跳至正文
+  navigation: 主導覽
+  apps: 所有 App（英文）
+  home: /
+  team: Vanto 團隊
+  language: 語言
+  footer: 頁尾導覽
+  contact: 聯絡我們
+  website_privacy: 網站隱私說明（英文）
+  site_privacy: /en/site-privacy/
+  separate: 不同 App 適用不同政策，請先確認 App 名稱。
+  privacy: 隱私政策
+  terms: 使用條款
+  support: App 資訊與支援
+  contents: 本頁目錄
+  effective: 生效與更新日期
+  version: 文件版本
 ja:
   brand: アプリとプライバシー
   description: Vantoチームのアプリのプライバシーポリシーとサポート情報。
@@ -57,6 +77,7 @@ ja:
   site_privacy: /en/site-privacy/
   separate: ポリシーはアプリごとに異なります。対象のアプリ名をご確認ください。
   privacy: プライバシーポリシー
+  terms: 利用規約
   contents: 目次
   effective: 発効・更新日
   version: 文書バージョン
@@ -75,6 +96,7 @@ ko:
   site_privacy: /en/site-privacy/
   separate: 앱마다 처리방침이 다릅니다. 해당 앱 이름을 확인해 주세요.
   privacy: 개인정보 처리방침
+  terms: 이용약관
   contents: 목차
   effective: 시행·수정일
   version: 문서 버전

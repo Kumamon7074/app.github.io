@@ -1,15 +1,30 @@
 - id: scope
   en: Scope
   zh: 适用范围
+  zh-Hant: 適用範圍
+  ja: 適用範囲
+  ko: 적용 범위
 - id: use
   en: Using the app
   zh: 使用应用
+  zh-Hant: 使用 App
+  ja: アプリの利用
+  ko: 앱 사용
 - id: purchases
   en: Purchases
   zh: 购买
+  zh-Hant: 購買
+  ja: 購入
+  ko: 구매
 - id: responsibility
   en: Files and availability
   zh: 文件与可用性
+  zh-Hant: 檔案與服務可用性
+  ja: ファイルと利用可能性
+  ko: 파일과 이용 가능성
 - id: contact
   en: Updates and contact
   zh: 更新与联系
+  zh-Hant: 更新與聯絡
+  ja: 更新とお問い合わせ
+  ko: 변경과 문의

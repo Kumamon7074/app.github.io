@@ -18,9 +18,12 @@ expected = %w[index.html zh/index.html en/privacy/index.html zh/privacy/index.ht
   en/app/calculator/privacy/index.html zh/app/calculator/privacy/index.html
   en/app/folder/index.html zh/app/folder/index.html
   en/app/folder/privacy/index.html zh/app/folder/privacy/index.html
+  zh-Hant/app/folder/privacy/index.html ja/app/folder/privacy/index.html ko/app/folder/privacy/index.html
   en/app/shengye/privacy/index.html zh/app/shengye/privacy/index.html
   ja/app/shengye/privacy/index.html ko/app/shengye/privacy/index.html es/app/shengye/privacy/index.html
-  en/app/folder/terms/index.html zh/app/folder/terms/index.html en/site-privacy/index.html
+  en/app/folder/terms/index.html zh/app/folder/terms/index.html
+  zh-Hant/app/folder/terms/index.html ja/app/folder/terms/index.html ko/app/folder/terms/index.html
+  en/site-privacy/index.html
   zh/site-privacy/index.html 404.html]
 expected.each { |path| abort "Missing page: #{path}" unless File.file?(File.join(output, path)) }
 %w[en/terms zh/terms en/media-guide zh/media-guide].each do |path|
@@ -93,14 +96,42 @@ sections = YAML.load_file(File.join(root, '_data/policy_sections.yml')).map { |s
   abort "Legacy policy differs" unless legacy.at_css('article.prose').text.strip == doc.at_css('article.prose').text.strip
 end
 { 'privacy' => 'folder_policy_sections', 'terms' => 'folder_terms_sections' }.each do |kind, section_file|
-  folder_sections = YAML.load_file(File.join(root, "_data/#{section_file}.yml")).map { |section| section.fetch('id') }
-  %w[en zh].each do |language|
+  folder_sections = YAML.load_file(File.join(root, "_data/#{section_file}.yml"))
+  folder_translations = YAML.load_file(File.join(root, '_data/translations.yml')).fetch("folder-#{kind}")
+  abort "Incomplete Folder #{kind} translations" unless folder_translations.map { |entry| entry.fetch('lang') }.sort == %w[en ja ko zh zh-Hant].sort
+  metadata = []
+  folder_translations.each do |entry|
+    language = entry.fetch('lang')
     doc = documents.fetch(File.join(output, language, "app/folder/#{kind}/index.html"))
-    folder_sections.each { |id| abort "Folder #{kind} section missing: #{language}/#{id}" unless doc.at_css("article ##{id}") }
+    abort "Wrong Folder #{kind} document language" unless doc.at_css('html')['lang'] == language
+    abort "Wrong Folder #{kind} canonical" unless doc.at_css('link[rel="canonical"]')['href'] == origin + entry.fetch('url')
+    folder_sections.each do |section|
+      id = section.fetch('id')
+      label = section.fetch(language)
+      abort "Folder #{kind} section missing: #{language}/#{id}" unless doc.at_css("article ##{id}")
+      abort "Untranslated Folder #{kind} section: #{language}/#{id}" if label.strip.empty?
+      doc.css('.policy-toc, .mobile-toc').each do |toc|
+        abort "Wrong Folder #{kind} contents label" unless toc.at_css("a[href='##{id}']")&.text == label
+      end
+    end
     abort 'Wrong Folder identity' unless doc.text.include?('1563518405')
-    other = language == 'en' ? 'zh' : 'en'
-    abort 'Folder language switch leaves document' unless doc.at_css('a.language-link')['href'] == "/#{other}/app/folder/#{kind}/"
+    if kind == 'terms'
+      abort "Folder terms link to wrong policy: #{language}" unless doc.at_css("article a[href='/#{language}/app/folder/privacy/']")
+    end
+    current = doc.css('.language-picker a[aria-current="page"]')
+    abort "Missing current Folder #{kind} language" unless current.length == 1 && current.first['lang'] == language
+    abort "Wrong Folder #{kind} language option count" unless doc.css('.language-option').length == folder_translations.length
+    folder_translations.each do |option|
+      link = doc.at_css(".language-option[lang='#{option['lang']}']")
+      alternate = doc.at_css("link[rel='alternate'][hreflang='#{option['lang']}']")
+      abort "Folder #{kind} language switch leaves document" unless link&.[]('href') == option.fetch('url') && link.text == option.fetch('label')
+      abort "Missing Folder #{kind} reciprocal hreflang" unless alternate&.[]('href') == origin + option.fetch('url')
+      abort "Folder #{kind} translation missing from sitemap" unless sitemap.include?(origin + option.fetch('url'))
+    end
+    metadata << doc.css('.policy-meta dd').map(&:text)
   end
+  expected_metadata = kind == 'privacy' ? ['2026-09-19', '1.3'] : ['2026-09-19', '1.2']
+  abort "Folder #{kind} translations have different dates or versions" unless metadata.uniq == [expected_metadata]
 end
 translations = YAML.load_file(File.join(root, '_data/translations.yml')).fetch('shengye-privacy')
 abort 'Incomplete Shengye translations' unless translations.map { |entry| entry.fetch('lang') }.sort == %w[en es ja ko zh]

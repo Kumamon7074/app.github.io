@@ -7,7 +7,7 @@
 ## 内容范围
 
 - 超级计算器 / Smart Calculator：独立中英文隐私政策，App Store ID 1322880549。
-- 文件匣 / FileNook（旧名文件夹 / Folder）：独立中英文隐私政策、使用条款、版本说明与支持，App Store ID 1563518405。区分已发布旧版与 3.0.0；3.0.0 正式版默认启用 Firebase 统计与崩溃诊断，免费版使用 Google 广告。
+- 文件匣 / FileNook（旧名文件夹 / Folder）：简体中文、繁体中文、英文、日语、韩语隐私政策与使用条款，App Store ID 1563518405。区分已发布旧版与 3.0.0；3.0.0 正式版默认启用 Firebase 统计与崩溃诊断，免费版使用 Google 广告。
 - 声页 / Shengye：中文、英文、日语、韩语、西班牙语隐私政策，App Store ID 1241562587。当前政策 1.3 按 5.0.0 实现精简说明本地录音、设备端转文字、可选 iCloud、广告、购买与删除；不将新版停用分析的状态套用于旧版。
 - 网站隐私：说明本站无主动广告/分析脚本，以及 GitHub Pages 的安全日志。
 - 旧 /en/privacy/、/zh/privacy/ 保留为兼容页，明确适用软件，复用政策正文。
@@ -42,7 +42,7 @@
 - 腾讯云 DNSPod：只新增 `apps` 的 CNAME，指向 `kumamon7074.github.io`，默认线路，TTL 600；不修改根域名、www、邮件或 API 解析。
 - GitHub Pages：Custom domain 与仓库 `CNAME` 均为 `apps.vanto.space`；HTTPS 证书就绪后启用 Enforce HTTPS。
 - `_config.yml` 的 `url` 与 CNAME 保持一致；站内链接使用 `relative_url`，canonical / hreflang / sitemap 使用 `absolute_url`，不单独硬编码域名。
-- 更换商店地址前，确认正式 HTTPS 地址、中文/英文切换、CSS 和旧地址跳转正常。网页发布不会自动修改商店后台配置。
+- 更换商店地址前，确认正式 HTTPS 地址、语言切换、CSS 和旧地址跳转正常。网页发布不会自动修改商店后台配置。
 
 当前发布不修改计算器 SDK、权限流程或商店隐私数据类型。计算器自身的发布修复仍见 docs/privacy-inventory.md。
 
@@ -54,6 +54,18 @@
 - [한국어](https://apps.vanto.space/ko/app/shengye/privacy/)
 - [Español](https://apps.vanto.space/es/app/shengye/privacy/)
 
-五种语言相互切换时始终留在声页政策；页面的标题、目录和公共导航同步翻译。日/韩/西页面链接到尚未翻译的总目录和网站隐私时，明确标注“英语”，不伪造本地化入口。其他应用继续保留既有中英文切换及固定 URL。
+五种语言相互切换时始终留在声页政策；页面的标题、目录和公共导航同步翻译。日/韩/西页面链接到尚未翻译的总目录和网站隐私时，明确标注“英语”，不伪造本地化入口。
 
-本次仅更新政策站点，不改 App 客户端的语言路由、商店后台或第三方数据设置。检查脚本覆盖 20 页、全站署名和邮箱、旧政策正文复用、五语言一致版本与日期、内链与目录、双向 hreflang 和 sitemap。
+## 文件匣多语言地址
+
+隐私政策与使用条款均有简体中文、繁体中文、英文、日语、韩语版本：
+
+| 语言 | 隐私政策 | 使用条款 |
+|---|---|---|
+| 简体中文 | [政策](https://apps.vanto.space/zh/app/folder/privacy/) | [条款](https://apps.vanto.space/zh/app/folder/terms/) |
+| 繁體中文 | [政策](https://apps.vanto.space/zh-Hant/app/folder/privacy/) | [條款](https://apps.vanto.space/zh-Hant/app/folder/terms/) |
+| English | [Policy](https://apps.vanto.space/en/app/folder/privacy/) | [Terms](https://apps.vanto.space/en/app/folder/terms/) |
+| 日本語 | [ポリシー](https://apps.vanto.space/ja/app/folder/privacy/) | [利用規約](https://apps.vanto.space/ja/app/folder/terms/) |
+| 한국어 | [처리방침](https://apps.vanto.space/ko/app/folder/privacy/) | [이용약관](https://apps.vanto.space/ko/app/folder/terms/) |
+
+文件匣 App 内入口按应用语言跳转，其他语言回退英文；未翻译的站点总目录和网站隐私页明确标注英语。检查脚本覆盖 26 页、目录与内链、语言切换、互引 hreflang 和 sitemap。网页发布不自动修改商店后台或第三方数据设置。

@@ -6,7 +6,7 @@ app: folder
 app_name: FileNook
 lang: en
 permalink: /en/app/folder/terms/
-translation: /zh/app/folder/terms/
+translation_group: folder-terms
 sections: folder_terms_sections
 updated: "2026-09-19"
 policy_version: "1.2"
