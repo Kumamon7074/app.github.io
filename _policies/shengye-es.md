@@ -7,8 +7,8 @@ lang: es
 permalink: /es/app/shengye/privacy/
 translation_group: shengye-privacy
 sections: shengye_policy_sections
-updated: "2026-09-18"
-policy_version: "1.3"
+updated: "2026-09-23"
+policy_version: "1.4"
 description: Cómo trata Shengye las grabaciones, transcripciones, sincronización, anuncios y eliminación de datos.
 ---
 <div class="summary-box" markdown="1">
@@ -17,7 +17,7 @@ description: Cómo trata Shengye las grabaciones, transcripciones, sincronizaci�
 
 ## 1. Alcance {#scope}
 
-Esta política se aplica a **Shengye / 声页 / 聲頁**, del equipo de Vanto (App Store ID **1241562587**, identificador `com.mac.zhou.artrecorder.first`), según la implementación actual de la versión 5.0.0. Las versiones anteriores pueden tener otros mecanismos de publicidad, análisis y compras. Desactivar ahora un servicio no elimina los datos enviados anteriormente. Leer esta política no otorga consentimiento ni permisos del sistema.
+Esta política se aplica a **Shengye / 声页 / 聲頁**, del equipo de Vanto (App Store ID **1241562587**, identificador `com.mac.zhou.artrecorder.first`), según la implementación del cliente a 23 de septiembre de 2026. Las versiones anteriores pueden tener otros mecanismos de publicidad, análisis y compras. Desactivar ahora un servicio no elimina los datos enviados anteriormente. Leer esta política no otorga consentimiento ni permisos del sistema.
 
 ## 2. Datos locales y protección {#local}
 
@@ -44,7 +44,7 @@ Según los ajustes del sistema, las copias del dispositivo de Apple también pue
 - **Anuncios:** La versión sin Pro muestra banners en la pantalla de grabación y permite ver anuncios recompensados, si lo eliges, para obtener créditos de transcripción. Pro elimina ambos formatos. Google AdMob proporciona los anuncios y UMP gestiona las opciones de privacidad aplicables en cada región. Los anuncios esperan a que completes las elecciones necesarias; cuando se requiere, los ajustes ofrecen opciones de privacidad. La app solicita anuncios no personalizados y no pide permiso de seguimiento ATT.
 - **Datos publicitarios:** El SDK de Google puede tratar la dirección IP y la ubicación aproximada inferida, identificadores del dispositivo o la app, interacciones con anuncios y la app, e información de fallos y rendimiento para publicidad, medición, seguridad y funcionamiento. No personalizado no significa ausencia de recopilación. La app no añade audio, títulos, transcripciones, etiquetas ni notas a las solicitudes de anuncios. Consulta la [información de Google sobre datos](https://developers.google.com/admob/ios/privacy/data-disclosure?hl=es) y su [política de privacidad](https://policies.google.com/privacy?hl=es).
 - **Compras y créditos:** Apple StoreKit procesa las compras y restauraciones de Pro; no recibimos datos de tarjetas. La app guarda los derechos verificados. Los saldos de transcripción, las reservas para tareas y los comprobantes de recompensas se guardan localmente, fuera de las copias de la biblioteca y de iCloud. Las compras anteriores válidas siguen reconociéndose. Comprar Pro de por vida no cancela una suscripción anterior.
-- **Análisis y diagnóstico opcionales:** La versión actual desactiva el análisis de uso y el diagnóstico de fallos de la app, revoca las activaciones anteriores, no inicia Firebase Analytics ni Crashlytics y no integra Performance. El tratamiento propio del SDK publicitario es independiente.
+- **Análisis del producto:** La app inicia Firebase Analytics para conocer el uso de las funciones y mejorar la experiencia. Los eventos fijos solo incluyen categorías de acciones y resultados, intervalos de duración, tipo de acceso y campos similares; no envían audio, títulos de grabaciones, transcripciones, etiquetas, notas, búsquedas, rutas de archivos ni identificadores de grabaciones. Firebase puede tratar identificadores de instancia o instalación, datos del dispositivo y del sistema, sesiones automáticas y eventos de compras verificadas. Analytics funciona con independencia de UMP y de si se pueden solicitar anuncios, y Pro no lo desactiva; el almacenamiento publicitario, los datos de usuario para publicidad y las señales de personalización permanecen desactivados. No se activan el diagnóstico de Crashlytics ni la supervisión de Performance. Consulta la [información de privacidad de Firebase](https://firebase.google.com/support/privacy?hl=es).
 
 ## 6. Conservación y eliminación {#retention}
 

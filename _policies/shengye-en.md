@@ -7,8 +7,8 @@ lang: en
 permalink: /en/app/shengye/privacy/
 translation_group: shengye-privacy
 sections: shengye_policy_sections
-updated: "2026-09-18"
-policy_version: "1.3"
+updated: "2026-09-23"
+policy_version: "1.4"
 description: How Shengye handles recordings, transcription, sync, ads, and deletion.
 ---
 <div class="summary-box" markdown="1">
@@ -17,7 +17,7 @@ description: How Shengye handles recordings, transcription, sync, ads, and delet
 
 ## 1. Scope {#scope}
 
-This policy covers **Shengye / 声页 / 聲頁**, provided by the Vanto team (App Store ID **1241562587**, app identifier `com.mac.zhou.artrecorder.first`), based on the current 5.0.0 implementation. Earlier versions may differ in advertising, analytics, and purchases. Disabling a service now does not erase data sent previously. Reading this policy does not grant consent or system permissions.
+This policy covers **Shengye / 声页 / 聲頁**, provided by the Vanto team (App Store ID **1241562587**, app identifier `com.mac.zhou.artrecorder.first`), based on the client implementation as of September 23, 2026. Earlier versions may differ in advertising, analytics, and purchases. Disabling a service now does not erase data sent previously. Reading this policy does not grant consent or system permissions.
 
 ## 2. Local data and protection {#local}
 
@@ -44,7 +44,7 @@ Apple device backups may also include app data, depending on system settings. De
 - **Ads:** Non-Pro users see banners on the recording screen and can choose rewarded ads for transcription credits. Pro removes both placements. Google AdMob provides ads; UMP handles applicable regional privacy choices. Ads wait for required choices, and Settings shows privacy options when required. The app requests non-personalized ads and does not request ATT tracking permission.
 - **Ad data:** Google's SDK may process IP addresses and inferred approximate location, device or app identifiers, ad and app interactions, and crash and performance information for advertising, measurement, security, and operation. Non-personalized does not mean no collection. The app does not add audio, recording titles, transcripts, tags, or notes to ad requests. See [Google's data disclosure](https://developers.google.com/admob/ios/privacy/data-disclosure) and [Google Privacy Policy](https://policies.google.com/privacy).
 - **Purchases and credits:** Apple StoreKit handles Pro purchases and restoration; we do not receive card details. The app stores verified entitlements. Transcription balances, task reservations, and ad-reward receipts stay locally and are excluded from library backups and iCloud sync. Valid earlier purchases remain recognized. Buying lifetime Pro does not cancel an older subscription.
-- **Optional analytics and diagnostics:** The current version disables app usage analytics and crash diagnostics, revokes earlier opt-ins, does not start Firebase Analytics or Crashlytics, and does not integrate Performance. The advertising SDK's own processing remains separate.
+- **Product analytics:** The app starts Firebase Analytics to understand feature use and improve the experience. Fixed events contain action and result categories, duration bands, access tier, and similar fields—not audio, recording titles, transcripts, tags, notes, search terms, file paths, or recording identifiers. Firebase may still process app-instance or installation identifiers, device and system information, automatic sessions, and verified purchase events. Analytics does not use UMP or ad-request eligibility as its switch, and Pro does not disable it; ad storage, ad user data, and personalization signals remain disabled. Crashlytics diagnostics and Performance monitoring are not enabled. See [Firebase privacy information](https://firebase.google.com/support/privacy).
 
 ## 6. Retention and deletion {#retention}
 

@@ -7,8 +7,8 @@ lang: ko
 permalink: /ko/app/shengye/privacy/
 translation_group: shengye-privacy
 sections: shengye_policy_sections
-updated: "2026-09-18"
-policy_version: "1.3"
+updated: "2026-09-23"
+policy_version: "1.4"
 description: Shengye의 녹음, 텍스트 변환, 동기화, 광고 및 데이터 삭제 안내.
 ---
 <div class="summary-box" markdown="1">
@@ -17,7 +17,7 @@ description: Shengye의 녹음, 텍스트 변환, 동기화, 광고 및 데이�
 
 ## 1. 적용 범위 {#scope}
 
-이 방침은 Vanto 팀이 제공하는 **Shengye / 声页 / 聲頁**(App Store ID **1241562587**, 앱 식별자 `com.mac.zhou.artrecorder.first`)의 현재 5.0.0 구현을 기준으로 합니다. 이전 버전은 광고, 분석 및 구매 방식이 다를 수 있습니다. 현재 서비스를 중단해도 이전에 전송된 데이터가 삭제되는 것은 아닙니다. 이 방침을 읽는 것만으로 데이터 수집에 동의하거나 시스템 권한을 허용한 것으로 보지 않습니다.
+이 방침은 Vanto 팀이 제공하는 **Shengye / 声页 / 聲頁**(App Store ID **1241562587**, 앱 식별자 `com.mac.zhou.artrecorder.first`)의 2026년 9월 23일 기준 구현을 설명합니다. 이전 버전은 광고, 분석 및 구매 방식이 다를 수 있습니다. 현재 서비스를 중단해도 이전에 전송된 데이터가 삭제되는 것은 아닙니다. 이 방침을 읽는 것만으로 데이터 수집에 동의하거나 시스템 권한을 허용한 것으로 보지 않습니다.
 
 ## 2. 기기 내 데이터와 보호 {#local}
 
@@ -44,7 +44,7 @@ description: Shengye의 녹음, 텍스트 변환, 동기화, 광고 및 데이�
 - **광고:** Pro가 아닌 경우 녹음 화면에 배너가 표시되며, 선택적으로 보상형 광고를 시청하여 텍스트 변환 횟수를 받을 수 있습니다. Pro에서는 두 광고 유형을 표시하지 않습니다. Google AdMob이 광고를 제공하고 UMP가 해당 지역의 개인정보 선택 절차를 처리합니다. 필수 선택을 마친 후 광고를 요청하며, 필요한 경우 설정에 개인정보 옵션을 표시합니다. 앱은 비개인 맞춤 광고를 요청하고 ATT 추적 권한은 요청하지 않습니다.
 - **광고 데이터:** Google SDK는 광고, 측정, 보안 및 운영을 위해 IP 주소와 이를 통해 추정한 대략적 위치, 기기·앱 식별자, 광고·앱 상호작용, 충돌 및 성능 정보를 처리할 수 있습니다. 비개인 맞춤 광고도 데이터를 처리합니다. 앱은 오디오, 녹음 이름, 텍스트 본문, 태그 또는 메모를 광고 요청에 넣지 않습니다. [Google 데이터 안내](https://developers.google.com/admob/ios/privacy/data-disclosure?hl=ko) 및 [개인정보처리방침](https://policies.google.com/privacy?hl=ko)을 참고하세요.
 - **구매와 횟수:** Apple StoreKit이 Pro 구매와 복원을 처리하며, 저희는 카드 정보를 받지 않습니다. 앱은 검증된 구매 권한을 저장합니다. 남은 변환 횟수, 작업에 예약된 횟수 및 광고 보상 기록은 기기에만 저장되며 라이브러리 백업이나 iCloud 동기화에 포함되지 않습니다. 유효한 기존 구매 권한은 계속 인정됩니다. 평생 이용권을 구매해도 이전 구독이 자동 취소되지는 않습니다.
-- **선택적 분석과 진단:** 현재 버전은 앱 사용 분석과 오류 진단을 중단하고 이전 활성화 설정도 해제합니다. Firebase Analytics와 Crashlytics를 시작하지 않으며 Performance도 사용하지 않습니다. 광고 SDK 자체의 데이터 처리는 별개입니다.
+- **제품 분석:** 앱은 기능 사용 현황을 파악하고 경험을 개선하기 위해 Firebase Analytics를 시작합니다. 고정 이벤트에는 작업·결과 유형, 시간 구간, 이용 권한 유형 등이 포함되지만 오디오, 녹음 이름, 전사문, 태그, 메모, 검색어, 파일 경로 또는 녹음 식별자는 전송하지 않습니다. Firebase는 앱 인스턴스 또는 설치 식별자, 기기·시스템 정보, 자동 세션 및 검증된 구매 이벤트를 처리할 수 있습니다. Analytics는 UMP나 광고 요청 가능 여부와 독립적으로 작동하며 Pro에서도 중지되지 않습니다. 광고 저장소, 광고 사용자 데이터 및 개인 맞춤화 신호는 비활성화되어 있습니다. Crashlytics 오류 진단과 Performance 모니터링은 활성화하지 않습니다. [Firebase 개인정보 안내](https://firebase.google.com/support/privacy?hl=ko)를 참고하세요.
 
 ## 6. 보관과 삭제 {#retention}
 

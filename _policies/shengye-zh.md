@@ -7,8 +7,8 @@ lang: zh
 permalink: /zh/app/shengye/privacy/
 translation_group: shengye-privacy
 sections: shengye_policy_sections
-updated: "2026-09-18"
-policy_version: "1.3"
+updated: "2026-09-23"
+policy_version: "1.4"
 description: 声页的录音、转文字、同步、广告与数据删除说明。
 ---
 <div class="summary-box" markdown="1">
@@ -17,7 +17,7 @@ description: 声页的录音、转文字、同步、广告与数据删除说明�
 
 ## 1. 适用范围 {#scope}
 
-本政策适用于 Vanto 团队提供的**声页 / 聲頁 / Shengye**（App Store ID **1241562587**，应用标识 `com.mac.zhou.artrecorder.first`），按 5.0.0 当前实现说明。旧版本的广告、分析和购买流程可能不同；当前停用某项服务不会删除历史已发送的数据。阅读本政策不代表授权采集或系统权限。
+本政策适用于 Vanto 团队提供的**声页 / 聲頁 / Shengye**（App Store ID **1241562587**，应用标识 `com.mac.zhou.artrecorder.first`），按 2026 年 9 月 23 日的客户端实现说明。旧版本的广告、分析和购买流程可能不同；当前停用某项服务不会删除历史已发送的数据。阅读本政策不代表授权采集或系统权限。
 
 ## 2. 本地数据与保护 {#local}
 
@@ -44,7 +44,7 @@ Apple 设备备份也可能包含应用数据，取决于系统设置。应用�
 - **广告**：非专业版在录音页展示横幅，也可主动观看激励广告获得转文字次数；专业版不展示这两类广告。Google AdMob 提供广告，UMP 处理适用地区的隐私选择；需要选择时完成后才请求广告，需要时在设置提供隐私选项。应用请求非个性化广告，不申请 ATT 跟踪权限。
 - **广告数据**：Google SDK 可能处理 IP 地址及推断的大致位置、设备或应用标识、广告和应用互动、崩溃与性能信息，用于广告、衡量、安全及运行。非个性化不等于零采集；应用不把音频、录音名称、文字、标签或备注加入广告请求。参见 [Google 数据说明](https://developers.google.com/admob/ios/privacy/data-disclosure)与 [Google 隐私政策](https://policies.google.com/privacy)。
 - **购买与次数**：Apple StoreKit 处理专业版购买与恢复，我们不接收银行卡资料；应用保存验证后的权益。转文字额度、任务预留和广告奖励凭据保存在本机，不随资料库备份或 iCloud 同步。历史有效购买继续按权益识别；购买永久版不会自动取消旧订阅。
-- **可选分析与诊断**：当前版本统一停用应用使用分析和故障诊断，撤销旧启用偏好，不启动 Firebase Analytics / Crashlytics，也不接入 Performance。这不影响广告 SDK 自身的数据处理。
+- **产品统计**：App 启动 Firebase Analytics，用于了解功能使用和改进体验。固定事件只包含操作与结果类别、时长分档、权益类型等，不发送音频、录音名称、文字、标签、备注、搜索词、文件路径或录音标识。Firebase 仍可能处理 App 实例或安装标识、设备与系统信息、自动会话及已验证购买事件。Analytics 不以 UMP 或广告是否可请求为开关，专业版也不会关闭它；广告存储、广告用户数据和个性化信号保持关闭。Crashlytics 故障诊断和 Performance 监控未启用。参见 [Firebase 隐私说明](https://firebase.google.com/support/privacy)。
 
 ## 6. 保存与删除 {#retention}
 

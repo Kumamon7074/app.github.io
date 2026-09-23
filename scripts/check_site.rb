@@ -165,5 +165,5 @@ translations.each do |translation|
     abort "Missing Shengye disclosure: #{language}/#{term}" unless doc.at_css('article').text.include?(term)
   end
 end
-abort 'Shengye translations have different dates or versions' unless policy_metadata.uniq.length == 1 && policy_metadata.first == ['2026-09-18', '1.3']
+abort 'Shengye translations have different dates or versions' unless policy_metadata.uniq.length == 1 && policy_metadata.first == ['2026-09-23', '1.4']
 puts "Site checks passed: #{documents.length} pages, unified identity/email, five-language policies, internal links/anchors, reciprocal hreflang, policy reuse and no scripts."

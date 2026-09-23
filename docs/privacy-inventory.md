@@ -1,6 +1,6 @@
 # 隐私事实与发布边界
 
-## 声页：2026-09-18 当前实现
+## 声页：2026-09-23 当前实现
 
 App Store ID `1241562587`，应用标识 `com.mac.zhou.artrecorder.first`。核对 Recorder 5.0.0 当前源码及文档；不假定已安装旧版自动拥有新版行为。
 
@@ -10,12 +10,12 @@ App Store ID `1241562587`，应用标识 `com.mac.zhou.artrecorder.first`。核�
 | 转文字 | `TranscriptionService` / `SpeechAudioReader` 使用设备端 SpeechAnalyzer 模块；`AssetInventory` 仅下载 Apple 模型 |
 | 系统保护与共享 | `PrivacyLock` 使用系统身份验证；`AppModel` / `RecordingActivityController` / `WidgetSnapshot` 共享必要状态与控制元数据，应用锁启用时隐藏内容，不共享整段音频或正文 |
 | iCloud 与备份 | 专业版可选私有 CloudKit，默认关闭；仅本地录音不上传；`.shengye` 导出不加密，排除垃圾桶、未完成任务、权益和次数，导入不覆盖现有录音 |
-| 可选分析与诊断 | `Telemetry.environmentAllowsReporting` 固定为 `false`，撤销旧偏好，不创建 Firebase 传输端；Analytics / Crashlytics 不启动，Performance 不接入。不能再写存在使用分析/诊断开关 |
+| 产品统计与诊断 | Release 的 `Telemetry` 独立配置 Firebase Analytics，不读取 UMP 或广告请求资格；自定义事件只含固定类别与分档，不含录音内容、名称、文字、标签、备注、搜索、路径或录音 ID。关闭 IDFV、自动页面统计及广告相关 consent 信号；Crashlytics / Performance 不启用。端内无分析开关，专业版不关闭统计 |
 | 广告 | `AdvertisingService` / `ExternalServicesPolicy`：AdMob 13.9.0、UMP 3.1.0，非个性化请求，不请求 ATT；仍需披露广告 SDK 自身的数据处理；专业版无横幅和激励广告 |
 | 购买与次数 | Apple StoreKit 验证和恢复，应用不接收银行卡；次数与奖励凭据存本机，不经 CloudKit 或备份；永久购买不取消旧订阅 |
 | 删除 | 垃圾桶默认开启、不自动清空；关闭后新删除需确认并永久删除；临时清理保留正式录音和迁移原件；外部副本单独管理 |
 
-1.1 曾描述可选上报；后续 1.2 已统一停用。本次 1.3 保持同一数据边界，精简重复实现细节，补齐中、英、日、韩、西五语言。关闭采集不代表远端历史数据已删除。第三方保留期限、处理地域及具体请求能力未经后台确认，不作固定承诺。
+1.1 曾描述可选上报，1.2 / 1.3 曾统一停用。1.4 按新客户端实现恢复独立产品统计：Analytics 不由 UMP / `canRequestAds` 控制，Crashlytics / Performance 仍停用；同步更新中、英、日、韩、西五语言。策略变化不代表远端历史数据已删除。第三方保留期限、处理地域及具体请求能力未经后台确认，不作固定承诺。
 
 2026-09-18 的全站更新将服务提供者和隐私联系人统一为 Vanto 团队 / Vanto team，邮箱为 `support@vanto.space`；当时其他应用仅调整署名、联系方式、日期和政策版本，不推断它们的数据行为随声页改变。
 
