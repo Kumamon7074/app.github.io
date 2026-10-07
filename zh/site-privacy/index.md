@@ -9,11 +9,13 @@ translation: /en/site-privacy/
   <p class="lede">本说明仅涉及访问网站，不替代各 App 的隐私政策。</p>
 </header>
 <article class="prose" markdown="1">
-更新日期：2026 年 9 月 18 日。
+更新日期：2026 年 10 月 7 日。
 
 ## 阅读页面
 
 本站是静态网站，不主动添加广告、访问分析脚本、登录表单或跟踪 Cookie。字体使用系统字体，页面资源随站点提供，不从第三方字体服务加载。
+
+Vanto 的产品与帮助页面使用少量本地脚本切换语言、选择 App Store 地址和复制示例。手选语言仅保存在当前浏览器的本地存储中；浏览器语言可能用于选择页面与商店地区，不发送给统计服务。关闭 JavaScript 后仍可阅读页面。
 
 本站由 **GitHub Pages** 托管。GitHub 会为安全目的记录访客 IP 地址，无论访客是否登录。请参阅 [GitHub Pages 数据收集说明](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection) 和 [GitHub 隐私声明](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)。这与网站主动添加访问分析不同。
 

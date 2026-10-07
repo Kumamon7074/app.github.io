@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ko" data-site-base="/vanto/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-itunes-app" content="app-id=6794951510">
+  <meta name="theme-color" content="#0c0d10">
+  <meta name="description" content="Jellyfin 및 Kodi와 공유되는 규칙을 사용하여 Local, SMB 및 WebDAV에 대한 Vanto 미디어 조직.">
+  <link rel="canonical" href="https://apps.vanto.space/vanto/ko/media-guide/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://apps.vanto.space/vanto/zh/media-guide/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://apps.vanto.space/vanto/zh-Hant/media-guide/">
+  <link rel="alternate" hreflang="en" href="https://apps.vanto.space/vanto/en/media-guide/">
+  <link rel="alternate" hreflang="ja" href="https://apps.vanto.space/vanto/ja/media-guide/">
+  <link rel="alternate" hreflang="ko" href="https://apps.vanto.space/vanto/ko/media-guide/">
+  <link rel="alternate" hreflang="es" href="https://apps.vanto.space/vanto/es/media-guide/">
+  <link rel="alternate" hreflang="de" href="https://apps.vanto.space/vanto/de/media-guide/">
+  <link rel="alternate" hreflang="fr" href="https://apps.vanto.space/vanto/fr/media-guide/">
+  <link rel="alternate" hreflang="th" href="https://apps.vanto.space/vanto/th/media-guide/">
+  <link rel="alternate" hreflang="vi" href="https://apps.vanto.space/vanto/vi/media-guide/">
+  <link rel="alternate" hreflang="pt-BR" href="https://apps.vanto.space/vanto/pt-BR/media-guide/">
+  <link rel="alternate" hreflang="it" href="https://apps.vanto.space/vanto/it/media-guide/">
+  <link rel="alternate" hreflang="ru" href="https://apps.vanto.space/vanto/ru/media-guide/">
+  <link rel="alternate" hreflang="id" href="https://apps.vanto.space/vanto/id/media-guide/">
+  <link rel="alternate" hreflang="tr" href="https://apps.vanto.space/vanto/tr/media-guide/">
+  <link rel="alternate" hreflang="pl" href="https://apps.vanto.space/vanto/pl/media-guide/">
+  <link rel="alternate" hreflang="nl" href="https://apps.vanto.space/vanto/nl/media-guide/">
+  <link rel="alternate" hreflang="pt-PT" href="https://apps.vanto.space/vanto/pt-PT/media-guide/">
+  <link rel="alternate" hreflang="ms" href="https://apps.vanto.space/vanto/ms/media-guide/">
+  <link rel="alternate" hreflang="hi" href="https://apps.vanto.space/vanto/hi/media-guide/">
+  <link rel="alternate" hreflang="uk" href="https://apps.vanto.space/vanto/uk/media-guide/">
+  <link rel="alternate" hreflang="ar" href="https://apps.vanto.space/vanto/ar/media-guide/">
+  <link rel="alternate" hreflang="he" href="https://apps.vanto.space/vanto/he/media-guide/">
+  <link rel="alternate" hreflang="x-default" href="https://apps.vanto.space/vanto/en/media-guide/">
+  <title>미디어 조직 가이드 · Vanto</title>
+  <link rel="icon" href="/vanto/assets/versioned/images/vanto-icon-small.985060709d4b.png">
+  <link rel="stylesheet" href="/vanto/assets/versioned/css/site.0dc3424842d5.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../" aria-label="Vanto"><img src="/vanto/assets/versioned/images/vanto-icon-small.985060709d4b.png" alt=""><span>Vanto 도움말 및 법률</span></a><nav class="document-nav" aria-label="문서"><a class="nav-link" aria-current="page" href="./">미디어 가이드</a><a class="nav-link" href="../privacy/">개인 정보 보호</a><a class="nav-link" href="../terms/">용어</a></nav><a class="app-store-link" data-app-store-link="header" href="https://apps.apple.com/kr/app/id6794951510">App Store</a><label class="language-picker"><span class="visually-hidden">언어</span><select aria-label="언어" data-language-picker><option value="/vanto/zh/media-guide/">简体中文</option><option value="/vanto/zh-Hant/media-guide/">繁體中文</option><option value="/vanto/en/media-guide/">English</option><option value="/vanto/ja/media-guide/">日本語</option><option value="/vanto/ko/media-guide/" selected>한국어</option><option value="/vanto/es/media-guide/">Español</option><option value="/vanto/de/media-guide/">Deutsch</option><option value="/vanto/fr/media-guide/">Français</option><option value="/vanto/th/media-guide/">ไทย</option><option value="/vanto/vi/media-guide/">Tiếng Việt</option><option value="/vanto/pt-BR/media-guide/">Português (Brasil)</option><option value="/vanto/it/media-guide/">Italiano</option><option value="/vanto/ru/media-guide/">Русский</option><option value="/vanto/id/media-guide/">Bahasa Indonesia</option><option value="/vanto/tr/media-guide/">Türkçe</option><option value="/vanto/pl/media-guide/">Polski</option><option value="/vanto/nl/media-guide/">Nederlands</option><option value="/vanto/pt-PT/media-guide/">Português (Portugal)</option><option value="/vanto/ms/media-guide/">Bahasa Melayu</option><option value="/vanto/hi/media-guide/">हिन्दी</option><option value="/vanto/uk/media-guide/">Українська</option><option value="/vanto/ar/media-guide/">العربية</option><option value="/vanto/he/media-guide/">עברית</option></select></label></div></header>
+  <main>
+    <section class="document-hero"><p class="eyebrow">미디어 가이드</p><h1>미디어 조직 가이드</h1><p class="document-summary">Vanto, Jellyfin 및 Kodi가 안정적으로 식별할 수 있는 권장 Local, SMB 및 WebDAV 레이아웃.</p><div class="document-meta"><span>최종 업데이트: 2026년 9월 7일</span><span>현재 Vanto 릴리스의 경우</span></div></section>
+    <div class="document-layout">
+      <aside class="toc" aria-label="목차"><strong>이 페이지에서</strong><a href="#find-information">작품 정보 찾기</a><a href="#quick-rules">빠른 규칙</a><a href="#recommended-layout">추천 레이아웃</a><a href="#movie">영화</a><a href="#series">프로그램, 시즌, 에피소드</a><a href="#artwork">작품 이름 지정</a><a href="#subtitles">외부 자막</a><a href="#sources">출처 및 수정</a><a href="#compatibility">호환성 및 고급 규칙</a><a href="#checks">점검 및 문제 해결</a></aside>
+      <article class="article">
+        <h2 id="find-information">작품 정보 찾기</h2>
+        <p>제목, 짧은 소개, 이미지부터 추가하세요. 나머지 항목은 선택 사항이며 XML 지식은 필요하지 않습니다.</p>
+        <h3>1. 작품 확인</h3>
+        <p>작품명이나 인물 이름으로 검색하세요. 시즌과 에피소드는 시리즈명으로 검색하고 웹사이트에서 연도와 번호(예: S01E03)를 확인하세요. 파일 식별 정보는 변경하지 마세요.</p>
+        <h3>2. 참고 사이트 선택</h3>
+        <ul class="information-references">
+          <li><a href="https://movie.douban.com/" target="_blank" rel="noopener noreferrer">Douban</a><p>중국어 제목과 다른 이름을 확인합니다.</p></li>
+          <li><a href="https://www.imdb.com/" target="_blank" rel="noopener noreferrer">IMDb</a><p>원제와 크레딧을 확인합니다.</p></li>
+          <li><a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDB</a><p>영화, TV 프로그램, 인물 정보를 확인합니다.</p></li>
+        </ul>
+        <h3>3. 찾아보고 입력</h3>
+        <p>NFO 편집기에서 정보 찾기를 선택하세요. 시스템 지역이 중국 본토이면 Douban, 그 외에는 TMDB가 기본입니다. 사이트를 바꿀 수 있으며 직접 선택한 사이트는 이 기기에 기억됩니다. 키워드를 확인하여 검색하고 올바른 작품이나 인물 항목에서 정보와 이미지를 찾은 뒤 돌아와 직접 입력하세요. 사이트에 접속할 수 없으면 다른 사이트로 바꾸거나 키워드를 복사하세요.</p>
+        <p>iPhone에서는 브라우저를 닫아 돌아옵니다. iPad나 Mac에서는 Vanto와 브라우저를 나란히 배치해 텍스트를 복사하거나 이미지를 드래그할 수 있습니다. Apple TV는 읽기 전용입니다.</p>
+        <h3>4. 이미지 가져오기</h3>
+        <p>사진, 파일, 드래그 앤 드롭 또는 이미지 링크를 사용하세요. 작품 웹페이지는 이미지 URL이 아닙니다. 링크를 가져오지 못하면 다운로드가 허용된 이미지 파일을 사용하세요. 포스터와 인물 사진은 2:3, 배경과 에피소드 이미지는 16:9입니다.</p>
+        <p>공개된 자료라고 해서 자유롭게 재사용할 수 있는 것은 아닙니다. 출처의 약관과 이미지 라이선스를 확인하고 직접 만든 콘텐츠나 사용 허가를 받은 자료를 사용하세요.</p>
+        <h3>5. 변경 사항 저장</h3>
+        <p>시리즈, 현재 시즌, 에피소드를 한 페이지에서 편집합니다. 에피소드에는 제목, 소개, 이미지만 필요합니다. 변경 사항 저장은 이번 편집에서 수정한 모든 항목을 제출합니다. 앱이 종료되면 저장하지 않은 이미지는 복구할 수 없습니다.</p>
+
+        <h2 id="quick-rules">빠른 규칙</h2>
+        <ul><li>하나 사용 <code>Title (Year)</code> 하나의 메인 비디오와 함께 영화당 폴더.</li><li>사용 <code>Show (Year)/Season 01/Show - S01E01</code> 에피소드용.</li><li>NFO 파일은 선택 사항입니다. 하나도 없으면 Vanto는 폴더 및 파일 이름으로 미디어 구조를 구축합니다.</li><li>폴더와 파일 이름은 미디어 정체성을 확립합니다. NFO, 아트워크 및 자막은 프레젠테이션 세부 정보를 추가합니다.</li><li>Vanto 밖에서 파일을 변경했다면 소스를 새로 고치세요. Vanto에서 편집 후 저장하면 현재 라이브러리가 자동으로 갱신됩니다.</li></ul>
+        <div class="callout"><strong>가장 신뢰할 수 있는 접근 방식</strong><p>이름을 단순하게 유지하고 연도를 포함하세요. NFO를 사용하여 시즌, 에피소드 또는 폴더 관계를 다시 작성하지 말고 미디어 ID를 표현하기 위해 복잡한 릴리스 이름에 의존하지 마십시오.</p></div>
+
+        <h2 id="recommended-layout">추천 레이아웃</h2>
+        <pre><code>Media/
+├── Movies/
+│   └── Arrival (2016)/
+│       ├── Arrival (2016).mkv
+│       ├── Arrival (2016).nfo
+│       ├── poster.jpg
+│       ├── fanart.jpg
+│       ├── Arrival (2016).en.forced.srt
+│       ├── Trailers/
+│       │   └── trailer.mkv
+│       └── Extras/
+│           └── making-of.mkv
+└── TV Shows/
+    └── Example Show (2026)/
+        ├── tvshow.nfo
+        ├── poster.jpg
+        ├── fanart.jpg
+        ├── Season 00/
+        │   └── Example Show - S00E01.mkv
+        └── Season 01/
+            ├── season.nfo
+            ├── poster.jpg
+            ├── fanart.jpg
+            ├── Example Show - S01E01.mkv
+            ├── Example Show - S01E01.nfo
+            ├── Example Show - S01E01-thumb.jpg
+            └── Example Show - S01E01.en.forced.ass</code></pre>
+        <p>NFO, 아트워크 및 자막은 모두 선택 사항입니다. 비디오만 인덱싱할 수 있습니다. 이러한 파일이 있는 경우 Vanto는 명시적으로 바인딩된 로컬 정보를 선호합니다.</p>
+
+        <h2 id="movie">영화</h2>
+        <p>각 영화 폴더에 하나의 기본 동영상을 보관합니다. 예고편, 엑스트라, 샘플 및 인터뷰 넣기 <code>Trailers</code>, <code>Extras</code>, <code>Samples</code>, 또는 <code>Interviews</code> 하위 폴더. 별도의 홈 항목이 되지 않고 탐색 가능한 상태로 유지됩니다.</p>
+        <p>Vanto는 기본 이름이 동영상과 일치하고 다음을 수락하는 NFO를 선호합니다. <code>movie.nfo</code> 단일 기능 폴더에 저장합니다. Vanto는 현재 한 폴더의 여러 동영상을 다중 버전 항목으로 병합하지 않습니다. 여러 버전을 유지하는 경우 각 버전에 고유한 동영상 폴더를 제공합니다.</p>
+        <details class="guide-details"><summary>영화 NFO 예시 보기</summary><pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;movie&gt;
+  &lt;title&gt;Arrival&lt;/title&gt;
+  &lt;originaltitle&gt;Arrival&lt;/originaltitle&gt;
+  &lt;year&gt;2016&lt;/year&gt;
+  &lt;plot&gt;Movie summary&lt;/plot&gt;
+  &lt;genre&gt;Science Fiction&lt;/genre&gt;
+  &lt;rating&gt;7.9&lt;/rating&gt;
+  &lt;uniqueid type="tmdb" default="true"&gt;329865&lt;/uniqueid&gt;
+&lt;/movie&gt;</code></pre></details>
+
+        <h2 id="series">프로그램, 시즌, 에피소드</h2>
+        <p>쇼 이름은 쇼 루트, 시즌 폴더의 시즌 번호 및 비디오 파일 이름의 에피소드 번호에서 비롯됩니다. 사용 <code>Season 00</code> 그리고 <code>S00E01</code> 스페셜. 연속 에피소드를 스패닝하는 파일은 <code>S01E01-E02</code>별도의 에피소드 파일은 일반적으로 더 명확한 진행률과 메타데이터를 제공합니다.</p>
+        <p>사용 <code>tvshow.nfo</code> 쇼를 위해, <code>season.nfo</code> 각 시즌 폴더에 각 에피소드 비디오와 일치하는 NFO가 있습니다. NFO 내부의 시즌 및 에피소드 값은 스캔 중에 발견된 계층 구조를 대체하지 않습니다.</p>
+        <details class="guide-details"><summary>프로그램, 시즌, 에피소드 NFO 예시 보기</summary><h3>쇼: tvshow.nfo</h3><pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;tvshow&gt;
+  &lt;title&gt;Example Show&lt;/title&gt;
+  &lt;originaltitle&gt;Example Show&lt;/originaltitle&gt;
+  &lt;year&gt;2026&lt;/year&gt;
+  &lt;plot&gt;Show summary&lt;/plot&gt;
+  &lt;genre&gt;Drama&lt;/genre&gt;
+  &lt;uniqueid type="tvdb" default="true"&gt;123456&lt;/uniqueid&gt;
+&lt;/tvshow&gt;</code></pre>
+        <h3>시즌: 시즌 01/season.nfo</h3>
+        <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;season&gt;
+  &lt;title&gt;Season One&lt;/title&gt;
+  &lt;seasonnumber&gt;1&lt;/seasonnumber&gt;
+  &lt;plot&gt;Season summary&lt;/plot&gt;
+&lt;/season&gt;</code></pre>
+        <h3>에피소드: 동영상과 일치하는 NFO</h3>
+        <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;episodedetails&gt;
+  &lt;title&gt;Episode One&lt;/title&gt;
+  &lt;showtitle&gt;Example Show&lt;/showtitle&gt;
+  &lt;season&gt;1&lt;/season&gt;
+  &lt;episode&gt;1&lt;/episode&gt;
+  &lt;aired&gt;2026-01-01&lt;/aired&gt;
+  &lt;plot&gt;Episode summary&lt;/plot&gt;
+&lt;/episodedetails&gt;</code></pre></details>
+
+        <h2 id="artwork">작품 이름 지정</h2>
+        <div class="table-scroll"><table><thead><tr><th>품목</th><th>권장 파일</th><th>위치</th></tr></thead><tbody><tr><td>영화</td><td><code>poster.jpg</code>, <code>fanart.jpg</code></td><td>영화 폴더</td></tr><tr><td>쇼</td><td><code>poster.jpg</code>, <code>fanart.jpg</code></td><td>루트 표시</td></tr><tr><td>계절</td><td><code>poster.jpg</code>, <code>fanart.jpg</code></td><td><code>Season 01</code></td></tr><tr><td>에피소드</td><td><code>Example Show - S01E01-thumb.jpg</code></td><td>에피소드 영상 옆</td></tr></tbody></table></div>
+        <p>JPG 또는 PNG를 사용하세요. NFO의 상대 이미지 이름은 실제 파일과 정확히 일치해야 합니다. Vanto는 비슷한 이름으로 추측하지 않습니다. 정체성이 확실하지 않으면 잘못된 이미지를 표시하는 대신 작품을 비워 둡니다.</p>
+        <div class="callout"><strong>동영상 프레임 아트워크</strong><p>확인된 작품이 없는 경우, Vanto는 비디오 프레임을 대체 작품으로 사용할 수 있습니다. SMB 및 WebDAV는 표시되는 항목의 우선 순위를 지정하므로 나중에 새로 고침하거나 세부 정보 페이지를 열 때 나머지 작품이 표시될 수 있습니다.</p></div>
+
+        <h2 id="subtitles">외부 자막</h2>
+        <pre><code>Arrival (2016).mkv
+Arrival (2016).en.srt
+Arrival (2016).en.forced.ass
+Arrival (2016).zh-Hant.vtt</code></pre>
+        <ul><li>다음과 같은 언어 태그를 사용하세요. <code>zh-Hans</code>, <code>zh-Hant</code>, <code>en</code>, 또는 <code>ja</code>.</li><li>다음과 같은 일반적인 접미사 <code>forced</code> 유지될 수 있습니다. 플레이어의 자막 선택은 여전히 ​​신뢰할 수 있습니다.</li><li>텍스트 형식에는 SRT, ASS, SSA, VTT 및 SMI가 포함됩니다. 이미지 자막에는 PGS, SUP 및 동일 이름 IDX + 하위 쌍이 포함됩니다.</li><li>NFO에 외부 자막을 나열하지 마세요. 특정 비디오에 바인딩된 독립적인 파일로 유지됩니다.</li><li>한 언어에 서로 다른 자막이 여러 개 있으면  <code>.2</code>부터 순번을 추가합니다. 예:  <code>Arrival (2016).en.2.srt</code>. 같은 내용은 중복 저장되지 않습니다.</li></ul>
+
+        <h2 id="sources">출처 및 수정</h2>
+        <!-- product-nfo:start -->
+<p>쓰기 가능한 SMB 또는 WebDAV를 연결하면 iPhone, iPad, Mac에서 NFO를 무료로 편집할 수 있습니다. Apple TV는 읽기만 지원합니다.</p>
+<p>영화와 시리즈의 제목, 줄거리, 이미지, 출연진을 편집하세요.</p>
+<p>페이지 이동 없이 시즌과 회차를 전환하세요. 회차 편집은 제목, 줄거리, 표지만으로 간편하게.</p>
+<p>시즌은 제목, 줄거리, 포스터, 배경을 편집합니다. 회차는 제목, 줄거리, 16:9 표지만 편집하며 평점, 방영일, 출연진은 편집하지 않습니다.</p>
+<!-- product-nfo:end -->
+        <div class="table-scroll"><table><thead><tr><th>소스</th><th>스캔하여 읽기</th><th>Vanto로 회신하기</th></tr></thead><tbody><tr><td>Local</td><td>동영상, NFO, 아트워크 및 자막</td><td>제공되지 않음; 파일 시스템에서 이러한 파일 관리</td></tr><tr><td>SMB / WebDAV</td><td>동영상, NFO, 아트워크 및 자막</td><td>폴더 권한이 허용될 때 iPhone, iPad 및 Mac에서 지원됨</td></tr><tr><td>Apple TV</td><td>스캔한 콘텐츠를 읽고 표시합니다.</td><td>읽기 전용</td></tr></tbody></table></div>
+        <p>쓰기 가능한 SMB 및 WebDAV 상세 페이지에서 iPhone, iPad, Mac은 영화, 프로그램, 선택한 시즌 또는 에피소드의 NFO와 아트워크를 만들거나 업데이트할 수 있습니다. 온라인 다운로드 및 가져온 자막 파일은 기본적으로 비디오 옆에 저장되므로 같은 NAS 소스를 사용하는 다른 기기도 새로 고친 뒤 사용할 수 있습니다. Vanto는 기기에 두 번째 복사본을 보관하지 않습니다. NAS에 쓰기가 확실히 반영되지 않은 경우에만 이 기기에 저장하도록 선택할 수 있습니다. Apple TV는 NAS에 쓰지 않으며 온라인 자막을 해당 기기에 보관합니다.</p>
+        <div class="callout warning"><strong>쓰기 범위</strong><p>이번 편집 세션에서 변경한 초안만 저장하며 수정하지 않은 시즌과 회차는 다시 쓰지 않습니다. NAS 계정에 대상 폴더의 생성, 교체, 이름 변경, 삭제 권한이 있는지 확인하세요.</p></div>
+
+        <h2 id="compatibility">호환성 및 고급 규칙</h2>
+        <details class="guide-details"><summary>Jellyfin, Kodi 및 다른 인식된 이름 보기</summary><ul><li>Kodi 호환성을 위해 <code>season01-poster.jpg</code> 그리고 <code>season01-fanart.jpg</code> 쇼 루트에서 말이죠. 권장 Vanto 및 Jellyfin 레이아웃은 그대로 유지됩니다. <code>poster.jpg</code> 그리고 <code>fanart.jpg</code> 시즌 폴더 안에 있습니다.</li><li>다음과 같은 Kodi 필드 <code>namedseason</code> 그리고 <code>seasonplot</code> 에 남아있을 수 있습니다. <code>tvshow.nfo</code>하지만 Vanto는 시즌 타이틀과 요약을 <code>season.nfo</code> 시즌 폴더 안에 있습니다.</li><li>Vanto는 <code>1x01</code>, 현지화된 시즌 폴더 이름 및 기타 일반적인 패턴. 새로 구성된 미디어의 경우 이 페이지의 기본 레이아웃을 사용하세요.</li><li>제목이 모호한 경우 명시적으로 추가합니다. <code>uniqueid</code> 파일 이름에 포함된 앱별 ID에 의존하지 않고 NFO에 연결할 수 있습니다.</li></ul></details>
+
+        <h2 id="checks">점검 및 문제 해결</h2>
+        <ul><li>UTF-8 XML과 올바른 루트 요소를 사용하십시오. <code>movie</code>, <code>tvshow</code>, <code>season</code>, 또는 <code>episodedetails</code>.</li><li>각 NFO는 최대 2MB까지 가능합니다. Vanto는 최대 32명의 출연진을 읽습니다.</li><li>알 수 없는 XML 요소는 무시되며 검색이나 재생을 차단하지 않습니다.</li><li>변경 사항이 표시되지 않으면 소스를 새로 고치기 전에 이름, XML, 케이스, 아트워크 위치, 쓰기 권한을 확인하세요.</li></ul>
+        <p>이 페이지는 Vanto, Jellyfin 및 Kodi의 보수적인 교차점을 문서화합니다. 확장에 대해서는 다음을 참조하세요. <a href="https://jellyfin.org/docs/general/server/metadata/nfo/">젤리핀 NFO</a>, <a href="https://jellyfin.org/docs/general/server/media/movies/">젤리핀 영화</a>, <a href="https://jellyfin.org/docs/general/server/media/shows/">젤리핀 쇼</a>, <a href="https://kodi.wiki/view/NFO_files">Kodi NFO 파일</a>, 그리고 <a href="https://kodi.wiki/view/Artwork">코디 아트워크</a>.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><span>© 2026 Vanto 팀</span><nav class="footer-links"><a data-app-directory href="/">모든 앱</a><a href="../privacy/">개인 정보 보호</a><a href="../terms/">용어</a><a href="mailto:support@vanto.space">연락처</a></nav></div></footer>
+  <noscript><nav class="no-script-languages" aria-label="언어"><a href="/vanto/zh/media-guide/" lang="zh-CN">简体中文</a> <a href="/vanto/zh-Hant/media-guide/" lang="zh-Hant">繁體中文</a> <a href="/vanto/en/media-guide/" lang="en">English</a> <a href="/vanto/ja/media-guide/" lang="ja">日本語</a> <a href="/vanto/ko/media-guide/" lang="ko">한국어</a> <a href="/vanto/es/media-guide/" lang="es">Español</a> <a href="/vanto/de/media-guide/" lang="de">Deutsch</a> <a href="/vanto/fr/media-guide/" lang="fr">Français</a> <a href="/vanto/th/media-guide/" lang="th">ไทย</a> <a href="/vanto/vi/media-guide/" lang="vi">Tiếng Việt</a> <a href="/vanto/pt-BR/media-guide/" lang="pt-BR">Português (Brasil)</a> <a href="/vanto/it/media-guide/" lang="it">Italiano</a> <a href="/vanto/ru/media-guide/" lang="ru">Русский</a> <a href="/vanto/id/media-guide/" lang="id">Bahasa Indonesia</a> <a href="/vanto/tr/media-guide/" lang="tr">Türkçe</a> <a href="/vanto/pl/media-guide/" lang="pl">Polski</a> <a href="/vanto/nl/media-guide/" lang="nl">Nederlands</a> <a href="/vanto/pt-PT/media-guide/" lang="pt-PT">Português (Portugal)</a> <a href="/vanto/ms/media-guide/" lang="ms">Bahasa Melayu</a> <a href="/vanto/hi/media-guide/" lang="hi">हिन्दी</a> <a href="/vanto/uk/media-guide/" lang="uk">Українська</a> <a href="/vanto/ar/media-guide/" lang="ar">العربية</a> <a href="/vanto/he/media-guide/" lang="he">עברית</a></nav></noscript>
+  <script src="/vanto/assets/versioned/js/site.d95408b8c93f.js" defer></script>
+</body>
+</html>

@@ -33,6 +33,8 @@ end
 documents = {}
 Dir.glob(File.join(output, '**', '*.html')).each do |file|
   next if File.basename(file).start_with?('google')
+  # Vanto is an exported static product site with its own layout/runtime contract.
+  next if file.start_with?(File.join(output, 'vanto') + '/')
   html = File.read(file)
   abort "Removed content: #{file}" if html.match?(/googletagmanager|Welcome to GitHub Pages/i)
   abort "Unrendered template: #{file}" if html.include?('{%') || html.include?('{{')
@@ -167,3 +169,4 @@ translations.each do |translation|
 end
 abort 'Shengye translations have different dates or versions' unless policy_metadata.uniq.length == 1 && policy_metadata.first == ['2026-09-23', '1.4']
 puts "Site checks passed: #{documents.length} pages, unified identity/email, five-language policies, internal links/anchors, reciprocal hreflang, policy reuse and no scripts."
+abort 'Vanto export checks failed' unless system('python3', File.join(root, 'scripts/check_vanto.py'))

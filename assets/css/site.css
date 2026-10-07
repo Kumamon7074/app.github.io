@@ -34,6 +34,7 @@ html[lang=zh] h1 { letter-spacing: -.02em; }
 .app-directory { border-top: 1px solid var(--line); }
 .app-card { display: grid; grid-template-columns: 70px 1fr; padding: 2rem 0; border-bottom: 1px solid var(--line); gap: 1.5rem; }
 .app-number { color: var(--muted); font-variant-numeric: tabular-nums; font-size: .875rem; padding-top: .35rem; }
+.app-icon { display: block; width: min(56px, 100%); height: auto; border-radius: 12px; }
 .app-card h2 { font-size: 1.6rem; letter-spacing: -.02em; line-height: 1.4; margin: 0 0 .55rem; }
 .app-card p { color: var(--muted); margin: 0 0 1.25rem; max-width: 680px; }
 .primary-link { font-weight: 600; font-size: 1rem; }

@@ -9,11 +9,13 @@ translation: /zh/site-privacy/
   <p class="lede">This notice concerns visits to this website, not data handled by an app.</p>
 </header>
 <article class="prose" markdown="1">
-Updated: September 18, 2026.
+Updated: October 7, 2026.
 
 ## Reading these pages
 
 This is a static website. We do not add advertising, visitor-analytics scripts, login forms, or tracking cookies. Fonts and page assets are served with the site, rather than loaded from third-party font services.
+
+Vanto's product and help pages use a small local script for language selection, App Store links, and copying examples. Your chosen language is saved only in this browser's local storage. Browser language may select a page or App Store region; we do not send it to an analytics service. These pages remain readable without JavaScript.
 
 The site is hosted by **GitHub Pages**. GitHub records visitors' IP addresses for security purposes, even when they are not signed in. See [GitHub Pages data collection](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection) and the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). This hosting activity is distinct from analytics we choose to add.
 

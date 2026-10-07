@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://apps.vanto.space/sitemap.xml
+Sitemap: https://apps.vanto.space/vanto/sitemap.xml

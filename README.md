@@ -6,6 +6,7 @@
 
 ## 内容范围
 
+- Vanto：四端个人媒体库与播放器，App Store ID 6794951510；`/vanto/` 包含 23 种语言的产品页、媒体整理指南、隐私政策和使用条款，并接入中英文软件目录。腾讯云原官网 `https://vanto.space/` 继续保留。
 - 超级计算器 / Smart Calculator：独立中英文隐私政策，App Store ID 1322880549。
 - 文件匣 / FileNook（旧名文件夹 / Folder）：简体中文、繁体中文、英文、日语、韩语隐私政策与使用条款，App Store ID 1563518405。区分已发布旧版与 3.0.0；3.0.0 正式版默认启用 Firebase 统计与崩溃诊断，免费版使用 Google 广告。
 - 声页 / Shengye：中文、英文、日语、韩语、西班牙语隐私政策，App Store ID 1241562587。当前政策 1.4 说明本地录音、设备端转文字、可选 iCloud、广告、购买、删除，以及不依赖广告资格的 Firebase 产品统计；Crashlytics / Performance 继续停用。
@@ -24,7 +25,15 @@
 | _layouts/、_includes/ | 页面结构；政策与旧兼容页复用同一正文 |
 | assets/css/site.css | 响应式、深浅色、键盘焦点与打印样式 |
 
-使用原有 GitHub Pages + Jekyll；发布源为 gh-pages 分支。自定义域名为 apps.vanto.space，baseurl 为空。正文用 Markdown，组件样式本地提供，无运行时 JavaScript、外部字体或统计 SDK。
+使用原有 GitHub Pages + Jekyll；发布源为既有默认分支 gh-pages，不另建分支。自定义域名为 apps.vanto.space，baseurl 为空。平台目录及其它应用政策用 Markdown，不依赖 JavaScript；Vanto 为独立静态 HTML 产品站，仅使用本地语言切换、商店链接与复制脚本。全站不加载外部字体或统计 SDK。
+
+## Vanto 官网同步
+
+唯一内容源为 CineVault 工程的 `vanto-support/`，不是旧独立仓库。先在源目录运行生成、校验及 `python3 scripts/publish_platform.py /Users/macrzhou/workspace/app.github.io`，再在本仓库运行 Jekyll 构建与 `scripts/check_site.rb`。具体双站发布流程见源目录 README。
+
+本仓库的 `vanto/` 仅保存生成的公开页面和必要资源；不手工修改。`deployment.json` 校验全部生成文件，导出器拒绝覆盖独立修改。平台使用 `/vanto/` 资源和语言路径，canonical、hreflang、分享图片及独立 sitemap 指向本域名，不携带腾讯云备案号、CNAME、私有文档或凭据。`scripts/check_vanto.py` 在构建后检查 93 个页面、23 种语言、资源摘要、链接、RTL 和商店入口。
+
+平台页尾与 Vanto 页尾均可返回软件目录；网站隐私页说明语言本地存储。客户端帮助、隐私与条款采用 `https://apps.vanto.space/vanto/<locale>/<document>/`。网站发布不自动修改商店后台；`vanto.space` 旧网址不重定向、不删除，保留旧客户端入口。
 
 ## 修改与发布
 

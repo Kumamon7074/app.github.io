@@ -1,3 +1,20 @@
+- id: vanto
+  name:
+    en: Vanto
+    zh: Vanto
+  description:
+    en: Your media, on iPhone, iPad, Mac and Apple TV. Connect a media server or NAS, play, and edit NFO. No films or TV shows are provided.
+    zh: 在 iPhone、iPad、Mac 与 Apple TV 上管理和播放自己的媒体，连接媒体服务器或 NAS，免费编辑 NFO。Vanto 不提供影视内容。
+  icon: /vanto/assets/images/vanto-icon-small.png
+  policy:
+    en: /vanto/en/privacy/
+    zh: /vanto/zh/privacy/
+  terms:
+    en: /vanto/en/terms/
+    zh: /vanto/zh/terms/
+  website:
+    en: /vanto/en/
+    zh: /vanto/zh/
 - id: calculator
   name:
     en: Smart Calculator
