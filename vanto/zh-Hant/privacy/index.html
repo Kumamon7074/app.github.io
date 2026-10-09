@@ -38,7 +38,7 @@
 <body>
   <header class="site-header"><div class="header-inner"><a class="brand" href="../../" aria-label="Vanto"><img src="/vanto/assets/versioned/images/vanto-icon-small.985060709d4b.png" alt=""><span>Vanto 幫助與法律</span></a><nav class="document-nav" aria-label="文件"><a class="nav-link" href="../media-guide/">媒體指南</a><a class="nav-link" aria-current="page" href="./">隱私權政策</a><a class="nav-link" href="../terms/">使用條款</a></nav><a class="app-store-link" data-app-store-link="header" href="https://apps.apple.com/tw/app/id6794951510">App Store</a><label class="language-picker"><span class="visually-hidden">語言</span><select aria-label="語言" data-language-picker><option value="/vanto/zh/privacy/">简体中文</option><option value="/vanto/zh-Hant/privacy/" selected>繁體中文</option><option value="/vanto/en/privacy/">English</option><option value="/vanto/ja/privacy/">日本語</option><option value="/vanto/ko/privacy/">한국어</option><option value="/vanto/es/privacy/">Español</option><option value="/vanto/de/privacy/">Deutsch</option><option value="/vanto/fr/privacy/">Français</option><option value="/vanto/th/privacy/">ไทย</option><option value="/vanto/vi/privacy/">Tiếng Việt</option><option value="/vanto/pt-BR/privacy/">Português (Brasil)</option><option value="/vanto/it/privacy/">Italiano</option><option value="/vanto/ru/privacy/">Русский</option><option value="/vanto/id/privacy/">Bahasa Indonesia</option><option value="/vanto/tr/privacy/">Türkçe</option><option value="/vanto/pl/privacy/">Polski</option><option value="/vanto/nl/privacy/">Nederlands</option><option value="/vanto/pt-PT/privacy/">Português (Portugal)</option><option value="/vanto/ms/privacy/">Bahasa Melayu</option><option value="/vanto/hi/privacy/">हिन्दी</option><option value="/vanto/uk/privacy/">Українська</option><option value="/vanto/ar/privacy/">العربية</option><option value="/vanto/he/privacy/">עברית</option></select></label></div></header>
   <main>
-    <section class="document-hero"><p class="eyebrow">Privacy Policy</p><h1>隱私權政策</h1><p class="document-summary">Vanto 以本機處理為主，只在提供您選擇的服務、跨裝置同步、購買驗證和產品穩定性所需時處理資料。</p><div class="document-meta"><span>生效日期：2026 年 8 月 1 日</span><span>最近更新：2026 年 9 月 7 日</span></div></section>
+    <section class="document-hero"><p class="eyebrow">Privacy Policy</p><h1>隱私權政策</h1><p class="document-summary">Vanto 主要在本機處理媒體。本政策涵蓋服務存取、同步、購買、使用分析及 Apple Ads 獲客衡量。</p><div class="document-meta"><span>生效日期：2026 年 8 月 1 日</span><span>最近更新：2026 年 10 月 8 日</span></div></section>
     <div class="document-layout">
       <aside class="toc" aria-label="頁面目錄"><strong>本頁內容</strong><a href="#scope">適用範圍</a><a href="#device">設備數據</a><a href="#firebase">使用分析與崩潰診斷</a><a href="#apple">Apple 服務與同步</a><a href="#third-party">第三方服務</a><a href="#purpose">目的與共享</a><a href="#retention">保存、刪除與權利</a><a href="#security">安全與跨境</a><a href="#contact">聯繫</a></aside>
       <article class="article">
@@ -52,10 +52,11 @@
         <p>媒體伺服器和遠端檔案來源的密碼、令牌及其他敏感憑證保存在系統 Keychain 中，僅用於連接您指定的服務。 Vanto 不會建立獨立的 Vanto 使用者帳號。</p>
 
         <h2 id="firebase">3. Firebase 使用分析與崩潰診斷</h2>
-        <p>Vanto 預設使用 Google Firebase Analytics 與 Firebase Crashlytics，以了解核心功能是否正常、發現崩潰並改善穩定性。 Vanto 不包含廣告，不申請 AppTrackingTransparency 權限，也不使用這些資料進行廣告投放、跨 App 追蹤或使用者畫像。</p>
+        <p>Vanto 預設使用 Google Firebase Analytics 與 Firebase Crashlytics，以了解核心功能是否正常、發現崩潰並改進穩定性。Vanto 不包含廣告，不申請 AppTrackingTransparency 權限，也不使用這些資料進行廣告個人化、跨 App 追蹤或使用者剖析。</p>
         <h3>3.1 使用分析</h3>
         <p>Vanto 只主動上報經過類型白名單和分檔處理的產品事件，例如 App 版本、設備平台、頁面和來源類型，以及播放、緩衝、下載或購買流程的成功、失敗和耗時分檔。</p>
         <p>自訂事件不包含媒體標題、人員姓名、完整檔案路徑、伺服器位址、URL、帳號、憑證或原始錯誤內容。 Firebase SDK 仍可能處理其正常運作所需的 App 實例識別碼、裝置與系統資訊及網路傳輸資訊。</p>
+        <p>在 iPhone 和 iPad 上，Firebase 還透過 Apple AdServices 衡量來自 Apple Ads 的下載及後續使用和購買。臨時歸因權杖傳送給 Apple，回傳的廣告活動和關鍵字識別碼由 Firebase 用於分析。Vanto 不收集 IDFA、不申請追蹤權限，也不將此歸因與您的媒體、來源帳號或其他裝置關聯。</p>
         <h3>3.2 崩潰診斷</h3>
         <p>Crashlytics 報告可能包含崩潰堆疊、執行緒狀態、App 與系統版本、裝置類型和受限的運行上下文。 Vanto 不主動附加媒體標題、路徑、伺服器位址、帳號或憑證。</p>
         <p>Vanto 已關閉 Firebase 自動頁面上報、廣告個人化訊號和 IDFV 收集。停止使用或卸載 Vanto 會停止未來產生的收集；已發送的資料無法從裝置撤回，其保存受 Vanto 的 Firebase 配置和 Google 適用條款約束。</p>
@@ -75,7 +76,7 @@
 
         <h2 id="purpose">6. 處理目的與共享範圍</h2>
         <p>Vanto 僅為以下目的處理資料：</p>
-        <ul><li>連結、瀏覽和播放您選擇的媒體來源；</li><li>保存偏好、播放狀態、收藏和離線內容；</li><li>提供您啟用且符合權益條件的跨裝置同步；</li><li>驗證和恢復 Vanto Pro 權益；</li><li>分析核心功能可靠性並診斷崩潰；</li><li>履行法律義務並保護 App 與使用者安全。</li></ul>
+        <ul><li>連結、瀏覽和播放您選擇的媒體來源；</li><li>保存偏好、播放狀態、收藏和離線內容；</li><li>提供您啟用且符合權益條件的跨裝置同步；</li><li>驗證和恢復 Vanto Pro 權益；</li><li>分析核心功能可靠性並診斷崩潰；</li><li>衡量 Vanto 的 Apple Ads 獲客效果；</li><li>履行法律義務並保護 App 與使用者安全。</li></ul>
         <p>Vanto 不出售或出租數據，也不向廣告商提供數據。只有在實現上述功能所必需時，資料才會由 Apple、Google Firebase 或您主動配置的服務處理；或在法律明確要求時向有權機關提供必要資訊。</p>
 
         <h2 id="retention">7. 儲存、刪除與您的權利</h2>
